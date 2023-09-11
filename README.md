@@ -1,1 +1,1 @@
-# Paradigm-Website
+# Paradigm Website

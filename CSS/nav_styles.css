@@ -117,7 +117,7 @@
   
 .btn 
 {
-    color: white;
+    color: white !important;
     background-color: #005580;
     padding: 8px 20px;
     border-radius: 1000px;
@@ -147,6 +147,11 @@
     margin: 5px 0;
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
+}
+
+.nav__item a, .nav__item a:visited
+{
+    color: #005580;
 }
   
 /* For JS */

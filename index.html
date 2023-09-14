@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/normalize.css"> 
     <link rel="stylesheet" href="./CSS/nav_styles.css">
+    <script defer src ="./JavaScript/marquee_script.js"></script> 
     <link rel="stylesheet" href="./CSS/index_styles.css">
     <script defer src="./JavaScript/nav_script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -159,20 +160,7 @@
 
 
     <script>
-        const para1 = document.getElementById("para1");
-        animate(para1);
-
-        function animate(element) 
-        {
-            let elementWidth = element.offsetWidth;
-            let parentWidth = element.parentElement.offsetWidth;
-            let flag = 0;
-
-            setInterval(() => {
-                element.style.marginLeft = --flag + "px";
-                if (elementWidth == -flag) { flag = parentWidth; }
-            }, 10);
-        }
+        
     </script>
 </body>
 

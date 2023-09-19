@@ -49,7 +49,8 @@ body
 
 .feesandpolicies-margin-top 
 {
-    margin-top: 112px !important
+    margin-top: 112px !important;
+    margin-bottom: 24px;
 }
 
 .feesandpolicies-padding-16 
@@ -68,4 +69,31 @@ body
 .feesandpolicies-text-grey 
 {
     color: #757575 !important
+}
+
+.feesandpolicies-container .policiesPar
+{
+    line-height: 1.5;
+}
+
+/* Table Properties */
+table
+{
+    width: 100%;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 0.075in;
+}
+
+th
+{
+    width: 2.5in;
 }

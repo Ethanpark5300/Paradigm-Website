@@ -11,51 +11,51 @@ h2 {
     font-size: 30px
 }
 
-.w3-container:after,
-.w3-container:before,
-.w3-row-padding:after,
-.w3-row-padding:before {
+.fees-container:after,
+.fees-container:before,
+.fees-row-padding:after,
+.fees-row-padding:before {
     content: "";
     display: table;
     clear: both
 }
 
-.w3-content {
+.fees-content {
     margin-left: auto;
     margin-right: auto
 }
 
-.w3-content {
+.fees-content {
     max-width: 980px
 }
 
-.w3-row-padding {
+.fees-row-padding {
     padding: 0 8px
 }
 
-.w3-container {
+.fees-container {
     padding: 0.01em 16px
 }
 
-.w3-card {
+.fees-card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.w3-margin-top {
+.fees-margin-top {
     margin-top: 112px !important
 }
 
-.w3-padding-16 {
+.fees-padding-16 {
     padding-top: 16px !important;
     padding-bottom: 16px !important
 }
 
 /* Colors */
-.w3-white {
+.fees-white {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.w3-text-grey {
+.fees-text-grey {
     color: #757575 !important
 }

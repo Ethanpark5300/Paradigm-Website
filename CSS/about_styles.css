@@ -28,6 +28,12 @@ body
     margin: 10px 0;
 }
 
+.about-us h1
+{
+    color: #009688 !important;
+    font-size: 36px;
+}
+
 .about-us hr 
 {
     border: 0;
@@ -169,7 +175,7 @@ body
 
 .about-padding-16 
 {
-    padding-bottom: 8px !important;
+    padding-bottom: 0px !important;
 }
 
 /* Colors */

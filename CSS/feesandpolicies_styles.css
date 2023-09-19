@@ -1,61 +1,71 @@
-body
+body 
 {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #005580;
 }
 
-h2 {
-    
-    font-weight: 400;
+.feesandpolicies h1 
+{
+    color: #009688 !important;
+    font-size: 36px;
     margin: 10px 0;
-    font-size: 30px
 }
 
-.fees-container:after,
-.fees-container:before,
-.fees-row-padding:after,
-.fees-row-padding:before {
+.feesandpolicies-container:after,
+.feesandpolicies-container:before,
+.feesandpolicies-row-padding:after,
+.feesandpolicies-row-padding:before 
+{
     content: "";
     display: table;
     clear: both
 }
 
-.fees-content {
+.feesandpolicies-content 
+{
     margin-left: auto;
     margin-right: auto
 }
 
-.fees-content {
+.feesandpolicies-content 
+{
     max-width: 980px
 }
 
-.fees-row-padding {
+.feesandpolicies-row-padding 
+{
     padding: 0 8px
 }
 
-.fees-container {
+.feesandpolicies-container 
+{
     padding: 0.01em 16px
 }
 
-.fees-card {
+.feesandpolicies-card 
+{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.fees-margin-top {
+.feesandpolicies-margin-top 
+{
     margin-top: 112px !important
 }
 
-.fees-padding-16 {
+.feesandpolicies-padding-16 
+{
     padding-top: 16px !important;
     padding-bottom: 16px !important
 }
 
 /* Colors */
-.fees-white {
+.feesandpolicies-white 
+{
     color: #000 !important;
     background-color: #fff !important
 }
 
-.fees-text-grey {
+.feesandpolicies-text-grey 
+{
     color: #757575 !important
 }

@@ -185,7 +185,7 @@ body
     background-color: #fff !important
 }
 
-@media (max-width: 378px)
+/* @media (max-width: 378px)
 {
     .about-container2 p
     {
@@ -199,7 +199,7 @@ body
     {
         font-size: 13px;
     }
-}
+} */
 
 .about-light-grey 
 {

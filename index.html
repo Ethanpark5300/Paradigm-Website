@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Paradigm Psychiatry </title>
@@ -8,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/normalize.css"> 
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/nav_styles.css">
-    <script defer src ="./JavaScript/marquee_script.js"></script> 
+    <script defer src="./JavaScript/marquee_script.js"></script>
     <link rel="stylesheet" href="./CSS/index_styles.css">
     <script defer src="./JavaScript/nav_script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://db.onlinewebfonts.com/c/8be4a2f403c2dc27187d892cca388e24?family=Britannic+Bold" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <section class="navbar">
@@ -40,12 +44,13 @@
                     </a>
                     <nav class="nav">
                         <ul class="nav__list">
-                            <li class="nav__item nav_active"> <a class="nav__link" href="index.html">Home</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="./HTML/providers.html">Providers</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="./HTML/feesandpolicies.html">Fees & Policies</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Contact</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="#">Crisis</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="./HTML/about.html">About</a> </li>
+                            <li class="nav__item nav_active"> <a class="nav__link" href="index.html">Home</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./HTML/aboutus.html">About us</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./HTML/services.html">Services</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./HTML/providers.html">Providers</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./HTML/contact.html">Contact</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./HTML/faq.html">FAQ</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./HTML/resources.html">Resources</a></li>
                             <li class="nav__item"> <a class="btn" href="#">Schedule Appointment</a> </li>
                         </ul>
                     </nav>
@@ -59,22 +64,93 @@
         </header>
     </section>
 
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-image">
+            <div class="hero-text">
+                <img src="./Images/Logo.svg"">
+              <h1 class=" hero-space"> Paradigm Psychiatry</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome -->
+    <section class="welcome">
+        <div class="welcome-content welcome-margin-top" style="max-width:1400px;">
+            <div class="welcome-row-padding">
+                <div class="welcome-container welcome-card welcome-white welcome-margin-bottom">
+                    <h1 class="welcome-text-grey welcome-padding-16">WELCOME TO PARADIGM PSYCHIATRY</h1>
+                    <div class="welcome-container">
+                        <h2 class="welcome-opacity">CURRENTLY ACCEPTING NEW PATIENTS</h2>
+                        <h2 class="welcome-opacity">SCHEDULE AN APPOINTMENT TODAY</h2>
+                        <div class="flex-parent jc-center">
+                            <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';" class="welcome-button welcome-block margin-right"> New Patients</button>    
+                            <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';" class="welcome-button welcome-block"> Existing Patients</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
     <!-- Marquee/Moving Text -->
     <section class="marquee">
         <div id="main">
             <p class="para" id="para1"> We are excited to welcome Jill Abernathy NP to our team. She is accepting new patients! </p>
     </section>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="./Images/Logo.svg">
-            <h1 class="hero-title"> Paradigm Psychiatry </h1>
-            <button type="button" class="hero-button" onclick="window.location.href = '#'"> Schedule Appointment </button>
+
+
+    <!-- Providers  -->
+    <section class="providers">
+        <div class="providers-content providers-margin-top" style="max-width:1600px;">
+            <div class="providers-row-padding">
+                <div class="providers-container providers-card providers-white providers-margin-bottom">
+                    <h2 class="providers-text-grey providers-padding-16">Meet the Faculty</h2>
+                    <div class="providers-container">
+                        <div class="providers-row-padding" style="margin-top:16px">
+                            <div class="providers-col l3 m6 providers-margin-bottom">
+                                <div class="providers-card">
+                                    <img src="./Images/AlexandraMoore.jpeg" style="width:100%;">
+                                    <div class="providers-container">
+                                        <h3>Alexandra Moore</h3>
+                                        <p class="providers-opacity">APRN, PMHNP-BC</p> <br>
+                                        <button onclick="location.href='./HTML/providers.html'" class="providers-button providers-block"> More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="providers-col l3 m6 providers-margin-bottom">
+                                <div class="providers-card">
+                                    <img src="./Images/JillAbernathy.jpeg" style="width:100%">
+                                    <div class="providers-container">
+                                        <h3>Jill Abernathy</h3>
+                                        <p class="providers-opacity">PMHNP-BC</p> <br>
+                                        <button onclick="location.href='./HTML/providers.html#JillAbernathySection'" class="providers-button providers-block"> More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="providers-col l3 m6 providers-margin-bottom">
+                                <div class="providers-card">
+                                    <img src="./Images/KiongleeJung.jpeg" style="width:100%">
+                                    <div class="providers-container">
+                                        <h3>Kionglee Jung</h3>
+                                        <p class="providers-opacity">DNP, PMHNP, FNP - BC</p> <br>
+                                        <button onclick="location.href='./HTML/providers.html#KiongleeJungSection'" class="providers-button providers-block"> More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Services-->
+</body>
+
+</html>
+
+<!-- Services
     <section class="services">
         <div class="services-content services-margin-top" style="max-width:1400px;">
             <div class="services-row-padding">
@@ -108,51 +184,4 @@
                     </div>
                 </div>
             </div>
-    </section>
-
-    <!-- Providers  -->
-    <section class="providers">
-        <div class="providers-content providers-margin-top" style="max-width:1400px;">
-            <div class="providers-row-padding">
-                <div class="providers-container providers-card providers-white providers-margin-bottom">
-                    <h2 class="providers-text-grey providers-padding-16">Meet the Faculty</h2>
-                    <div class="providers-container">
-                        <div class="providers-row-padding" style="margin-top:16px">
-                            <div class="providers-col l3 m6 providers-margin-bottom">
-                                <div class="providers-card">
-                                    <img src="./Images/AlexandraMoore.jpeg" style="width:100%;">
-                                    <div class="providers-container">
-                                        <h3>Alexandra Moore</h3>
-                                        <p class="providers-opacity">APRN, PMHNP-BC</p> <br>
-                                        <button onclick="location.href='./HTML/providers.html'" type="button" class="providers-button providers-block"> More Info</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="providers-col l3 m6 providers-margin-bottom">
-                                <div class="providers-card">
-                                    <img src="./Images/JillAbernathy.jpeg" style="width:100%">
-                                    <div class="providers-container">
-                                        <h3>Jill Abernathy</h3>
-                                        <p class="providers-opacity">PMHNP-BC</p> <br>
-                                        <button onclick="location.href='./HTML/providers.html#JillAbernathySection'" type="button" class="providers-button providers-block"> More Info</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="providers-col l3 m6 providers-margin-bottom">
-                                <div class="providers-card">
-                                    <img src="./Images/KiongleeJung.jpeg" style="width:100%">
-                                    <div class="providers-container">
-                                        <h3>Kionglee Jung</h3>
-                                        <p class="providers-opacity">DNP, PMHNP, FNP - BC</p> <br>
-                                        <button onclick="location.href='./HTML/providers.html#KiongleeJungSection'" type="button" class="providers-button providers-block"> More Info</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+    </section> -->

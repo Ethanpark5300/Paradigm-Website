@@ -7,7 +7,7 @@ body
 
 /* Hero */
 .hero-image {
-    background-image: url("../Images/Hero.png");
+    background-image: url("../images/hero_banner.png");
     height: 900px;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,13 +41,11 @@ body
 .welcome h1 {
     font-size: 48px;
     text-align: center;
-    font-family: "Britannic Bold";
 }
 
 .welcome h2 {
     font-size: 28px;
     text-align: center;
-    font-family: "century-gothic", sans-serif;
     line-height: 1.5;
 }
 

@@ -1,5 +1,4 @@
-body 
-{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #005580;
 }
@@ -37,10 +36,21 @@ body
 }
 
 /* Welcome */
-
 .welcome h1 {
     font-size: 48px;
     text-align: center;
+}
+
+@media (max-width: 361px) 
+{
+    .welcome h1 {
+        font-size: 40px;
+    }
+
+    .weclome h2
+    {
+        font-size: 20px;
+    }
 }
 
 .welcome h2 {
@@ -64,7 +74,7 @@ body
 }
 
 .welcome-row-padding {
-    padding: 0 16px;
+    padding: 16px 16px;
 }
 
 .welcome-container {
@@ -119,26 +129,22 @@ body
     font-size: 20px;
 }
 
-@media (min-width: 602px) 
-{
-    .flex-parent 
-    {
+@media (min-width: 602px) {
+    .flex-parent {
         display: flex;
     }
-    .jc-center 
-    {
+
+    .jc-center {
         justify-content: center;
     }
 }
 
-.welcome .margin-right
-{
+.welcome .margin-right {
     margin-right: 48px;
 }
 
 @media (max-width: 602px) {
-    .welcome-button
-    {
+    .welcome-button {
         width: 100%;
     }
 }
@@ -184,7 +190,7 @@ body
 }
 
 .providers img {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .providers-button {
@@ -222,16 +228,16 @@ body
 }
 
 .providers-col.l3 {
-    width: 25%;
+    width: 33%;
 }
 
-@media (max-width: 1093px) {
+@media (max-width: 950px) {
     .providers-col.l3 {
         width: 49.99999%;
     }
 }
 
-@media (max-width: 601px) {
+@media (max-width: 700px) {
     .providers-col.l3 {
         width: 100%;
     }
@@ -259,9 +265,8 @@ body
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.providers-container .providers-card2 img
-{
-    width: 75%; 
+.providers-container .providers-card2 img {
+    width: 250px;
     border-radius: 16px;
 }
 
@@ -288,6 +293,7 @@ body
 
 .providers-padding-16 {
     padding-top: 16px !important;
+    padding-bottom: 16px;
 }
 
 .providers-button:hover {

@@ -1,309 +1,257 @@
-body 
-{
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
     background-color: #005580;
+    font-weight: 500;
 }
 
 /* About Us */
-.about-us
-{
+.about-us {
     box-sizing: border-box;
 }
 
-.about-us hr 
-{
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
-
-.about-us h2 
-{
+.about-us h2 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0px 0;
 }
 
-.about-us h1
-{
+.about-us h1 {
     color: #427F70 !important;
     font-size: 36px;
 }
 
-.about-us p
-{
+.about-us p {
     padding-bottom: 16px;
 }
 
-.about-us h2
-{
+.about-us h2 {
     padding-top: 8px;
 }
 
-.about-display-container 
-{
+.about-display-container {
     position: relative;
 }
 
 .about-container:after,
 .about-container:before,
 .about-row-padding:after,
-.about-row-padding:before 
-{
+.about-row-padding:before {
     content: "";
     display: table;
     clear: both;
 }
 
 .about-third,
-.about-twothird 
-{
+.about-twothird {
     float: left;
     width: 100%;
 }
 
-.about-content 
-{
+.about-content {
     margin-left: auto;
     margin-right: auto;
 }
 
 .about-row-padding,
 .about-row-padding>.about-third,
-.about-row-padding>.about-twothird 
-{
+.about-row-padding>.about-twothird {
     padding: 0 8px;
 }
 
-.about-container 
-{
-    padding-top: 0.01em; 
-    padding-bottom: 4px; 
-    padding-left: 16px;
-    padding-right: 16px;
+.about-container {
+    padding-top: 0.01em;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
     line-height: 1.5;
 }
 
-.about-card 
-{
+.about-card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.about-card-4 
-{
+.about-card-4 {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about-large 
-{
-    font-size: 18px;
-}
-
-.about-xxlarge 
-{
+.about-xxlarge {
     font-size: 36px !important
 }
 
-.about-margin-top 
-{
+.about-margin-top {
     margin-top: 112px !important;
 }
 
-.about-margin-bottom 
-{
+.about-margin-bottom {
     margin-bottom: 16px !important;
 }
 
-.about-margin-right 
-{
+.about-margin-right {
     margin-right: 16px !important;
 }
 
-.about-margin-right-address 
-{
+.about-margin-right-address {
     margin-right: 22px;
 }
 
-.about-third 
-{
+.about-third {
     margin-bottom: 16px;
 }
 
-.about-padding-16 
-{
+.about-padding-16 {
     padding-bottom: 0px !important;
 }
 
-.about-white 
-{
+.about-white {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.about-light-grey 
-{
+.about-light-grey {
     color: #000 !important;
     background-color: #f1f1f1 !important;
 }
 
-.about-text-grey 
-{
+.about-text-grey {
     color: #427F70 !important;
 }
 
 /* Conditions Treated and Evaluated */
 
-.conditions
-{
+.conditions {
     box-sizing: border-box;
 }
 
-.conditions h2 
-{
+.conditions h2 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0px 0;
 }
 
-.conditions h1
-{
+.conditions h1 {
     color: #427F70 !important;
     font-size: 36px;
 }
 
-.conditions p
-{
+.conditions p {
     padding-bottom: 16px;
 }
 
-.conditions h2
-{
+.conditions h2 {
     padding-top: 8px;
 }
 
-.conditions-display-container 
-{
+.conditions-display-container {
     position: relative;
 }
 
 .conditions-container:after,
 .conditions-container:before,
 .conditions-row-padding:after,
-.conditions-row-padding:before 
-{
+.conditions-row-padding:before {
     content: "";
     display: table;
     clear: both;
 }
 
 .conditions-third,
-.conditions-twothird 
-{
+.conditions-twothird {
     float: left;
     width: 100%;
 }
 
-.conditions-content 
-{
+.conditions-content {
     margin-left: auto;
     margin-right: auto;
 }
 
 .conditions-row-padding,
 .conditions-row-padding>.conditions-third,
-.conditions-row-padding>.conditions-twothird 
-{
+.conditions-row-padding>.conditions-twothird {
     padding: 0 8px;
 }
 
-.conditions-container2
-{
-    padding-top: 0.01em; 
-    padding-bottom: 16px; 
-    padding-left: 16px;
-    padding-right: 16px;
+.conditions-container2 {
+    padding-top: 0.01em;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
     line-height: 1.5;
 }
 
-.conditions-container
-{
+.conditions-container {
     padding: 0.01em 16px;
     line-height: 1.5;
-    text-align: center;
 }
 
-.conditions-card 
-{
+.conditions-card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.conditions-card-4 
-{
+.conditions-card-4 {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.conditions-large 
-{
+.conditions-large {
     font-size: 18px;
 }
 
-.conditions-xxlarge 
-{
+.conditions-xxlarge {
     font-size: 36px !important
 }
 
-.conditions-margin-top 
-{
+.conditions-margin-top {
     margin-top: 16px !important;
 }
 
-.conditions-margin-bottom 
-{
+.conditions-margin-bottom {
     margin-bottom: 16px !important;
 }
 
-.conditions-margin-right 
-{
+.conditions-margin-right {
     margin-right: 16px !important;
 }
 
-.conditions-margin-right-address 
-{
+.conditions-margin-right-address {
     margin-right: 22px;
 }
 
-.conditions-third 
-{
+.conditions-third {
     margin-bottom: 16px;
 }
 
-.conditions-padding-16 
-{
+.conditions-padding-16 {
     padding-bottom: 0px !important;
 }
 
-.conditions-white 
-{
+.conditions-white {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.conditions-light-grey 
-{
+.conditions-light-grey {
     color: #000 !important;
     background-color: #f1f1f1 !important;
 }
 
-.conditions-text-grey 
-{
-    color: #757575 !important;
+.conditions-text-grey {
+    color: #427F70 !important;
 }
 
-.conditions-columns
-{
-    
-    display: inline-block;
-  text-align: left;
-  width: 800px;
-  column-count: 2;
+.conditions-columns {
+    columns: 3;
+}
+
+@media (max-width: 1040px) {
+    .conditions-columns {
+        columns: 2;
+    }
+}
+
+@media (max-width: 784px) {
+    .conditions-columns {
+        columns: 1;
+    }
 }

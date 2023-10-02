@@ -4,14 +4,10 @@ body
     background-color: #005580;
 }
 
+/* About Us */
 .about-us
 {
     box-sizing: border-box;
-}
-
-.about-us img 
-{
-    border-style: none;
 }
 
 .about-us hr 
@@ -25,35 +21,18 @@ body
 {
     font-size: 30px;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .about-us h1
 {
-    color: #009688 !important;
+    color: #427F70 !important;
     font-size: 36px;
-}
-
-.about-us hr 
-{
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 20px 0;
 }
 
 .about-us p
 {
     padding-bottom: 16px;
-}
-
-.about-us .p2
-{
-    padding-bottom: 4px!important;
-}
-
-.about-us img 
-{
-    vertical-align: middle;
 }
 
 .about-us h2
@@ -89,11 +68,6 @@ body
     margin-right: auto;
 }
 
-.about-content 
-{
-    max-width: 980px;
-}
-
 .about-row-padding,
 .about-row-padding>.about-third,
 .about-row-padding>.about-twothird 
@@ -103,7 +77,10 @@ body
 
 .about-container 
 {
-    padding: 0.01em 16px;
+    padding-top: 0.01em; 
+    padding-bottom: 4px; 
+    padding-left: 16px;
+    padding-right: 16px;
     line-height: 1.5;
 }
 
@@ -144,7 +121,7 @@ body
 
 .about-margin-right-address 
 {
-    margin-right: 22px;;
+    margin-right: 22px;
 }
 
 .about-third 
@@ -152,54 +129,16 @@ body
     margin-bottom: 16px;
 }
 
-@media (min-width: 1095px) 
-{
-    .about-third 
-    {
-        width: 33.33333%
-    }
-
-    .about-twothird 
-    {
-        width: 66.66666%
-    }
-}
-
-@media (max-width:601px)
-{
-    .about-margin-right-address 
-    {
-        margin-right: 24px;
-    }
-}
-
 .about-padding-16 
 {
     padding-bottom: 0px !important;
 }
 
-/* Colors */
 .about-white 
 {
     color: #000 !important;
     background-color: #fff !important
 }
-
-/* @media (max-width: 378px)
-{
-    .about-container2 p
-    {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 361px)
-{
-    .about-container2 p
-    {
-        font-size: 13px;
-    }
-} */
 
 .about-light-grey 
 {
@@ -209,5 +148,162 @@ body
 
 .about-text-grey 
 {
+    color: #427F70 !important;
+}
+
+/* Conditions Treated and Evaluated */
+
+.conditions
+{
+    box-sizing: border-box;
+}
+
+.conditions h2 
+{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px 0;
+}
+
+.conditions h1
+{
+    color: #427F70 !important;
+    font-size: 36px;
+}
+
+.conditions p
+{
+    padding-bottom: 16px;
+}
+
+.conditions h2
+{
+    padding-top: 8px;
+}
+
+.conditions-display-container 
+{
+    position: relative;
+}
+
+.conditions-container:after,
+.conditions-container:before,
+.conditions-row-padding:after,
+.conditions-row-padding:before 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.conditions-third,
+.conditions-twothird 
+{
+    float: left;
+    width: 100%;
+}
+
+.conditions-content 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conditions-row-padding,
+.conditions-row-padding>.conditions-third,
+.conditions-row-padding>.conditions-twothird 
+{
+    padding: 0 8px;
+}
+
+.conditions-container2
+{
+    padding-top: 0.01em; 
+    padding-bottom: 16px; 
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 1.5;
+}
+
+.conditions-container
+{
+    padding: 0.01em 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.conditions-card 
+{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.conditions-card-4 
+{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.conditions-large 
+{
+    font-size: 18px;
+}
+
+.conditions-xxlarge 
+{
+    font-size: 36px !important
+}
+
+.conditions-margin-top 
+{
+    margin-top: 16px !important;
+}
+
+.conditions-margin-bottom 
+{
+    margin-bottom: 16px !important;
+}
+
+.conditions-margin-right 
+{
+    margin-right: 16px !important;
+}
+
+.conditions-margin-right-address 
+{
+    margin-right: 22px;
+}
+
+.conditions-third 
+{
+    margin-bottom: 16px;
+}
+
+.conditions-padding-16 
+{
+    padding-bottom: 0px !important;
+}
+
+.conditions-white 
+{
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.conditions-light-grey 
+{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.conditions-text-grey 
+{
     color: #757575 !important;
+}
+
+.conditions-columns
+{
+    
+    display: inline-block;
+  text-align: left;
+  width: 800px;
+  column-count: 2;
 }

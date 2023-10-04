@@ -118,6 +118,11 @@ body {
     color: #427F70 !important;
 }
 
+.about-us p
+{
+    font-size: 18px;
+}
+
 /* Conditions Treated and Evaluated */
 
 .conditions {
@@ -240,17 +245,23 @@ body {
     color: #427F70 !important;
 }
 
+.conditions li
+{
+    font-size: 18px;
+}
+
 .conditions-columns {
+    list-style-type: circle;
     columns: 3;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1181px) {
     .conditions-columns {
         columns: 2;
     }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 807px) {
     .conditions-columns {
         columns: 1;
     }

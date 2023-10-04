@@ -7,18 +7,16 @@ body {
 }
 
 .services h1 {
-    font-size: 36px
+    margin: 0px 0;
+    font-size: 36px;
+    color: #427F70 !important;
 }
 
-.services h2 {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.services h1,
 .services h2 {
     color: #427F70 !important;
-    margin: 10px 0
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .services-container:after,
@@ -35,7 +33,7 @@ body {
 .services-third,
 .services-twothird {
     float: left;
-    width: 100%
+
 }
 
 .services-content {
@@ -93,8 +91,12 @@ body {
 }
 
 .services-padding-64 {
-    padding-top: 16px !important;
-    padding-bottom: 64px !important
+    padding-top: 0px !important;
+    padding-bottom: 16px !important
+}
+
+.services p {
+    font-size: 18px;
 }
 
 .services-white {
@@ -102,30 +104,62 @@ body {
     background-color: #fff !important
 }
 
-.services-text-teal {
-    color: #009688 !important
+.genetic_testing ul 
+{
+    list-style: none;
 }
 
-.services-text-grey {
-    color: #757575 !important
+.genetic_testing li
+{
+    position: relative;
+    padding-left: 1.5em;
+    font-size: 18px;
+    padding: 4px 0;
 }
 
-.services-custom-margin2 {
-    margin-top: 144px;
+.genetic_testing ul li:before {
+    content: '✓'; 
 }
 
-.services-custom-margin {
-    margin-top: 64px;
+.adhd_testing ul
+{
+    position: relative;
+    padding-left: 1.5em;
 }
 
-@media (min-width: 1024px) {
-    .services-third {
-        width: 33.33333%
-    }
+.adhd_testing li
+{
+    list-style-type: circle;
+    font-size: 18px;
+    padding: 4px 0;
+}
 
-    .services-twothird {
-        width: 66.66666%
-    }
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.services-third {
+    width: 33.33333%
+}
+
+.services-twothird {
+    width: 66.66666%
+}
+
+.imagessidebyside_column
+{
+    float: left;
+    width: 50%;
+}
+
+.imagessidebyside_row::after
+{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .center-image {
@@ -141,6 +175,18 @@ body {
 
 .medication_management_image {
     margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.genetic_testing_image1
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.genetic_testing_image2
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -151,15 +197,5 @@ body {
     .services-twothird {
         width: 100%
     }
-
-    .psychiatric_evaluations_image {
-        width: 60%;
-        margin-top: 16px !important;
-    }
-
-    .medication_management_image 
-    {
-        width: 60%;
-        margin-top: 32px;
-    }
+    
 }

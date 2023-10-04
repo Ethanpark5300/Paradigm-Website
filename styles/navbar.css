@@ -91,7 +91,6 @@
     font-size: 20px;
     color: #427F70;
     font-weight: 700;
-    letter-spacing: -0.5px;
 }
 
 .nav /* Remove for instant dropdown */
@@ -145,7 +144,7 @@
 {
     height: 2px;
     width: 27px;
-    background-color: darkgray;
+    background-color: #427F70;
     margin: 5px 0;
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
@@ -205,12 +204,12 @@
   
     .nav__link 
     {
-        font-size: 14px;
+        font-size: 16px;
     }
   
     .btn 
     {
-        font-size: 11px;
+        font-size: 14px;
         padding: 7px 17px;
     }
   

@@ -134,6 +134,19 @@ body {
     padding: 4px 0;
 }
 
+.alternativetreatments ul
+{
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.alternativetreatments li
+{
+    list-style-type: circle;
+    font-size: 16px;
+    padding: 4px 0;
+}
+
 hr {
     border: 0;
     border-top: 1px solid #eee;
@@ -169,6 +182,12 @@ hr {
     margin-right: auto;
 }
 
+.services-image
+{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 @media (max-width: 1024px) {
     .services-third {
         width: 100%
@@ -177,15 +196,21 @@ hr {
     .services-twothird {
         width: 100%
     }
+
+    .psychiatric_evaluations_img {
+        margin-top: 16px !important;
+    }
     
 }
 
 .psychiatric_evaluations_img {
-    margin-top: 112px;
+    margin-top: 94px;
 }
 
-.services-image
+.DesertValleyPediatricTherapy_Img
 {
-    margin-top: 32px;
-    margin-bottom: 16px;
+    width: 66%;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
+

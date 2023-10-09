@@ -117,12 +117,6 @@ body {
 .about-text-grey {
     color: #427F70 !important;
 }
-
-.about-us p
-{
-    font-size: 18px;
-}
-
 /* Conditions Treated and Evaluated */
 
 .conditions {
@@ -243,11 +237,6 @@ body {
 
 .conditions-text-grey {
     color: #427F70 !important;
-}
-
-.conditions li
-{
-    font-size: 18px;
 }
 
 .conditions-columns {

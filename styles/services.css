@@ -96,7 +96,7 @@ body {
 }
 
 .services p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .services-white {
@@ -113,7 +113,7 @@ body {
 {
     position: relative;
     padding-left: 1.5em;
-    font-size: 18px;
+    font-size: 16px;
     padding: 4px 0;
 }
 
@@ -130,7 +130,7 @@ body {
 .adhd_testing li
 {
     list-style-type: circle;
-    font-size: 18px;
+    font-size: 16px;
     padding: 4px 0;
 }
 
@@ -169,26 +169,6 @@ hr {
     margin-right: auto;
 }
 
-.psychiatric_evaluations_image {
-    margin-top: 112px;
-}
-
-.medication_management_image {
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
-
-.genetic_testing_image1
-{
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
-.genetic_testing_image2
-{
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
-
 @media (max-width: 1024px) {
     .services-third {
         width: 100%
@@ -198,4 +178,14 @@ hr {
         width: 100%
     }
     
+}
+
+.psychiatric_evaluations_img {
+    margin-top: 112px;
+}
+
+.services-image
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }

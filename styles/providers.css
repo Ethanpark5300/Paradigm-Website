@@ -1,13 +1,22 @@
-body
-{
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
     background-color: #005580;
+    font-weight: 500;
 }
 
-.providers h1
-{
+.providers h1 {
+    margin: 0px 0;
     font-size: 36px;
-    margin: 10px 0
+    color: #427F70 !important;
+}
+
+.providers h2 {
+    color: #427F70 !important;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .providers-container:after,
@@ -15,8 +24,7 @@ body
 .providers-row:after,
 .providers-row:before,
 .providers-row-padding:after,
-.providers-row-padding:before 
-{
+.providers-row-padding:before {
     content: "";
     display: table;
     clear: both
@@ -25,120 +33,121 @@ body
 .providers-third,
 .providers-twothird {
     float: left;
-    width: 100%
+
 }
 
-@media (min-width:601px) 
-{
-    .providers-third 
-    {
-        width: 33.33333%
-    }
-
-    .providers-twothird 
-    {
-        width: 66.66666%
-    }
-}
-
-.providers-content 
-{
+.providers-content {
     margin-left: auto;
     margin-right: auto
 }
 
-.providers-content 
-{
-    max-width: 980px
+@media (max-width:992px) {
+    .providers-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
 }
 
-.providers-row-padding 
-{
+.providers-row-padding {
     padding: 0 8px
 }
 
-.providers-container 
-{
-    padding-top: 0.01em;
-    padding-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
+.providers-container {
+    padding: 0.01em 16px
 }
 
-.providers-card 
-{
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+.providers-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.providers-center 
-{
-    text-align: center !important;
+.providers-center {
+    text-align: center !important
 }
 
-.providers-margin-top 
-{
-    margin-top: 112px !important;
+.providers-border {
+    border: 1px solid #ccc !important
 }
 
-/* Space between providers */ 
-.providers-margin-bottom 
-{
-    margin-bottom: 64px !important;
+.providers-margin-top {
+    margin-top: 112px !important
 }
 
-.providers-padding-large 
-{
-    padding: 12px 24px !important;
+.providers-margin-bottom {
+    margin-bottom: 16px !important
 }
 
-.providers-padding-32 
-{
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
+.providers-padding-large {
+    padding: 12px 24px !important
 }
 
-.providers-padding-64 
-{
+.providers-padding-16 {
     padding-top: 16px !important;
-    padding-bottom: 0px !important;
+    padding-bottom: 16px !important
 }
 
-#JillAbernathySection p, #KiongleeJungSection p
-{
-    color: white;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.providers-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
 }
 
-.providers-description
-{
+.providers-padding-64 {
+    padding-top: 0px !important;
+    padding-bottom: 16px !important
+}
+
+.providers p {
     font-size: 16px;
-    line-height: 1.5;
 }
 
-/* Colors */
-.providers-white 
-{
+.providers-white {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.providers-light-grey 
-{
-    color: #000 !important;
-    background-color: #f1f1f1 !important
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.providers-text-teal 
-{
-    color: #009688 !important
+.providers-third {
+    width: 33.33333%
 }
 
-.providers-opacity 
-{
-    opacity: 0.60;
+.providers-twothird {
+    width: 66.66666%
 }
+
+.center-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.providers-image
+{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+    .providers-third {
+        width: 100%
+    }
+
+    .providers-twothird {
+        width: 100%
+    }
+
+    .psychiatric_evaluations_img {
+        margin-top: 16px !important;
+    }
+    
+}
+
+.psychiatric_evaluations_img {
+    margin-top: 96px;
+}
+ 

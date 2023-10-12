@@ -16,7 +16,18 @@ body {
     color: #427F70 !important;
     font-size: 30px;
     font-weight: 700;
+}
+
+.providers h3 {
+    color: gray;
+    opacity: 0.60;
     margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.providers p
+{
+    font-size: 16px;
 }
 
 .providers-container:after,
@@ -95,10 +106,6 @@ body {
     padding-bottom: 16px !important
 }
 
-.providers p {
-    font-size: 16px;
-}
-
 .providers-white {
     color: #000 !important;
     background-color: #fff !important
@@ -120,15 +127,17 @@ hr {
 }
 
 .center-image {
-    width: 100%;
+    width: 300px;
+    height: 300px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 48px;
+    border-radius: 16px;
 }
 
 .providers-image
 {
-    margin-top: 16px;
+    margin-top: 32px;
     margin-bottom: 16px;
 }
 
@@ -144,10 +153,16 @@ hr {
     .psychiatric_evaluations_img {
         margin-top: 16px !important;
     }
+
+    .center-image
+    {
+        margin-top: 16px;
+        margin-right: auto;
+    }
     
 }
 
 .psychiatric_evaluations_img {
-    margin-top: 96px;
+    margin-top: 112px;
 }
  

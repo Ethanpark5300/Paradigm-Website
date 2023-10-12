@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Lexend', sans-serif;
     background-color: #005580;
-    font-weight: 500;
 }
 
 .services h1 {
@@ -53,7 +52,7 @@ body {
 }
 
 .services-container {
-    padding: 0.01em 16px
+    padding: 0.01em 16px;
 }
 
 .services-card {
@@ -97,6 +96,8 @@ body {
 
 .services p {
     font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 .services-white {
@@ -104,9 +105,15 @@ body {
     background-color: #fff !important
 }
 
+.services li
+{
+    font-weight: 300;
+}
+
 .genetic_testing ul 
 {
     list-style: none;
+    line-height: 1.5;
 }
 
 .genetic_testing li
@@ -114,7 +121,6 @@ body {
     position: relative;
     padding-left: 1.5em;
     font-size: 16px;
-    padding: 4px 0;
 }
 
 .genetic_testing ul li:before {
@@ -125,26 +131,26 @@ body {
 {
     position: relative;
     padding-left: 1.5em;
+    line-height: 1.5;
 }
 
 .adhd_testing li
 {
     list-style-type: circle;
-    font-size: 16px;
-    padding: 4px 0;
+    font-size: 16px
 }
 
 .alternativetreatments ul
 {
     position: relative;
     padding-left: 1.5em;
+    line-height: 1.5;
 }
 
 .alternativetreatments li
 {
     list-style-type: circle;
     font-size: 16px;
-    padding: 4px 0;
 }
 
 hr {

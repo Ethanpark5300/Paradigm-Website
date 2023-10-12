@@ -5,7 +5,7 @@ body {
     background-color: #005580;
 }
 
-/* About Us */
+/* About Us Section */
 .about-us {
     box-sizing: border-box;
 }
@@ -14,6 +14,7 @@ body {
     font-size: 30px;
     font-weight: 700;
     margin: 0px 0;
+    padding-top: 8px;
 }
 
 .about-us h1 {
@@ -22,13 +23,10 @@ body {
 }
 
 .about-us p {
-    padding-bottom: 16px;
     line-height: 1.5;
     font-weight: 300;
-}
-
-.about-us h2 {
-    padding-top: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .about-display-container {
@@ -66,6 +64,7 @@ body {
     padding-bottom: 4px;
     padding-left: 24px;
     padding-right: 24px;
+    text-align: center;
 }
 
 .about-card {
@@ -117,8 +116,119 @@ body {
 .about-text-grey {
     color: #427F70 !important;
 }
-/* Conditions Treated and Evaluated */
 
+/* Mission and Values Section */
+.mission-values {
+    box-sizing: border-box;
+}
+
+.mission-values h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0;
+    padding-top: 8px;
+}
+
+.mission-values h1 {
+    color: #427F70 !important;
+    font-size: 36px;
+}
+
+.mission-values p {
+    line-height: 1.5;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.missionvalues-display-container {
+    position: relative;
+}
+
+.missionvalues-container:after,
+.missionvalues-container:before,
+.missionvalues-row-padding:after,
+.missionvalues-row-padding:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.missionvalues-third,
+.missionvalues-twothird {
+    float: left;
+    width: 100%;
+}
+
+.missionvalues-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.missionvalues-row-padding,
+.missionvalues-row-padding>.missionvalues-third,
+.missionvalues-row-padding>.missionvalues-twothird {
+    padding: 0 8px;
+}
+
+.missionvalues-container {
+    padding-top: 0.01em;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.missionvalues-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.missionvalues-card-4 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.missionvalues-xxlarge {
+    font-size: 36px !important
+}
+
+.missionvalues-margin-bottom {
+    margin-bottom: 16px !important;
+}
+
+.missionvalues-margin-right {
+    margin-right: 16px !important;
+}
+
+.missionvalues-third {
+    margin-bottom: 16px;
+}
+
+.missionvalues-padding-16 {
+    padding-bottom: 0px !important;
+}
+
+.missionvalues-white {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.missionvalues-light-grey {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.missionvalues-text-grey {
+    color: #427F70 !important;
+}
+
+.missionvalues-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Conditions Treated and Evaluated Section */
 .conditions {
     box-sizing: border-box;
 }
@@ -127,23 +237,20 @@ body {
     font-size: 30px;
     font-weight: 700;
     margin: 0px 0;
+    padding-top: 8px;
 }
 
 .conditions h1 {
     color: #427F70 !important;
     font-size: 36px;
+    text-align: center;
 }
 
 .conditions p {
     padding-bottom: 16px;
 }
 
-.conditions h2 {
-    padding-top: 8px;
-}
-
-.conditions ul
-{
+.conditions ul {
     font-weight: 300;
 }
 
@@ -206,10 +313,6 @@ body {
     font-size: 36px !important
 }
 
-.conditions-margin-top {
-    margin-top: 16px !important;
-}
-
 .conditions-margin-bottom {
     margin-bottom: 16px !important;
 }
@@ -259,4 +362,118 @@ body {
     .conditions-columns {
         columns: 1;
     }
+}
+
+/* Types of Medication Section */
+.typesofmedication {
+    box-sizing: border-box;
+}
+
+.typesofmedication h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0;
+}
+
+.typesofmedication h1 {
+    color: #427F70 !important;
+    font-size: 36px;
+    text-align: center;
+}
+
+.typesofmedication p {
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.typesofmedication h2 {
+    padding-top: 8px;
+}
+
+.medication-display-container {
+    position: relative;
+}
+
+.medication-container:after,
+.medication-container:before,
+.medication-row-padding:after,
+.medication-row-padding:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.medication-third,
+.medication-twothird {
+    float: left;
+    width: 100%;
+}
+
+.medication-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medication-row-padding,
+.medication-row-padding>.medication-third,
+.medication-row-padding>.medication-twothird {
+    padding: 0 8px;
+}
+
+.medication-container {
+    padding-top: 0.01em;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.medication-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.medication-card-4 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.medication-xxlarge {
+    font-size: 36px !important
+}
+
+.medication-margin-top {
+    margin-top: 112px !important;
+}
+
+.medication-margin-bottom {
+    margin-bottom: 16px !important;
+}
+
+.medication-margin-right {
+    margin-right: 16px !important;
+}
+
+.medication-margin-right-address {
+    margin-right: 22px;
+}
+
+.medication-third {
+    margin-bottom: 16px;
+}
+
+.medication-padding-16 {
+    padding-bottom: 0px !important;
+}
+
+.medication-white {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.medication-light-grey {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.medication-text-grey {
+    color: #427F70 !important;
 }

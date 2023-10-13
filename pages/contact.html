@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script defer src="../scripts/navbar.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <section class="navbar">
+        <header class="header">
+            <div class="top-bar">
+                <div class="top-bar__content">
+                    <section class="phone">
+                        <i class="fa fa-phone"></i>
+                        <span> 480-613-9599 </span>
+                    </section>
+                    <section class="email">
+                        <i class="fa fa-envelope"></i>
+                        <span> info@paradigmpsychiatry.com </span>
+                    </section>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <div class="bottom-bar__content">
+                    <a href="../index.html" class="logo">
+                        <img class="logo__img" src="../images/logo.svg" alt="logo">
+                        <span class="logo__text"> Paradigm Psychiatry </span>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"> <a class="nav__link" href="../index.html">Home</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./aboutus.html">About Us</a> </li>
+                            <li class="nav__item"> <a class="nav__link" href="./services.html">Services</a> </li>
+                            <li class="nav__item"> <a class="nav__link" href="./providers.html">Providers</a></li>
+                            <li class="nav__item nav_active"> <a class="nav__link" href="./contact.html">Contact</a> </li>
+                            <li class="nav__item"> <a class="nav__link" href="./faq.html">FAQ</a></li>
+                            <li class="nav__item"> <a class="nav__link" href="./resources.html">Resources</a></li>
+                            <li class="nav__item"> <a class="btn" href="#">Schedule Appointment</a> </li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section class="contactus">
+        <!-- Page Container -->
+        <div class="contact-content contact-margin-top">
+
+            <!-- The Grid -->
+            <div class="contact-row-padding">
+
+                <!-- Left Column -->
+                <div class="contact-twothird">
+                    <div class="contact-container contact-card contact-white contact-margin-bottom">
+                        <div class="contact-container">
+                            <h1> Contact Us!</h1>
+                            <h2>Drop us a line!</h2>
+                            <div class="contact-form">
+                                <form action="https://formsubmit.co/ethanpark5300@gmail.com" method="POST">
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contact.html">
+                                    <input type="text" name="_honey" style="display:none">
+                                    <input type="hidden" name="_subject" value="New form submission!">
+                                    <input type="hidden" name="_autoresponse" value="asdasda">
+                                    <input type="hidden" name="_template" value="box">
+                                    
+                                    <div class="forminput" style="margin-top: 32px;">
+                                        <label for="Name">Full Name</label>
+                                        <br>
+                                        <input type="text" name="Name" placeholder="Name..." required>
+                                    </div>
+                                    <div class="forminput">
+                                        <label for="Email">Email</label>
+                                        <br>
+                                        <input type="email" name="Email" placeholder="Email..." required>
+                                    </div>
+                                    <div class="forminput">
+                                        <label for="Subject">Subject</label>
+                                        <br>
+                                        <input type="text" name="Subject" placeholder="Subject..." required>
+                                    </div>
+                                    <div class="forminput">
+                                        <label for="Message">Message</label>
+                                        <br>
+                                        <textarea id="Message" name="Message" placeholder="Message..." style="height:200px; margin-top: 6px;"></textarea>
+                                    </div>
+                                    <div class="center-wrapper">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                    
+                                    
+
+                                </form>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column -->
+                <div class="contact-third">
+
+                    <div class="contact-white contact-text-grey contact-card-4">
+                        <div class="contact-display-container">
+                            <div class="google-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.9006833119975!2d-111.88703312475792!3d33.321411855967305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b07abe6c53195%3A0xda57b0f1ff7d4821!2sParadigm%20Psychiatry!5e0!3m2!1sen!2sus!4v1697180534594!5m2!1sen!2sus"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="contact-container">
+                            <p><i
+                                    class="fa fa-briefcase fa-fw contact-margin-right contact-large contact-text-teal"></i>Designer
+                            </p>
+                            <p><i
+                                    class="fa fa-home fa-fw contact-margin-right contact-large contact-text-teal"></i>London,
+                                UK</p>
+                            <p><i
+                                    class="fa fa-envelope fa-fw contact-margin-right contact-large contact-text-teal"></i>ex@mail.com
+                            </p>
+                            <p><i
+                                    class="fa fa-phone fa-fw contact-margin-right contact-large contact-text-teal"></i>1224435534
+                            </p>
+
+                            <!-- End Right Column -->
+                        </div>
+
+
+
+                        <!-- End Grid -->
+                    </div>
+
+                    <!-- End Page Container -->
+                </div>
+    </section>
+
+
+
+</body>
+
+</html>

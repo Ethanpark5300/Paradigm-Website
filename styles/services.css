@@ -48,7 +48,7 @@ body {
 }
 
 .services-row-padding {
-    padding: 0 8px
+    padding: 0 16px
 }
 
 .services-container {
@@ -97,7 +97,7 @@ body {
 .services p {
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .services-white {
@@ -107,7 +107,7 @@ body {
 
 .services li
 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .genetic_testing ul 

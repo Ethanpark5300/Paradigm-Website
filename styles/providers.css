@@ -28,7 +28,7 @@ body {
 {
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .providers-container:after,
@@ -61,7 +61,7 @@ body {
 }
 
 .providers-row-padding {
-    padding: 0 8px
+    padding: 0 16px
 }
 
 .providers-container {

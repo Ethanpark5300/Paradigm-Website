@@ -10,6 +10,7 @@ body {
 .hero-image {
     background-image: url("../images/hero_banner.png");
     height: 900px;
+    padding: 0 8px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,7 +70,8 @@ body {
 .welcome-row-padding:before {
     content: "";
     display: table;
-    clear: both
+    clear: both;
+    padding: 0 8px;
 }
 
 .welcome-content {
@@ -125,7 +127,7 @@ body {
     white-space: nowrap;
     transition: all 0.2s;
     margin-top: 16px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
 }
 

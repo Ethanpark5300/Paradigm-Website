@@ -24,7 +24,7 @@ body {
 
 .about-us p {
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -56,7 +56,7 @@ body {
 .about-row-padding,
 .about-row-padding>.about-third,
 .about-row-padding>.about-twothird {
-    padding: 0 8px;
+    padding: 0 16px;
 }
 
 .about-container {
@@ -136,7 +136,7 @@ body {
 
 .mission-values p {
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -168,7 +168,7 @@ body {
 .missionvalues-row-padding,
 .missionvalues-row-padding>.missionvalues-third,
 .missionvalues-row-padding>.missionvalues-twothird {
-    padding: 0 8px;
+    padding: 0 16px;
 }
 
 .missionvalues-container {
@@ -228,6 +228,12 @@ body {
     width: 100%;
 }
 
+@media (min-width: 768px) {
+    .missionvalues-container img {
+        width: 50%;
+    }
+}
+
 /* Conditions Treated and Evaluated Section */
 .conditions {
     box-sizing: border-box;
@@ -251,7 +257,7 @@ body {
 }
 
 .conditions ul {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .conditions-display-container {
@@ -281,7 +287,7 @@ body {
 .conditions-row-padding,
 .conditions-row-padding>.conditions-third,
 .conditions-row-padding>.conditions-twothird {
-    padding: 0 8px;
+    padding: 0 16px;
 }
 
 .conditions-container2 {
@@ -383,7 +389,7 @@ body {
 
 .typesofmedication p {
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -418,7 +424,7 @@ body {
 .medication-row-padding,
 .medication-row-padding>.medication-third,
 .medication-row-padding>.medication-twothird {
-    padding: 0 8px;
+    padding: 0 16px;
 }
 
 .medication-container {

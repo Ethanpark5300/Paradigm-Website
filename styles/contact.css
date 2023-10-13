@@ -28,6 +28,10 @@ body {
     vertical-align: middle
 }
 
+.contactus h1 {
+    color: #427F70;
+}
+
 .contact-display-container {
     position: relative
 }
@@ -40,6 +44,12 @@ body {
     display: table;
     clear: both
 }
+
+.contact-third
+{
+    margin-bottom: 16px;
+}
+
 
 .contact-third,
 .contact-twothird {
@@ -121,16 +131,9 @@ body {
     background-color: #fff !important
 }
 
-.contact-text-teal {
-    color: #009688 !important
-}
-
-.contact-text-black {
-    color: #000 !important
-}
-
-.contact-text-grey {
-    color: #757575 !important
+.contact-green
+{
+    color: #427F70;
 }
 
 .contact-form p {
@@ -171,8 +174,20 @@ input[type=submit] {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;
+    margin-bottom: 16px;
 }
 
 input[type=submit]:hover {
     background-color: lightgray;
+}
+
+.contact-informationcontainer .contact-margintop
+{
+    margin-top: 16px;
+}
+
+.contact-informationcontainer p
+{
+    margin-left: 16px;
+    line-height: 1.5;
 }

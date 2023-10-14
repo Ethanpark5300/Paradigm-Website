@@ -7,6 +7,9 @@ body {
 
 .google-map {
     padding-bottom: 66%;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     position: relative;
 }
 
@@ -117,7 +120,7 @@ body {
 }
 
 .contact-margin-right {
-    margin-right: 16px !important
+    margin-right: 8px !important
 }
 
 .contact-padding-16 {
@@ -170,7 +173,7 @@ input[type=submit] {
     border: none;
     border-radius: 16px;
     cursor: pointer;
-    width: 33%;
+    width: 66%;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;

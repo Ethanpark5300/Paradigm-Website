@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #005580;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #005580;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.services h1 {
+    margin: 0px 0;
+    font-size: 36px;
+    color: #427F70 !important;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.services h2 {
+    color: #427F70 !important;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.services-container:after,
+.services-container:before,
+.services-row:after,
+.services-row:before,
+.services-row-padding:after,
+.services-row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.services-third,
+.services-twothird {
+    float: left;
+
+}
+
+.services-content {
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media (max-width:992px) {
+    .services-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+}
+
+.services-row-padding {
+    padding: 0 16px
+}
+
+.services-container {
+    padding: 0.01em 16px;
+}
+
+.services-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.services-center {
+    text-align: center !important
+}
+
+.services-border {
+    border: 1px solid #ccc !important
+}
+
+.services-margin-top {
+    margin-top: 112px !important
+}
+
+.services-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.services-padding-large {
+    padding: 12px 24px !important
+}
+
+.services-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.services-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.services-padding-64 {
+    padding-top: 0px !important;
+    padding-bottom: 16px !important
+}
+
+.services p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.services-white {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.genetic_testing li {
+    font-weight: 300;
+}
+
+.genetic_testing ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.genetic_testing li {
+    position: relative;
+    padding-left: 1.5em;
+    font-size: 16px;
+}
+
+.genetic_testing ul li:before {
+    content: '✓';
+}
+
+.adhd_testing ul {
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 1.5;
+}
+
+.services .adhd_testing li {
+    list-style-type: circle;
+    font-size: 16px;
+    font-weight: 300 !important;
+}
+
+.alternativetreatments ul {
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 1.5;
+}
+
+.alternativetreatments li {
+    list-style-type: circle;
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+
+    margin-bottom: 16px;
+}
+
+.services-third {
+    width: 33.33333%
+}
+
+.services-twothird {
+    width: 66.66666%
+}
+
+.imagessidebyside_column {
+    float: left;
+    width: 50%;
+}
+
+.imagessidebyside_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-image {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+    .services-third {
+        width: 100%
+    }
+
+    .services-twothird {
+        width: 100%
+    }
+
+    .psychiatric_evaluations_img {
+        margin-top: 16px !important;
+    }
+
+}
+
+.psychiatric_evaluations_img {
+    margin-top: 32px;
+}
+
+.DesertValleyPediatricTherapy_Img {
+    width: 66%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

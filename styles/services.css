@@ -5,23 +5,14 @@ body {
     background-color: #005580;
 }
 
-.services h1 {
-    margin: 0px 0;
-    font-size: 36px;
-    color: #427F70 !important;
-}
-
-.services h2 {
-    color: #427F70 !important;
+h2 {
     font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-weight: 400;
+    margin: 10px 0
 }
 
 .services-container:after,
 .services-container:before,
-.services-row:after,
-.services-row:before,
 .services-row-padding:after,
 .services-row-padding:before {
     content: "";
@@ -29,22 +20,9 @@ body {
     clear: both
 }
 
-.services-third,
-.services-twothird {
-    float: left;
-
-}
-
 .services-content {
     margin-left: auto;
     margin-right: auto
-}
-
-@media (max-width:992px) {
-    .services-main {
-        margin-left: 0 !important;
-        margin-right: 0 !important
-    }
 }
 
 .services-row-padding {
@@ -52,19 +30,15 @@ body {
 }
 
 .services-container {
-    padding: 0.01em 16px;
+    padding: 0.01em 16px
 }
 
 .services-card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.services-center {
-    text-align: center !important
-}
-
-.services-border {
-    border: 1px solid #ccc !important
+.services-xxlarge {
+    font-size: 36px !important
 }
 
 .services-margin-top {
@@ -75,148 +49,126 @@ body {
     margin-bottom: 16px !important
 }
 
-.services-padding-large {
-    padding: 12px 24px !important
+.services-margin-right {
+    margin-right: 16px !important
 }
 
 .services-padding-16 {
     padding-top: 16px !important;
-    padding-bottom: 16px !important
+    /* padding-bottom: 16px !important */
 }
 
-.services-padding-32 {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important
-}
-
-.services-padding-64 {
-    padding-top: 0px !important;
-    padding-bottom: 16px !important
-}
-
-.services p {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
+/* Colors */
 .services-white {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.services li
-{
-    font-weight: 400;
+.services-text-teal {
+    color: #009688 !important
 }
 
-.genetic_testing ul 
-{
-    list-style: none;
-    line-height: 1.5;
+.services-text-grey {
+    color: #757575 !important
 }
 
-.genetic_testing li
-{
-    position: relative;
-    padding-left: 1.5em;
-    font-size: 16px;
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.genetic_testing ul li:before {
-    content: '✓'; 
+h1 {
+    font-size: 50px;
+    margin-bottom: 0px !important;
 }
 
-.adhd_testing ul
-{
-    position: relative;
-    padding-left: 1.5em;
-    line-height: 1.5;
+.row {
+    margin: 8px -16px;
 }
 
-.adhd_testing li
-{
-    list-style-type: circle;
-    font-size: 16px
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-.alternativetreatments ul
-{
-    position: relative;
-    padding-left: 1.5em;
-    line-height: 1.5;
-}
-
-.alternativetreatments li
-{
-    list-style-type: circle;
-    font-size: 16px;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.services-third {
-    width: 33.33333%
-}
-
-.services-twothird {
-    width: 66.66666%
-}
-
-.imagessidebyside_column
-{
+/* Create four equal columns that floats next to each other */
+.column {
     float: left;
-    width: 50%;
+    width: 25%;
 }
 
-.imagessidebyside_row::after
-{
+/* Clear floats after rows */
+.row:after {
     content: "";
-    clear: both;
     display: table;
+    clear: both;
 }
 
-.center-image {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Content */
+.content {
+    background-color: #F1F1F1;
+    padding: 10px;
 }
 
-.services-image
-{
-    margin-top: 32px;
-    margin-bottom: 16px;
+h3 {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 500;
 }
 
-@media (max-width: 1024px) {
-    .services-third {
-        width: 100%
+.services button {
+    background-color: #427F70;
+    border-radius: 16px;
+    border: 1px solid #427F70;
+    display: inline-block;
+    padding: 8px;
+    vertical-align: middle;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    margin-top: 16px;
+}
+
+.services button:hover {
+    color: white !important;
+    background-color: lightgray !important;
+    border: 1px solid lightgray;
+    text-decoration: underline;
+}
+
+.flex-parent {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1172px) {
+    .column {
+        width: 33%;
     }
+}
 
-    .services-twothird {
-        width: 100%
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 908px) {
+    .column {
+        width: 50%;
     }
+}
 
-    .psychiatric_evaluations_img {
-        margin-top: 16px !important;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 626px) {
+    .column {
+        width: 100%;
     }
-    
 }
-
-.psychiatric_evaluations_img {
-    margin-top: 112px;
-}
-
-.DesertValleyPediatricTherapy_Img
-{
-    width: 66%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-

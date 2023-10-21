@@ -24,7 +24,7 @@ body {
 
 .about-us p {
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -136,7 +136,7 @@ body {
 
 .mission-values p {
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -257,7 +257,7 @@ body {
 }
 
 .conditions ul {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .conditions-display-container {
@@ -389,8 +389,9 @@ body {
 
 .typesofmedication p {
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .typesofmedication h2 {

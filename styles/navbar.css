@@ -1,44 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
-.navbar ul 
-{
+
+.navbar ul {
     list-style: none;
 }
-  
-.navbar a 
-{
+
+.navbar a {
     text-decoration: none;
 }
-  
-.navbar button
-{
+
+.navbar button {
     background: none;
     border: none;
 }
 
-.header 
-{
+.header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 2;
 }
-  
-.top-bar 
-{
+
+.top-bar {
     background-color: rgb(39, 44, 51);
 }
-  
-.top-bar__content 
-{
+
+.top-bar__content {
     height: 30px;
     /* max-width: 1400px; */
     padding: 0 30px;
@@ -50,76 +43,68 @@
     font-size: 12px;
     color: rgba(255, 255, 255, 0.35);
 }
-  
-.icon 
-{
+
+.icon {
     margin-right: 3px;
     color: rgba(255, 255, 255, 0.17);
 }
-  
-.bottom-bar 
-{
+
+.bottom-bar {
     background-color: white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-  
-.bottom-bar__content 
-{
+
+.bottom-bar__content {
     min-height: 60px;
     /* max-width: 1400px; */
-    padding: 0 32px;
-    margin: 0 auto;  
+    padding: 0 16px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  
-.logo 
-{
+
+.logo {
     vertical-align: middle;
     display: flex;
     column-gap: 10px;
     align-items: center;
 }
-  
-.logo__img 
-{
+
+.logo__img {
     height: 50px;
 }
-  
-.logo__text 
-{
+
+.logo__text {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     color: #427F70;
     font-weight: 700;
 }
 
-.nav /* Remove for instant dropdown */
-{
+.nav
+
+/* Remove for instant dropdown */
+    {
     transition: all 0.3s ease-in-out;
 }
-  
-.nav__list 
-{
+
+.nav__list {
     display: flex;
     column-gap: 40px;
     color: #005580;
 }
-  
-.nav__link 
-{
+
+.nav__link {
     transition: all 0.2s;
 }
-  
+
 .nav__link:hover,
-.nav__link:focus 
-{
+.nav__link:focus {
     text-decoration: underline;
 }
-  
-.btn 
-{
+
+.btn {
     color: white !important;
     background-color: #005580;
     padding: 8px 20px;
@@ -130,20 +115,17 @@
     cursor: pointer;
     transition: all 0.2s;
 }
-  
-.btn:hover 
-{
+
+.btn:hover {
     background-color: lightgray;
 }
-  
-.hamburger 
-{
+
+.hamburger {
     cursor: pointer;
     display: none;
 }
-  
-.bar
-{
+
+.bar {
     height: 2px;
     width: 27px;
     background-color: #427F70;
@@ -152,42 +134,35 @@
     transition: all 0.3s ease-in-out;
 }
 
-.nav__item a, .nav__item a:visited
-{
+.nav__item a,
+.nav__item a:visited {
     color: #005580;
 }
 
-.nav_active
-{
+.nav_active {
     text-decoration: underline;
 }
-  
+
 /* For JS */
-.nav--open 
-{
+.nav--open {
     left: 50% !important;
 }
 
-.hamburger--open .bar:nth-child(1) 
-{
+.hamburger--open .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
 
-.hamburger--open .bar:nth-child(2) 
-{
+.hamburger--open .bar:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger--open .bar:nth-child(3) 
-{
+.hamburger--open .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
-  
+
 /* MEDIA QUERIES */
-@media (max-width: 1226px) 
-{
-    .nav 
-    {
+@media (max-width: 1226px) {
+    .nav {
         position: fixed;
         top: 90px;
         left: -100%;
@@ -196,45 +171,50 @@
         width: 100%;
         padding: 10px 0 25px;
     }
-  
-    .nav__list 
-    {
+
+    .nav__list {
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
     }
-  
-    .nav__link 
-    {
+
+    .nav__link {
         font-size: 15px;
     }
-  
-    .btn 
-    {
+
+    .btn {
         font-size: 14px;
         padding: 7px 17px;
     }
-  
-    .hamburger 
-    {
+
+    .hamburger {
         display: block;
     }
 }
-  
-@media (max-width: 360px)
-{
-    .top-bar__content 
-    {
+
+@media (max-width: 360px) {
+    .top-bar__content {
         font-size: 10px;
     }
 }
 
-a[x-apple-data-detectors] 
-{
+a[x-apple-data-detectors] {
     color: inherit !important;
     text-decoration: none !important;
     font-size: inherit !important;
     font-family: inherit !important;
     font-weight: inherit !important;
     line-height: inherit !important;
+}
+
+.navbar br 
+{
+    display: none;
+}
+
+@media (max-width: 347px) {
+    .navbar br 
+    {
+        display: inline;
+    }
 }

@@ -155,6 +155,7 @@ body {
     color: white !important;
     background-color: lightgray !important;
     border: 1px solid lightgray;
+    text-decoration: underline;
 }
 
 /* Marquee

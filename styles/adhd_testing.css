@@ -38,6 +38,12 @@ ul.breadcrumb li a:hover {
     margin-top: 8px;
 }
 
+@media (max-width: 336px) {
+    .services h1 {
+        font-size: 30px;
+    }
+}
+
 .services h2 {
     color: #427F70 !important;
     font-size: 30px;
@@ -177,8 +183,6 @@ ul.breadcrumb li a:hover {
 hr {
     border: 0;
     border-top: 1px solid #eee;
-
-    margin-bottom: 16px;
 }
 
 .services-third {
@@ -200,16 +204,26 @@ hr {
     display: table;
 }
 
+.imagessidebyside_row
+{
+    margin-top: 16px;
+}
+
 .center-image {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 32px;
 }
 
-.services-image {
+.endeavor-rx
+{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 32px;
-    margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -221,18 +235,12 @@ hr {
         width: 100%
     }
 
-    .psychiatric_evaluations_img {
+    .center-image {
         margin-top: 16px !important;
     }
 
-}
-
-.psychiatric_evaluations_img {
-    margin-top: 32px;
-}
-
-.DesertValleyPediatricTherapy_Img {
-    width: 66%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    .endeavor-rx {
+        margin-top: 0 !important;
+        margin-bottom: 16px;
+    }
 }

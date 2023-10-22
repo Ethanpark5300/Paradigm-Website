@@ -7,8 +7,10 @@
     <link rel="icon" type="image/x-icon" href="../images/logo.svg">
     <link rel="stylesheet" href="../styles/adhd_testing.css">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
     <script defer src="../scripts/navbar.js"></script>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script defer src="../scripts/backtotopbutton.js"></script>
+    <link rel="stylesheet" href="../styles/backtotopbutton.css">
 </head>
 
 <body>
@@ -37,8 +39,7 @@
                         <ul class="nav__list">
                             <li class="nav__item"> <a class="nav__link" href="../index.html">Home</a></li>
                             <li class="nav__item"> <a class="nav__link" href="./aboutus.html">About Us</a> </li>
-                            <li class="nav__item nav_active"> <a class="nav__link" href="./services.html">Services</a>
-                            </li>
+                            <li class="nav__item nav_active"> <a class="nav__link" href="./services.html">Services</a> </li>
                             <li class="nav__item"> <a class="nav__link" href="./providers.html">Providers</a></li>
                             <li class="nav__item"> <a class="nav__link" href="./contact.html">Contact</a></li>
                             <li class="nav__item"> <a class="nav__link" href="./faq.html">FAQ</a></li>
@@ -94,7 +95,7 @@
                                     </p>
                                 </div>
                                 <div class="services-third services-container">
-                                    <img src="../images/adhd_testing.png" class="services-image center-image">
+                                    <img src="../images/adhd_testing.png" class="center-image">
                                     <div class="imagessidebyside_row">
                                         <div class="imagessidebyside_column">
                                             <img src="../images/ResultwithoutADHD.png"
@@ -136,13 +137,21 @@
                                 <br>
                             </div>
                             <div class="services-third services-container">
-                                <img src="../images/EndeavorRx_Logo.png" class="services-image center-image">
+                                <img src="../images/EndeavorRx_Logo.png" class="endeavor-rx">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
+
+    <!-- Back to top button -->
+    <button class="back-to-top hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
 
 </html>

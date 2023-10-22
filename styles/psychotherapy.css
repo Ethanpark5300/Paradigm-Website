@@ -38,6 +38,12 @@ ul.breadcrumb li a:hover {
     margin-top: 8px;
 }
 
+@media (max-width: 366px) {
+    .services h1 {
+        font-size: 30px;
+    }
+}
+
 .services h2 {
     color: #427F70 !important;
     font-size: 30px;
@@ -132,52 +138,9 @@ ul.breadcrumb li a:hover {
     background-color: #fff !important
 }
 
-.genetic_testing li {
-    font-weight: 300;
-}
-
-.genetic_testing ul {
-    list-style: none;
-    line-height: 1.5;
-}
-
-.genetic_testing li {
-    position: relative;
-    padding-left: 1.5em;
-    font-size: 16px;
-}
-
-.genetic_testing ul li:before {
-    content: '✓';
-}
-
-.adhd_testing ul {
-    position: relative;
-    padding-left: 1.5em;
-    line-height: 1.5;
-}
-
-.services .adhd_testing li {
-    list-style-type: circle;
-    font-size: 16px;
-    font-weight: 300 !important;
-}
-
-.alternativetreatments ul {
-    position: relative;
-    padding-left: 1.5em;
-    line-height: 1.5;
-}
-
-.alternativetreatments li {
-    list-style-type: circle;
-    font-size: 16px;
-}
-
 hr {
     border: 0;
     border-top: 1px solid #eee;
-
     margin-bottom: 16px;
 }
 
@@ -189,27 +152,12 @@ hr {
     width: 66.66666%
 }
 
-.imagessidebyside_column {
-    float: left;
-    width: 50%;
-}
-
-.imagessidebyside_row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .center-image {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.services-image {
     margin-top: 32px;
-    margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -221,18 +169,7 @@ hr {
         width: 100%
     }
 
-    .psychiatric_evaluations_img {
+    .center-image {
         margin-top: 16px !important;
     }
-
-}
-
-.psychiatric_evaluations_img {
-    margin-top: 32px;
-}
-
-.DesertValleyPediatricTherapy_Img {
-    width: 66%;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }

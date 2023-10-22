@@ -9,6 +9,7 @@ body {
     margin: 0px 0;
     font-size: 36px;
     color: #427F70 !important;
+    padding-bottom: 32px !important;
 }
 
 .providers h2 {
@@ -28,7 +29,7 @@ body {
 {
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .providers-container:after,
@@ -94,7 +95,7 @@ body {
 
 .providers-padding-16 {
     padding-top: 16px !important;
-    padding-bottom: 16px !important
+    /* padding-bottom: 32px !important */
 }
 
 .providers-padding-32 {
@@ -119,6 +120,11 @@ hr {
     margin-bottom: 16px;
 }
 
+.providers img
+{
+    border: 4px solid #005580;
+}
+
 .providers-third {
     width: 33.33333%
 }
@@ -128,18 +134,24 @@ hr {
 }
 
 .center-image {
-    width: 300px;
+    max-width: 100%;
     height: 300px;
     display: block;
     margin-left: auto;
-    margin-right: 48px;
+    margin-right: auto;
     border-radius: 16px;
 }
 
 .providers-image
 {
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin-top: 64px;
+}
+
+@media (max-width: 420px)
+{
+    .center-image {
+        height: 225px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -151,19 +163,18 @@ hr {
         width: 100%
     }
 
-    .psychiatric_evaluations_img {
+    .first_img {
         margin-top: 16px !important;
     }
 
     .center-image
     {
         margin-top: 16px;
-        margin-right: auto;
     }
     
 }
 
-.psychiatric_evaluations_img {
+.first_img {
     margin-top: 112px;
 }
  

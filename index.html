@@ -7,9 +7,11 @@
     <link rel="icon" type="image/x-icon" href="./images/logo.svg">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <!-- <script defer src="./scripts/marquee.js"></script> -->
     <script defer src="./scripts/navbar.js"></script>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <script defer src="./scripts/backtotopbutton.js"></script>
+    <link rel="stylesheet" href="./styles/backtotopbutton.css">
+    <!-- <script defer src="./scripts/marquee.js"></script> -->
 </head>
 
 <body>
@@ -71,19 +73,29 @@
         <div class="welcome-content welcome-margin-top">
             <div class="welcome-row-padding">
                 <div class="welcome-container welcome-card welcome-white welcome-margin-bottom">
-                    <h1 class="welcome-text-grey welcome-padding-16 welcome-text">WELCOME TO PARADIGM PSYCHIATRY</h1>
+                    <h1>WELCOME TO PARADIGM PSYCHIATRY</h1>
                     <div class="welcome-container">
-                        <h2>CURRENTLY ACCEPTING NEW PATIENTS!</h2>
+                        <h2 class="h2-margin-bottom">CURRENTLY ACCEPTING NEW PATIENTS!</h2>
                         <h2>SCHEDULE AN APPOINTMENT TODAY!</h2>
                         <div class="flex-parent jc-center">
-                            <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';" class="welcome-button welcome-block margin-right">New Patients</button>
-                            <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';" class="welcome-button welcome-block">Existing Patients</button>
+                            <button
+                                onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';"
+                                class="welcome-button margin-right">New Patients</button>
+                            <button
+                                onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';"
+                                class="welcome-button">Existing Patients</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <button class="back-to-top hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 
     <!-- Providers  -->
     <section class="providers">
@@ -129,6 +141,7 @@
             </div>
         </div>
     </section>
+    
 
 </body>
 

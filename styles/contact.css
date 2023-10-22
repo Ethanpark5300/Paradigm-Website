@@ -136,6 +136,7 @@ body {
 
 .contact-green
 {
+    font-weight: 400 !important;
     color: #427F70;
 }
 
@@ -191,6 +192,7 @@ input[type=submit]:hover {
 
 .contact-informationcontainer p
 {
+    font-weight: 300;
     margin-left: 16px;
     line-height: 1.5;
 }

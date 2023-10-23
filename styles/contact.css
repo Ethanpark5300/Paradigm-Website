@@ -60,7 +60,7 @@ body {
     width: 100%
 }
 
-@media (min-width:601px) {
+@media (min-width:1212px) {
     .contact-third {
         width: 33.33333%
     }

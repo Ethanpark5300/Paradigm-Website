@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -76,16 +74,14 @@
 }
 
 .logo__text {
-    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     color: #427F70;
     font-weight: 700;
 }
 
 .nav
-
-/* Remove for instant dropdown */
-    {
+{
+    /* Remove for instant dropdown */
     transition: all 0.3s ease-in-out;
 }
 
@@ -97,6 +93,7 @@
 
 .nav__link {
     transition: all 0.2s;
+    font-weight: 600;
 }
 
 .nav__link:hover,

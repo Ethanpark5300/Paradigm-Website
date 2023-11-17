@@ -1,5 +1,4 @@
 body {
-    font-family: 'Quicksand', sans-serif;
     background-color: #005580;
 }
 
@@ -18,13 +17,14 @@ body {
 .about-us h1 {
     color: #427F70 !important;
     font-size: 36px;
+    margin-bottom: 16px;
 }
 
 .about-us p {
     line-height: 1.5;
-    font-weight: 300;
     margin-top: 16px;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .about-display-container {
@@ -130,11 +130,12 @@ body {
 .mission-values h1 {
     color: #427F70 !important;
     font-size: 36px;
+    margin-bottom: 16px;
 }
 
 .mission-values p {
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -223,7 +224,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 50%;
 }
 
 @media (max-width: 896px) {
@@ -245,9 +246,10 @@ body {
 }
 
 .conditions h1 {
-    color: #427F70 !important;
+    color: #427F70;
     font-size: 36px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .conditions p {
@@ -255,7 +257,7 @@ body {
 }
 
 .conditions ul {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .conditions-display-container {
@@ -325,16 +327,8 @@ body {
     margin-right: 16px !important;
 }
 
-.conditions-margin-right-address {
-    margin-right: 22px;
-}
-
 .conditions-third {
     margin-bottom: 16px;
-}
-
-.conditions-padding-16 {
-    padding-bottom: 0px !important;
 }
 
 .conditions-white {
@@ -380,14 +374,15 @@ body {
 }
 
 .typesofmedication h1 {
-    color: #427F70 !important;
+    color: #427F70;
     font-size: 36px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .typesofmedication p {
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 8px;
 }

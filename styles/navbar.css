@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
     margin: 0;
@@ -59,7 +60,7 @@ body {
 
 .bottom-bar__content {
     min-height: 60px;
-    padding: 0 16px;
+    padding: 0 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -90,7 +91,7 @@ body {
 
 .nav__list {
     display: flex;
-    column-gap: 40px;
+    column-gap: 32px;
     color: #005580;
 }
 
@@ -99,22 +100,26 @@ body {
     font-weight: 600;
     display: inline-block;
     position: relative;
+
+    padding-top: 4px;
 }
 
-.btn {
+nav button
+{
     color: white !important;
-    background-color: #005580;
+    background-color: #005580 !important;
     padding: 8px 20px;
     border-radius: 1000px;
+    font-size: 14px;
     text-transform: uppercase;
-    font-size: 12px;
     font-weight: 600;
-    cursor: pointer;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: lightgray;
+nav button:hover
+{
+    transform: scale(1.1);
 }
 
 .hamburger {
@@ -138,9 +143,31 @@ body {
 
 .nav__active {
     border-bottom: solid 8px #005580;
-    margin-bottom: -18px;
-    padding-bottom: 16px;
+    padding-bottom: 15px !important;
     font-weight: 600;
+}
+
+.nav__link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 8px #005580;
+    margin-bottom: -16px;
+    padding-bottom: 16px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav__link:hover:after {
+    transform: scaleX(1);
+}
+
+.nav__link.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+.nav__item__active
+{
+    margin-top: 4px;
 }
 
 /* For JS */
@@ -158,24 +185,6 @@ body {
 
 .hamburger--open .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
-}
-
-.nav__link:after {
-    display: block;
-    content: '';
-    border-bottom: solid 8px #005580;
-    margin-bottom: -18px;
-    padding-bottom: 16px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-}
-
-.nav__link:hover:after {
-    transform: scaleX(1);
-}
-
-.nav__link.fromLeft:after {
-    transform-origin: 0% 50%;
 }
 
 /* MEDIA QUERIES */

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,9 +32,9 @@
             transform: scaleX(1);
         }
 
-        h1.fromRight:after {
+        /* h1.fromRight:after {
             transform-origin: 100% 50%;
-        }
+        } */
 
         h1.fromLeft:after {
             transform-origin: 0% 50%;
@@ -45,6 +45,49 @@
 <body>
     <h1 class="fromLeft">Expand from left</h1>
 
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add your styles here */
+        .disappearing-element {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: opacity 0s ease-in-out;
+        }
+
+        .disappearing-element:hover {
+            opacity: 0;
+        }
+    </style>
+    <title>Disappearing Element</title>
+</head>
+
+<body>
+
+    <div class="disappearing-element" id="myElement">Hover to Disappear</div>
+
+    <script>
+        // Add your JavaScript here
+        const disappearingElement = document.getElementById('myElement');
+
+        // You can also use event listeners for more complex interactions
+        disappearingElement.addEventListener('mouseenter', () => {
+            disappearingElement.style.opacity = '0';
+        });
+
+        disappearingElement.addEventListener('mouseleave', () => {
+            disappearingElement.style.opacity = '1';
+        });
+    </script>
 </body>
 
 </html>

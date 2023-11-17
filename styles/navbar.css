@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #005580;
 }
 
 .navbar ul {
@@ -31,7 +37,6 @@
 
 .top-bar__content {
     height: 30px;
-    /* max-width: 1400px; */
     padding: 0 30px;
     margin: 0 auto;
     display: flex;
@@ -54,7 +59,6 @@
 
 .bottom-bar__content {
     min-height: 60px;
-    /* max-width: 1400px; */
     padding: 0 16px;
     margin: 0 auto;
     display: flex;
@@ -79,8 +83,7 @@
     font-weight: 700;
 }
 
-.nav
-{
+.nav {
     /* Remove for instant dropdown */
     transition: all 0.3s ease-in-out;
 }
@@ -94,11 +97,8 @@
 .nav__link {
     transition: all 0.2s;
     font-weight: 600;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-    text-decoration: underline;
+    display: inline-block;
+    position: relative;
 }
 
 .btn {
@@ -108,7 +108,7 @@
     border-radius: 1000px;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -136,8 +136,11 @@
     color: #005580;
 }
 
-.nav_active {
-    text-decoration: underline;
+.nav__active {
+    border-bottom: solid 8px #005580;
+    margin-bottom: -18px;
+    padding-bottom: 16px;
+    font-weight: 600;
 }
 
 /* For JS */
@@ -155,6 +158,24 @@
 
 .hamburger--open .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav__link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 8px #005580;
+    margin-bottom: -18px;
+    padding-bottom: 16px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav__link:hover:after {
+    transform: scaleX(1);
+}
+
+.nav__link.fromLeft:after {
+    transform-origin: 0% 50%;
 }
 
 /* MEDIA QUERIES */
@@ -204,14 +225,12 @@ a[x-apple-data-detectors] {
     line-height: inherit !important;
 }
 
-.navbar br 
-{
+.navbar br {
     display: none;
 }
 
 @media (max-width: 347px) {
-    .navbar br 
-    {
+    .navbar br {
         display: inline;
     }
 }

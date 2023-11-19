@@ -1,6 +1,6 @@
 /* General styles for larger screens */
 .faq-section {
-    margin-top: 112px;
+    margin-top: 112px !important;
 }
 
 .faq-section h1 {

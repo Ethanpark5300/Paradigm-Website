@@ -1,22 +1,18 @@
-const showOnPx = 100;
-const backToTopButton = document.querySelector(".back-to-top")
-
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
+const navbarHeight = 90;
 
 document.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > showOnPx) {
-    backToTopButton.classList.remove("hidden")
+  if (scrollContainer().scrollTop > showOnPx + navbarHeight) {
+    backToTopButton.classList.remove("hidden");
   } else {
-    backToTopButton.classList.add("hidden")
+    backToTopButton.classList.add("hidden");
   }
-})
+});
 
 const goToTop = () => {
   scrollContainer().scrollIntoView({
     behavior: "smooth",
+    block: "start",
   });
 };
 
-backToTopButton.addEventListener("click", goToTop)
+backToTopButton.addEventListener("click", goToTop);

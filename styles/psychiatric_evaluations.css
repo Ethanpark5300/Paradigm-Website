@@ -1,8 +1,3 @@
-body {
-    font-family: 'Lexend', sans-serif;
-    background-color: #005580;
-}
-
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -42,13 +37,6 @@ ul.breadcrumb li a:hover {
     }
 }
 
-.services h2 {
-    color: #427F70 !important;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
 .services-container:after,
 .services-container:before,
 .services-row:after,
@@ -63,7 +51,6 @@ ul.breadcrumb li a:hover {
 .services-third,
 .services-twothird {
     float: left;
-
 }
 
 .services-content {
@@ -128,7 +115,7 @@ ul.breadcrumb li a:hover {
 .services p {
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .services-white {
@@ -137,44 +124,7 @@ ul.breadcrumb li a:hover {
 }
 
 .services li {
-    font-weight: 400;
-}
-
-.genetic_testing ul {
-    list-style: none;
-    line-height: 1.5;
-}
-
-.genetic_testing li {
-    position: relative;
-    padding-left: 1.5em;
-    font-size: 16px;
-}
-
-.genetic_testing ul li:before {
-    content: '✓';
-}
-
-.adhd_testing ul {
-    position: relative;
-    padding-left: 1.5em;
-    line-height: 1.5;
-}
-
-.adhd_testing li {
-    list-style-type: circle;
-    font-size: 16px
-}
-
-.alternativetreatments ul {
-    position: relative;
-    padding-left: 1.5em;
-    line-height: 1.5;
-}
-
-.alternativetreatments li {
-    list-style-type: circle;
-    font-size: 16px;
+    font-weight: 600;
 }
 
 hr {
@@ -190,17 +140,6 @@ hr {
 
 .services-twothird {
     width: 66.66666%
-}
-
-.imagessidebyside_column {
-    float: left;
-    width: 50%;
-}
-
-.imagessidebyside_row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .center-image {

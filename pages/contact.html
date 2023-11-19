@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/font-awesome.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/backtotopbutton.css">
     <script defer src="../scripts/navbar.js"></script>
+    <script defer src="../scripts/backtotopbutton.js"> </script>
+    
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -34,14 +37,14 @@
                     </a>
                     <nav class="nav">
                         <ul class="nav__list">
-                            <li class="nav__item"> <a class="nav__link" href="../index.html">Home</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="./aboutus.html">About Us</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="./services.html">Services</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="./providers.html">Providers</a></li>
-                            <li class="nav__item nav_active"> <a class="nav__link" href="./contact.html">Contact</a> </li>
-                            <li class="nav__item"> <a class="nav__link" href="./faq.html">FAQ</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="./resources.html">Resources</a></li>
-                            <li class="nav__item"> <a class="btn" href="#">Schedule Appointment</a> </li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="../index.html">Home</a></li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="./aboutus.html">About Us</a> </li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="./services.html">Services</a> </li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="./providers.html">Providers</a></li>
+                            <li class="nav__item nav__item__active"> <a class="nav__active" href="./contact.html">Contact</a></li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="./faq.html">FAQ</a></li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="./resources.html">Resources</a></li>
+                            <button onclick="location.href='../index.html';" class="">Schedule Appointment</button>
                         </ul>
                     </nav>
                     <div class="hamburger">
@@ -66,27 +69,23 @@
                                     <input type="hidden" name="_next" value="https://ethanpark5300.github.io/Paradigm-Website/pages/contact.html">
                                     <input type="hidden" name="_subject" value="New form submission!">
                                     <input type="hidden" name="_template" value="box">
-                                    <input type="hidden" name="_autoresponse" value="your custom message">
 
-                                    <div class="forminput" style="margin-top: 32px;">
-                                        <label for="Name">Full Name</label>
-                                        <input type="text" name="Name" placeholder="Name..." required>
-                                    </div>
-                                    <div class="forminput">
-                                        <label for="Email">Email</label>
-                                        <input type="email" name="Email" placeholder="Email..." required>
-                                    </div>
-                                    <div class="forminput">
-                                        <label for="Subject">Subject</label>
-                                        <input type="text" name="Subject" placeholder="Subject..." required>
-                                    </div>
-                                    <div class="forminput">
-                                        <label for="Message">Message</label>
-                                        <textarea id="Message" name="Message" placeholder="Message..." style="height:240px; margin-top: 8px;"></textarea>
-                                    </div>
+                                    <label for="Name">Full Name</label>
+                                    <input type="text" name="Name" placeholder="Name..." required>
+
+                                    <label for="Email">Email</label>
+                                    <input type="email" name="Email" placeholder="Email..." required>
+
+                                    <label for="Subject">Subject</label>
+                                    <input type="text" name="Subject" placeholder="Subject..." required>
+
+                                    <label for="Message">Message</label>
+                                    <textarea id="Message" name="Message" placeholder="Message..."></textarea>
+
                                     <div class="center-wrapper">
                                         <input type="submit" value="Submit">
                                     </div>
+                                    
                                 </form>
                             </div>
                         </div>
@@ -96,10 +95,10 @@
                 <div class="contact-third">
                     <div class="contact-white contact-text-grey contact-card-4">
                         <div class="contact-display-container">
-                            <div class="contact-informationcontainer">
+                            <div class="contact-information-container">
                                 <br>
-                                <p class="contact-green"><i class="fa fa-map-marker fa-fw contact-margin-right contact-large contact-green"></i>Address</p>
-                                <p>2460 W Ray Rd, Chandler, AZ 85224 Suite 1</p>
+                                <p class="contact-label-green"><i class="fa fa-map-marker fa-fw contact-margin-right contact-large contact-label-green"></i>Address</p>
+                                <p class="contact-value">2460 W Ray Rd, Chandler, AZ 85224 Suite 1</p>
 
                                 <div class="google-map">
                                     <iframe
@@ -108,18 +107,18 @@
                                     </iframe>
                                 </div>
                                 <br>
-                                <p class="contact-green"><i class="fa fa-phone fa-fw contact-margin-right contact-large contact-green"></i>Phone Numbers</p>
-                                <p>Office: <a href="tel:480-613-9599">(480) 613-9599</a></p>
-                                <p>Fax: <a href="tel:480-900-8515">(480) 900-8515</a></p>
+                                <p class="contact-label-green"><i class="fa fa-phone fa-fw contact-margin-right contact-large contact-label-green"></i>Phone Numbers</p>
+                                <p class="contact-value">Office: <a href="tel:480-613-9599">(480) 613-9599</a></p>
+                                <p class="contact-value">Fax: <a href="tel:480-900-8515">(480) 900-8515</a></p>
                                 <br>
-                                <p class="contact-green"><i class="fa fa-envelope fa-fw contact-margin-right contact-large contact-green"></i>Email Addresses</p>
-                                <p>General Inquiry: <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a></p>
-                                <p>Billing Inquiry: <a href="mailto:billing@paradigmpsychiatry.com">billing@paradigmpsychiatry.com</a></p>
+                                <p class="contact-label-green"><i class="fa fa-envelope fa-fw contact-margin-right contact-large contact-label-green"></i>Email Addresses</p>
+                                <p class="contact-value">General Inquiry: <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a></p>
+                                <p class="contact-value">Billing Inquiry: <a href="mailto:billing@paradigmpsychiatry.com">billing@paradigmpsychiatry.com</a></p>
                                 <br>
-                                <p class="contact-green"><i class="fa fa-calendar fa-fw contact-margin-right contact-large contact-green"></i>Open Hours</p>
-                                <p>Mon/Tue: 8 AM to 6 PM</p>
-                                <p>Wed/Thu: 8 AM to 5 PM</p>
-                                <p>Fri: 8 AM to 12 PM (Telemedicine)</p>
+                                <p class="contact-label-green"><i class="fa fa-calendar fa-fw contact-margin-right contact-large contact-label-green"></i>Open Hours</p>
+                                <p class="contact-value">Mon/Tue: 8 AM to 6 PM</p>
+                                <p class="contact-value">Wed/Thu: 8 AM to 5 PM</p>
+                                <p class="contact-value">Fri: 8 AM to 12 PM (Telemedicine)</p>
                             </div>
                             <br>
                         </div>
@@ -128,5 +127,13 @@
             </div>
         </div>
     </section>
+    
+    <!-- Back to top button -->
+    <button class="back-to-top hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
 </html>

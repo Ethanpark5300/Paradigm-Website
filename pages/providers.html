@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../styles/providers.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/backtotopbutton.css">
     <script defer src="../scripts/navbar.js"></script>
+    <script defer src="../scripts/backtotopbutton.js"> </script>
+    
 </head>
 
 <body>
@@ -33,19 +36,18 @@
                         <img class="logo__img" src="../images/logo.svg" alt="logo">
                         <span class="logo__text"> Paradigm Psychiatry </span>
                     </a>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item"> <a class="nav__link" href="../index.html">Home</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="./aboutus.html">About Us</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="./services.html">Services</a></li>
-                            <li class="nav__item nav_active"> <a class="nav__link" href="./providers.html">Providers</a>
-                            </li>
-                            <li class="nav__item"> <a class="nav__link" href="./contact.html">Contact</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="./faq.html">FAQ</a></li>
-                            <li class="nav__item"> <a class="nav__link" href="./resources.html">Resources</a></li>
-                            <li class="nav__item"> <a class="btn" href="#">Schedule Appointment</a> </li>
-                        </ul>
-                    </nav>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="../index.html">Home</a></li>
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="./aboutus.html">About Us</a> </li>
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="./services.html">Services</a> </li>
+                        <li class="nav__item nav__item__active"> <a class="nav__active" href="./providers.html">Providers</a></li>
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="./contact.html">Contact</a></li>
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="./faq.html">FAQ</a></li>
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="./resources.html">Resources</a></li>
+                        <button onclick="location.href='../index.html';" class="">Schedule Appointment</button>
+                    </ul>
+                </nav>
                     <div class="hamburger">
                         <div class="bar"></div>
                         <div class="bar"></div>
@@ -172,6 +174,14 @@
             </div>
         </div>
     </section>
+
+    <!-- Back to top button -->
+    <button class="back-to-top hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
 
 </html>

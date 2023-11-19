@@ -1,14 +1,3 @@
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #005580;
-}
-
-h2 {
-    font-size: 30px;
-    font-weight: 400;
-    margin: 10px 0
-}
-
 .services-container:after,
 .services-container:before,
 .services-row-padding:after,
@@ -114,9 +103,9 @@ h1 {
 }
 
 h3 {
-    margin-top: 16px;
+    margin-top: 8px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .services button {
@@ -133,13 +122,11 @@ h3 {
     white-space: nowrap;
     transition: all 0.2s;
     margin-top: 16px;
+    font-weight: 500;
 }
 
 .services button:hover {
-    color: white !important;
-    background-color: lightgray !important;
-    border: 1px solid lightgray;
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .flex-parent {

@@ -1,8 +1,3 @@
-body {
-    background-color: #005580;
-}
-
-/* About Us Section */
 .about-us {
     box-sizing: border-box;
 }
@@ -224,12 +219,15 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
     width: 50%;
 }
 
-@media (max-width: 896px) {
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
     .missionvalues-container img {
         width: 100%;
+        /* Adjust the percentage for larger images on mobile */
     }
 }
 
@@ -346,7 +344,7 @@ body {
 }
 
 .conditions-columns {
-    list-style-type: circle;
+    /* list-style-type: circle; */
     columns: 3;
 }
 

@@ -132,7 +132,7 @@ nav button:hover
     width: 27px;
     background-color: #427F70;
     margin: 5px 0;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     transition: all 0.3s ease-in-out;
 }
 
@@ -189,6 +189,22 @@ nav button:hover
 
 /* MEDIA QUERIES */
 @media (max-width: 1226px) {
+    .nav__active 
+    {
+        border-bottom: solid 6px #005580;
+        padding-bottom: 0px !important;
+    }
+
+    .nav__link:after {
+        display: block;
+        content: '';
+        border-bottom: solid 6px #005580;
+        margin-bottom: 0px !important;
+        padding-bottom: 1px !important;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+
     .nav {
         position: fixed;
         top: 90px;

@@ -14,8 +14,7 @@ document.addEventListener("scroll", () => {
 })
 
 const goToTop = () => {
-  
-  document.body.scrollIntoView({
+  scrollContainer().scrollIntoView({
     behavior: "smooth",
   });
 };

@@ -21,7 +21,7 @@
 {
     font-weight: 500;
     line-height: 1.75;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .resources hr {
@@ -77,6 +77,11 @@
     margin-bottom: 16px;
 }
 
+.emergency-number p
+{
+    text-decoration: underline;
+}
+
 /* Colors */
 .resources-white {
     color: #000 !important;
@@ -85,11 +90,17 @@
 
 .crisis-lines h2
 {
+    margin-top: 16px;
     margin-bottom: 8px;
 }
 
 .psychiatric-urgent-cares h2
 {
     margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.psychiatric-hospitals h2
+{
     margin-bottom: 8px;
 }

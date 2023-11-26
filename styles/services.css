@@ -41,7 +41,7 @@
 }
 
 .services-padding-16 {
-    padding-top: 16px !important;
+    /* padding-top: 16px !important; */
     /* padding-bottom: 16px !important */
 }
 
@@ -66,8 +66,9 @@
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 36px !important;
     margin-bottom: 0px !important;
+    text-align: center;
 }
 
 .row {

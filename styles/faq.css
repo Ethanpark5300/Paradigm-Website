@@ -7,6 +7,7 @@
     text-align: center;
     margin-top: 0;
     color: #427F70;
+    font-size: 36px !important;
 }
 
 .underline
@@ -15,7 +16,7 @@
 }
 
 .accordion {
-    width: 1400px;
+    width: 1487px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
@@ -61,6 +62,7 @@
     overflow: hidden;
     transition: 0.2s;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .accordion hr {
@@ -81,6 +83,14 @@
 .accordion .container.active .label::before {
     content: '-';
     font-size: 32px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive styles */

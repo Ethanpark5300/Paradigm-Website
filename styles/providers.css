@@ -1,8 +1,8 @@
 .providers h1 {
-    margin: 0px 0;
+    margin: 16px 0;
     font-size: 36px;
     color: #427F70 !important;
-    padding-bottom: 32px !important;
+    text-align: center;
 }
 
 .providers h2 {
@@ -87,7 +87,7 @@
 }
 
 .providers-padding-16 {
-    padding-top: 16px !important;
+    padding-top: 4px !important;
     /* padding-bottom: 32px !important */
 }
 
@@ -109,7 +109,7 @@
 hr {
     border: 0;
     border-top: 1px solid gray;
-    opacity: .5;
+    opacity: .25;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -169,6 +169,6 @@ hr {
 }
 
 .first_img {
-    margin-top: 112px;
+    margin-top: 60px;
 }
  

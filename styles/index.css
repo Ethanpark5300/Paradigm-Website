@@ -254,7 +254,9 @@
 }
 
 .providers-opacity {
-    opacity: 0.6
+    color: gray;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .providers-xxlarge {

@@ -173,7 +173,7 @@ textarea {
     justify-content: center;
 }
 
-input[type=submit] {
+button[type=submit] {
     background-color: #005580;
     color: white;
     padding: 16px 16px;
@@ -186,9 +186,10 @@ input[type=submit] {
     cursor: pointer;
     transition: all 0.2s;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     transform: scale(1.1);
 }
 

@@ -1,5 +1,5 @@
 .faq-section {
-    margin-top: 112px;
+    margin-top: 112px !important;
 }
 
 .faq-section h1 {
@@ -11,14 +11,10 @@
 
 .accordion {
     width: 1487px;
-    margin: 0 auto 0 auto;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
     color: black;
     background-color: white;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 16px 32px 16px 16px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -28,15 +24,13 @@
 
 .accordion .container {
     position: relative;
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 .accordion .label {
     font-weight: 600;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 32px;
+    padding: 10px 32px 10px 0;
     font-size: 24px;
     color: #427F70;
     cursor: pointer;
@@ -57,7 +51,6 @@
     position: relative;
     background: white;
     height: 0;
-    font-size: 16px;
     overflow: hidden;
     transition: 0.2s;
     font-weight: 500;
@@ -82,9 +75,7 @@
 
 .accordion .container.active .content {
     height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 8px;
+    padding: 8px 8px 8px 0;
 }
 
 .accordion .container.active .label::before {
@@ -94,7 +85,7 @@
 
 @media only screen and (max-width: 1471px) {
     .accordion {
-        width: 97%;
+        width: 90%;
         padding-left: 16px;
         padding-right: 16px;
     }

@@ -57,7 +57,7 @@
 }
 
 .providers-container {
-    padding: 0.01em 16px;
+    padding: .01em 16px 8px;
 }
 
 .providers-card {
@@ -126,7 +126,7 @@ hr {
     }
 
     .first_img {
-        margin-top: 16px;
+        margin-top: 16px !important;
     }
 
     .center-image {

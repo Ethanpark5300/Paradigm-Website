@@ -24,50 +24,29 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.services-xxlarge {
-    font-size: 36px !important
-}
-
 .services-margin-top {
-    margin-top: 112px !important
+    margin-top: 112px
 }
 
 .services-margin-bottom {
-    margin-bottom: 16px !important
-}
-
-.services-margin-right {
-    margin-right: 16px !important
-}
-
-.services-padding-16 {
-    /* padding-top: 16px !important; */
-    /* padding-bottom: 16px !important */
+    margin-bottom: 16px
 }
 
 /* Colors */
 .services-white {
-    color: #000 !important;
-    background-color: #fff !important
-}
-
-.services-text-teal {
-    color: #009688 !important
+    color: #000;
+    background-color: #fff
 }
 
 .services-text-grey {
-    color: #757575 !important
+    color: #757575
 }
 
 /* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
 
 h1 {
-    font-size: 36px !important;
-    margin-bottom: 0px !important;
+    font-size: 36px;
+    margin-bottom: 0px;
     text-align: center;
 }
 

@@ -1,218 +1,140 @@
-.about-us {
-    box-sizing: border-box;
+.about-card,
+.missionvalues-card,
+.conditions-card,
+.medication-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.about-us h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0px 0;
-    padding-top: 8px;
-}
-
-.about-us h1 {
-    color: #427F70 !important;
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-
-.about-us p {
-    line-height: 1.5;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-weight: 500;
-}
-
-.about-display-container {
-    position: relative;
+.about-container,
+.missionvalues-container {
+    padding: .01em 24px 4px;
+    text-align: center;
 }
 
 .about-container:after,
 .about-container:before,
 .about-row-padding:after,
-.about-row-padding:before {
+.about-row-padding:before,
+.missionvalues-container:after,
+.missionvalues-container:before,
+.missionvalues-row-padding:after,
+.missionvalues-row-padding:before,
+.conditions-container:after,
+.conditions-container:before,
+.conditions-row-padding:after,
+.conditions-row-padding:before,
+.medication-container:after,
+.medication-container:before,
+.medication-row-padding:after,
+.medication-row-padding:before {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
 }
 
-.about-third,
-.about-twothird {
-    float: left;
-    width: 100%;
-}
-
-.about-content {
+.about-content,
+.missionvalues-content,
+.conditions-content,
+.medication-content {
     margin-left: auto;
     margin-right: auto;
 }
 
-.about-row-padding,
-.about-row-padding>.about-third,
-.about-row-padding>.about-twothird {
-    padding: 0 16px;
-}
-
-.about-container {
-    padding-top: 0.01em;
-    padding-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
-    text-align: center;
-}
-
-.about-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.about-card-4 {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.about-xxlarge {
-    font-size: 36px !important
-}
-
-.about-margin-top {
-    margin-top: 112px !important;
-}
-
-.about-margin-bottom {
-    margin-bottom: 16px !important;
-}
-
-.about-margin-right {
-    margin-right: 16px !important;
-}
-
-.about-margin-right-address {
-    margin-right: 22px;
-}
-
-.about-third {
+.about-margin-bottom,
+.missionvalues-margin-bottom,
+.conditions-margin-bottom,
+.medication-margin-bottom {
     margin-bottom: 16px;
 }
 
-.about-padding-16 {
-    padding-bottom: 0px !important;
+.about-margin-top {
+    margin-top: 112px;
 }
 
-.about-white {
-    color: #000 !important;
-    background-color: #fff !important
+.about-padding-16,
+.missionvalues-padding-16,
+.medication-padding-16 {
+    padding-bottom: 0;
 }
 
-.about-light-grey {
-    color: #000 !important;
-    background-color: #f1f1f1 !important;
+.about-row-padding,
+.missionvalues-row-padding,
+.conditions-row-padding,
+.medication-row-padding {
+    padding: 0 16px;
 }
 
-.about-text-grey {
-    color: #427F70 !important;
+.about-text-grey,
+.missionvalues-text-grey,
+.conditions-text-grey,
+.medication-text-grey {
+    color: #427F70;
 }
 
-/* Mission and Values Section */
-.mission-values {
-    box-sizing: border-box;
-}
-
-.mission-values h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0px 0;
-    padding-top: 8px;
-}
-
+.about-us h1,
 .mission-values h1 {
-    color: #427F70 !important;
+    color: #427F70;
     font-size: 36px;
     margin-bottom: 16px;
 }
 
-.mission-values p {
-    line-height: 1.5;
+.about-us p {
     font-weight: 500;
-    margin-top: 16px;
+    line-height: 1.5;
     margin-bottom: 16px;
+    margin-top: 16px;
 }
 
-.missionvalues-display-container {
-    position: relative;
+.about-us,
+.mission-values,
+.conditions,
+.typesofmedication {
+    box-sizing: border-box;
 }
 
-.missionvalues-container:after,
-.missionvalues-container:before,
-.missionvalues-row-padding:after,
-.missionvalues-row-padding:before {
-    content: "";
-    display: table;
-    clear: both;
+.about-white,
+.missionvalues-white,
+.conditions-white,
+.medication-white {
+    background: #fff;
+    color: #000;
 }
 
-.missionvalues-third,
-.missionvalues-twothird {
-    float: left;
-    width: 100%;
-}
-
-.missionvalues-content {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.missionvalues-row-padding,
-.missionvalues-row-padding>.missionvalues-third,
-.missionvalues-row-padding>.missionvalues-twothird {
-    padding: 0 16px;
-}
-
-.missionvalues-container {
-    padding-top: 0.01em;
-    padding-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
+.conditions h1,
+.typesofmedication h1 {
+    color: #427F70;
+    font-size: 36px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
-.missionvalues-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+.conditions ul {
+    font-weight: 500;
 }
 
-.missionvalues-card-4 {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+.conditions-columns {
+    columns: 3;
 }
 
-.missionvalues-xxlarge {
-    font-size: 36px !important
+.conditions-container {
+    line-height: 1.5;
+    padding: .01em 16px;
 }
 
-.missionvalues-margin-bottom {
-    margin-bottom: 16px !important;
+.conditions-container2 {
+    line-height: 1.5;
+    padding: .01em 28px 16px;
 }
 
-.missionvalues-margin-right {
-    margin-right: 16px !important;
+.medication-container {
+    padding: .01em 24px 4px;
 }
 
-.missionvalues-third {
+.mission-values p {
+    font-weight: 500;
+    line-height: 1.5;
     margin-bottom: 16px;
-}
-
-.missionvalues-padding-16 {
-    padding-bottom: 0px !important;
-}
-
-.missionvalues-white {
-    color: #000 !important;
-    background-color: #fff !important
-}
-
-.missionvalues-light-grey {
-    color: #000 !important;
-    background-color: #f1f1f1 !important;
-}
-
-.missionvalues-text-grey {
-    color: #427F70 !important;
+    margin-top: 16px;
 }
 
 .missionvalues-container img {
@@ -223,129 +145,17 @@
     width: 50%;
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 768px) {
+.typesofmedication p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
     .missionvalues-container img {
         width: 100%;
-        /* Adjust the percentage for larger images on mobile */
     }
-}
-
-/* Conditions Treated and Evaluated Section */
-.conditions {
-    box-sizing: border-box;
-}
-
-.conditions h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0px 0;
-    padding-top: 8px;
-}
-
-.conditions h1 {
-    color: #427F70;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.conditions p {
-    padding-bottom: 16px;
-}
-
-.conditions ul {
-    font-weight: 500;
-}
-
-.conditions-display-container {
-    position: relative;
-}
-
-.conditions-container:after,
-.conditions-container:before,
-.conditions-row-padding:after,
-.conditions-row-padding:before {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.conditions-third,
-.conditions-twothird {
-    float: left;
-    width: 100%;
-}
-
-.conditions-content {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.conditions-row-padding,
-.conditions-row-padding>.conditions-third,
-.conditions-row-padding>.conditions-twothird {
-    padding: 0 16px;
-}
-
-.conditions-container2 {
-    padding-top: 0.01em;
-    padding-bottom: 16px;
-    padding-left: 28px;
-    padding-right: 28px;
-    line-height: 1.5;
-}
-
-.conditions-container {
-    padding: 0.01em 16px;
-    line-height: 1.5;
-}
-
-.conditions-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.conditions-card-4 {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.conditions-large {
-    font-size: 18px;
-}
-
-.conditions-xxlarge {
-    font-size: 36px !important
-}
-
-.conditions-margin-bottom {
-    margin-bottom: 16px !important;
-}
-
-.conditions-margin-right {
-    margin-right: 16px !important;
-}
-
-.conditions-third {
-    margin-bottom: 16px;
-}
-
-.conditions-white {
-    color: #000 !important;
-    background-color: #fff !important
-}
-
-.conditions-light-grey {
-    color: #000 !important;
-    background-color: #f1f1f1 !important;
-}
-
-.conditions-text-grey {
-    color: #427F70 !important;
-}
-
-.conditions-columns {
-    /* list-style-type: circle; */
-    columns: 3;
 }
 
 @media (max-width: 1181px) {
@@ -358,120 +168,4 @@
     .conditions-columns {
         columns: 1;
     }
-}
-
-/* Types of Medication Section */
-.typesofmedication {
-    box-sizing: border-box;
-}
-
-.typesofmedication h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0px 0;
-}
-
-.typesofmedication h1 {
-    color: #427F70;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.typesofmedication p {
-    line-height: 1.5;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
-.typesofmedication h2 {
-    padding-top: 8px;
-}
-
-.medication-display-container {
-    position: relative;
-}
-
-.medication-container:after,
-.medication-container:before,
-.medication-row-padding:after,
-.medication-row-padding:before {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.medication-third,
-.medication-twothird {
-    float: left;
-    width: 100%;
-}
-
-.medication-content {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.medication-row-padding,
-.medication-row-padding>.medication-third,
-.medication-row-padding>.medication-twothird {
-    padding: 0 16px;
-}
-
-.medication-container {
-    padding-top: 0.01em;
-    padding-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.medication-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.medication-card-4 {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.medication-xxlarge {
-    font-size: 36px !important
-}
-
-.medication-margin-top {
-    margin-top: 112px !important;
-}
-
-.medication-margin-bottom {
-    margin-bottom: 16px !important;
-}
-
-.medication-margin-right {
-    margin-right: 16px !important;
-}
-
-.medication-margin-right-address {
-    margin-right: 22px;
-}
-
-.medication-third {
-    margin-bottom: 16px;
-}
-
-.medication-padding-16 {
-    padding-bottom: 0px !important;
-}
-
-.medication-white {
-    color: #000 !important;
-    background-color: #fff !important
-}
-
-.medication-light-grey {
-    color: #000 !important;
-    background-color: #f1f1f1 !important;
-}
-
-.medication-text-grey {
-    color: #427F70 !important;
 }

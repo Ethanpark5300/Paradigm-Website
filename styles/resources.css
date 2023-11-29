@@ -1,24 +1,21 @@
 .resources h1 {
-    font-size: 36px !important;
+    font-size: 36px;
     text-align: center;
-    margin-bottom: 12px !important;
+    margin-bottom: 12px;
     color: #427F70;
     margin-top: 16px;
 }
 
-.resources h2
-{
-    font-size: 32px !important;
+.resources h2 {
+    font-size: 32px;
     color: #427F70;
 }
 
-.resources-container
-{
-    padding-bottom: 8px !important;
+.resources-container {
+    padding-bottom: 8px;
 }
 
-.resources-phone-numbers p
-{
+.resources-phone-numbers p {
     font-weight: 500;
     line-height: 1.75;
     /* font-size: 18px; */
@@ -57,50 +54,40 @@
 }
 
 .resources-margin-top {
-    margin-top: 112px !important
+    margin-top: 112px
 }
 
 .resources-margin-bottom {
-    margin-bottom: 16px !important
+    margin-bottom: 16px
 }
 
-.resources-padding-16 {
-    /* padding-top: 16px !important; */
-    /* padding-bottom: 16px !important */
-}
-
-.emergency-number
-{
+.emergency-number {
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
     margin-bottom: 16px;
 }
 
-.emergency-number p
-{
+.emergency-number p {
     text-decoration: underline;
 }
 
 /* Colors */
 .resources-white {
-    color: #000 !important;
-    background-color: #fff !important
+    color: #000;
+    background-color: #fff
 }
 
-.crisis-lines h2
-{
+.crisis-lines h2 {
     margin-top: 16px;
     margin-bottom: 8px;
 }
 
-.psychiatric-urgent-cares h2
-{
+.psychiatric-urgent-cares h2 {
     margin-top: 16px;
     margin-bottom: 8px;
 }
 
-.psychiatric-hospitals h2
-{
+.psychiatric-hospitals h2 {
     margin-bottom: 8px;
 }

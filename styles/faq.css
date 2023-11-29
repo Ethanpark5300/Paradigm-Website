@@ -1,16 +1,15 @@
 .faq-section {
-    margin-top: 112px !important;
+    margin-top: 112px;
 }
 
 .faq-section h1 {
     text-align: center;
     margin-top: 0;
     color: #427F70;
-    font-size: 36px !important;
+    font-size: 36px;
 }
 
-.underline
-{
+.underline {
     text-decoration: underline;
 }
 
@@ -36,7 +35,9 @@
 .accordion .label {
     font-weight: 600;
     position: relative;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
     font-size: 24px;
     color: #427F70;
     cursor: pointer;
@@ -70,18 +71,6 @@
     border: 0;
     border-top: 1px solid gray;
     opacity: .5;
-}
-
-.accordion .container.active .content {
-    height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 8px;
-}
-
-.accordion .container.active .label::before {
-    content: '-';
-    font-size: 32px;
 }
 
 .content a {

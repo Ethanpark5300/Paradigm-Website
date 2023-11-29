@@ -30,15 +30,34 @@
     opacity: 60%;
 } */
 
+/* Style for the back to top button */
 #backToTopBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #994d4b;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    /* Style for larger screens */
+    #backToTopBtn {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Style for smaller screens */
+    #backToTopBtn {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
 }

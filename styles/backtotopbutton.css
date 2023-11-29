@@ -1,4 +1,4 @@
-html {
+/* html {
     scroll-behavior: smooth;
     scroll-padding: 16rem;
 }
@@ -28,4 +28,17 @@ html {
 
 .back-to-top:hover {
     opacity: 60%;
+} */
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #994d4b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }

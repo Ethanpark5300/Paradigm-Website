@@ -18,7 +18,6 @@
 .resources-phone-numbers p {
     font-weight: 500;
     line-height: 1.75;
-    /* font-size: 18px; */
 }
 
 .resources hr {
@@ -69,7 +68,7 @@
 }
 
 .emergency-number p {
-    text-decoration: underline;
+    font-style: italic;
 }
 
 /* Colors */

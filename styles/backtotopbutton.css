@@ -1,9 +1,9 @@
-/* html {
+html {
     scroll-behavior: smooth;
     scroll-padding: 16rem;
 }
 
-.back-to-top {
+/* .back-to-top {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
@@ -57,7 +57,7 @@
     #backToTopBtn {
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(125%);
         margin-bottom: 20px;
     }
 }

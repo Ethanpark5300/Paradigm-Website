@@ -188,7 +188,7 @@ nav button:hover
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1226px) {
+@media (max-width: 1326px) {
     .nav__active 
     {
         border-bottom: solid 6px #005580;

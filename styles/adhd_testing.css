@@ -147,6 +147,9 @@ ul.breadcrumb li+li:before {
         margin-right: 0;
     }
 }
+.endeavor-rx {
+    margin-bottom: 16px;
+}
 
 @media (max-width: 1024px) {
     .center-image {
@@ -154,7 +157,6 @@ ul.breadcrumb li+li:before {
     }
 
     .endeavor-rx {
-        margin-bottom: 16px;
         margin-top: 0;
     }
 

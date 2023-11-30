@@ -1,0 +1,99 @@
+.appointment h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0
+}
+
+.appointment hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.appointment img {
+    vertical-align: middle
+}
+
+.appointment p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.appointment-container:after,
+.appointment-container:before,
+.appointment-row-padding:after,
+.appointment-row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.appointment-half {
+    float: left;
+    width: 100%
+}
+
+@media (min-width:601px) {
+    .appointment-half {
+        width: 49.99999%
+    }
+}
+
+@media (max-width: 600px) {
+    .appointment-half2 {
+        margin-top: 16px;
+    }
+}
+
+.appointment-content {
+    margin: 0 auto;
+}
+
+.appointment-row-padding,
+.appointment-row-padding>.appointment-half {
+    padding: 0 8px
+}
+
+.appointment-container {
+    padding: 0.01em 16px
+}
+
+.appointment-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.appointment-opacity {
+    opacity: 0.60
+}
+
+.appointment-xxlarge {
+    font-size: 36px
+}
+
+.appointment-margin-top {
+    margin: 112px 0 16px 0;
+}
+
+.appointment-margin-right {
+    margin-right: 16px
+}
+
+.appointment-padding-16 {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+/* Colors */
+.appointment-white {
+    color: #000;
+    background-color: #fff
+}
+
+.appointment-text-teal {
+    color: #009688
+}
+
+.appointment-text-grey {
+    color: #757575
+}

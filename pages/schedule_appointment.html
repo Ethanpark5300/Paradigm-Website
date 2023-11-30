@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Alternative Treatments</title>
+    <title>Schedule Appointment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/logo.svg">
-    <link rel="stylesheet" href="../styles/alternative_treatments.css">
+    <link rel="stylesheet" href="../styles/schedule_appointment.css">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <script defer src="../scripts/navbar.js"></script>
     <link rel="stylesheet" href="../styles/navbar.css">
-    <script defer src="../scripts/backtotopbutton.js"></script>
     <link rel="stylesheet" href="../styles/backtotopbutton.css">
+    <script defer src="../scripts/navbar.js"></script>
+    <script defer src="../scripts/accordian.js"></script>
+    <script defer src="../scripts/backtotopbutton.js"></script>
     <link rel="stylesheet" href="../styles/footer.css">
 </head>
-
 <body>
     <!-- Navigation Bar -->
     <section class="navbar">
@@ -40,7 +40,7 @@
                         <ul class="nav__list">
                             <li class="nav__item"> <a class="nav__link fromLeft" href="../index.html">Home</a></li>
                             <li class="nav__item"> <a class="nav__link fromLeft" href="./aboutus.html">About Us</a> </li>
-                            <li class="nav__item nav__item__active"> <a class="nav__active" href="./services.html">Services</a> </li>
+                            <li class="nav__item"> <a class="nav__link fromLeft" href="./services.html">Services</a> </li>
                             <li class="nav__item"> <a class="nav__link fromLeft" href="./providers.html">Providers</a></li>
                             <li class="nav__item"> <a class="nav__link fromLeft" href="./contact.html">Contact</a></li>
                             <li class="nav__item"> <a class="nav__link fromLeft" href="./faq.html">FAQ</a></li>
@@ -58,47 +58,29 @@
         </header>
     </section>
 
-    <section class="services">
-        <div class="services-content services-margin-top">
-            <div class="services-row-padding">
-                <div class="services-container services-card services-white services-margin-bottom">
-                    <div class="services-container">
-                        <div class="services-main">
-                            <div class="services-row services-padding-16">
-                                <div class="breadcrumbs">
-                                    <ul class="breadcrumb">
-                                        <li><a href="../pages/services.html">Services</a></li>
-                                        <li>Alternative Treatments</li>
-                                    </ul>
-                                </div>
-                                <div class="services-twothird services-container">
-                                    <h1 class="services-text-teal">Alternative Treatments</h1>
-                                    <p> GI Sustain™ is designed to provide gastrointestinal nutritional support. The formula is uniquely designed to help promote the growth of beneficial bacteria by including prebiotic nutrients, combined with readily digestible macronutrients. </p>
-                                    <br>
-                                    <p> GI Sustain features L-glutamine and prebiotic isomalto-oligosaccharides (IMOs) to promote gastrointestinal health. </p>
-                                    <div class="alternativetreatments">
-                                        <ul>
-                                            <li> Nourishes the cells of the intestinal mucosa </li>
-                                            <li> Features rice protein concentrate supplemented with L-lysine and L-threonine for an naturally-derived amino acid profile </li>
-                                            <li> Formulated with rice syrup solids as a naturally-derived energy source </li>
-                                            <li> Features medium-chain triglycerides, a readily absorbed and metabolized lipid source </li>
-                                            <li> Features prebiotic IMOs to selectively nourish beneficial bacteria, including lactobacilli and bifidobacteria </li>
-                                            <li> Formulated with zinc and L-glutamine to nutritionally support gastrointestinal mucosa integrity </li>
-                                            <li> Features methylated vitamin B<sub>12</sub> and calcium L-5 methyltetrahydrofolate, a bioavailable folate </li>
-                                        </ul>
-                                    </div>
-                                    <br>
-                                    <p> Lavela WS 1265™ is a clinically studied oral lavender essential oil for relaxation and occosational anxiety. </p>
-                                    <div class="alternativetreatments">
-                                        <ul>
-                                            <li> Lavela WS 1265, also known as Silexan™, is a clinically studied, non-habit-forming oral lavender essential oil (Lavendula angustifolia) that has been shown to promote relaxation, foster sleep quality in those experiencing occasional anxiety, calm nervousness, and support general mental health. Clinical trials published in peer reviewed medical journals demonstrate Lavela 1265 as a well-tolerated option for occasional anxiety. </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="services-third services-container">
-                                    <img src="../images/Alternative_Treatments.jpg" class="center-image">
-                                </div>
-                            </div>
+    <!-- Appointments -->
+    <section class="appointment">
+        <div class="appointment-content appointment-margin-top">
+            <div class="appointment-row-padding">
+        
+                <!-- New Patients Column -->
+                <div class="appointment-half">
+                    <div class="appointment-container appointment-card appointment-white">
+                        <div class="appointment-container">
+                            <h2 class="appointment-text-grey appointment-padding-16">New Patients</h2>
+                            <p>Welcome to our practice! We're thrilled to have you as a new patient. Taking the first step towards your health and wellness journey is easy. Simply click the button below to schedule your first appointment with us using CharmHealth. Our team is dedicated to providing personalized care, and CharmHealth makes the process seamless. We look forward to meeting you and addressing your healthcare needs.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Returning Patients Column -->
+                <div class="appointment-half appointment-half2">
+                    <div class="appointment-container appointment-card appointment-white">
+                        <div class="appointment-container">
+                            <h2 class="appointment-text-grey appointment-padding-16"></i>Returning Patients</h2>
+                            <p>Thank you for choosing us again for your healthcare needs! We appreciate your trust in our services. To make your next appointment convenient and seamless, click the button below to schedule using CharmHealth. Whether it's a follow-up, consultation, or routine check-up, we're here to ensure you receive the best care. Welcome back!</p>
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -147,10 +129,5 @@
             <p>Copyright © 2023 Paradigm Psychiatry - All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Back to top button -->
-    <button id="backToTopBtn" onclick="scrollToTop()">
-        <i class="fa fa-arrow-circle-up"></i> Back to Top
-    </button>
 </body>
 </html>

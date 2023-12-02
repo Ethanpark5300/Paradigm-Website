@@ -1,84 +1,14 @@
 .appointment h1 {
     font-size: 36px;
-    text-align: center;
     font-weight: 700;
     margin: 8px 0;
     padding-bottom: 8px;
+    text-align: center;
 }
 
 .appointment p {
     font-weight: 500;
     line-height: 1.5;
-}
-
-.appointment-container:after,
-.appointment-container:before,
-.appointment-row-padding:after,
-.appointment-row-padding:before {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.appointment-half {
-    float: left;
-    width: 100%
-}
-
-@media (min-width:601px) {
-    .appointment-half {
-        width: 49.99999%
-    }
-}
-
-@media (max-width: 600px) {
-    .appointment-half2 {
-        margin-top: 16px;
-    }
-}
-
-.appointment-content {
-    margin: 0 auto;
-}
-
-.appointment-row-padding,
-.appointment-row-padding>.appointment-half {
-    padding: 0 8px
-}
-
-.appointment-container {
-    padding: 0.01em 16px
-}
-
-.appointment-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-}
-
-.appointment-margin-top {
-    margin: 112px 0 16px 0;
-}
-
-.appointment-padding-16 {
-    padding-top: 16px;
-    padding-bottom: 16px
-}
-
-/* Colors */
-.appointment-white {
-    color: #000;
-    background-color: #fff
-}
-
-.appointment-text-green {
-    color: #757575
-}
-
-.flex-parent {
-    display: flex;
-}
-
-.jc-center {
-    justify-content: center;
 }
 
 .appointment-button {
@@ -100,20 +30,75 @@
     white-space: nowrap;
 }
 
-.appointmentinfo p {
-    font-weight: 500;
-}
-
 .appointment-button:hover {
     transform: scale(1.1);
 }
 
+.appointment-card,
+.appointmentinfo-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.appointment-container {
+    padding: .01em 16px;
+}
+
+.appointment-container:after,
+.appointment-container:before,
+.appointment-row-padding:after,
+.appointment-row-padding:before,
+.appointmentinfo-container:after,
+.appointmentinfo-container:before,
+.appointmentinfo-row-padding:after,
+.appointmentinfo-row-padding:before {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.appointment-content,
+.appointmentinfo-content {
+    margin: 0 auto;
+}
+
+.appointment-half {
+    float: left;
+    width: 100%;
+}
+
+.appointment-margin-top {
+    margin: 104px 0 16px;
+}
+
+.appointment-padding-16,
+.appointmentinfo-padding-16 {
+    padding: 16px 0;
+}
+
+.appointment-row-padding,
+.appointment-row-padding>.appointment-half,
+.appointmentinfo-row-padding,
+.appointmentinfo-row-padding>.appointmentinfo-twothird {
+    padding: 0 8px;
+}
+
+.appointment-text-green,
+.appointmentinfo-text-green {
+    color: #757575;
+}
+
+.appointment-white,
+.appointmentinfo-white {
+    background: #fff;
+    color: #000;
+}
+
 .appointmentinfo h1 {
     font-size: 36px;
-    text-align: center;
     font-weight: 700;
     margin: 8px 0;
     padding: 8px 0;
+    text-align: center;
 }
 
 .appointmentinfo h2 {
@@ -123,48 +108,35 @@
     padding: 8px 0;
 }
 
-.appointmentinfo-container:after,
-.appointmentinfo-container:before,
-.appointmentinfo-row-padding:after,
-.appointmentinfo-row-padding:before {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.appointmentinfo-content {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.appointmentinfo-row-padding,
-.appointmentinfo-row-padding>.appointmentinfo-twothird {
-    padding: 0 8px
+.appointmentinfo p {
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .appointmentinfo-container {
-    padding: 0.01em 16px 8px 16px;
-}
-
-.appointmentinfo-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    padding: .01em 16px 8px;
 }
 
 .appointmentinfo-margin-top {
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
-.appointmentinfo-padding-16 {
-    padding-top: 16px;
-    padding-bottom: 16px
+.flex-parent {
+    display: flex;
 }
 
-/* Colors */
-.appointmentinfo-white {
-    color: #000;
-    background-color: #fff
+.jc-center {
+    justify-content: center;
 }
 
-.appointmentinfo-text-green {
-    color: #757575
+@media (min-width: 601px) {
+    .appointment-half {
+        width: 49.99999%;
+    }
+}
+
+@media (max-width: 600px) {
+    .appointment-half2 {
+        margin-top: 16px;
+    }
 }

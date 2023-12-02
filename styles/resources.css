@@ -1,87 +1,81 @@
-.resources h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 12px;
-    color: #427F70;
-    margin-top: 16px;
-}
-
-.resources h2 {
-    font-size: 32px;
-    color: #427F70;
-}
-
-.resources-phone-numbers p {
-    font-weight: 500;
-    line-height: 1.75;
-}
-
-.resources hr {
-    border: 0;
-    border-top: 1px solid gray;
-    opacity: .25;
-    margin: 16px 0;
-}
-
-.resources-container:after,
-.resources-container:before,
-.resources-row-padding:after,
-.resources-row-padding:before {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.resources-content {
-    margin: 0 auto;
-}
-
-.resources-row-padding {
-    padding: 0 16px
-}
-
-.resources-container {
-    padding: 0.01em 16px 8px 16px;
-}
-
-.resources-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-}
-
-.resources-margin-top {
-    margin-top: 112px
-}
-
-.resources-margin-bottom {
-    margin-bottom: 16px
+.crisis-lines h2,
+.psychiatric-urgent-cares h2 {
+    margin: 16px 0 8px 0;
 }
 
 .emergency-number {
     font-weight: 500;
     line-height: 1.5;
-    text-align: center;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .emergency-number p {
     font-style: italic;
 }
 
-.resources-white {
-    color: #000;
-    background-color: #fff
-}
-
-.crisis-lines h2 {
-    margin-top: 16px;
-    margin-bottom: 8px;
-}
-
-.psychiatric-urgent-cares h2 {
-    margin-top: 16px;
-    margin-bottom: 8px;
-}
-
 .psychiatric-hospitals h2 {
     margin-bottom: 8px;
+}
+
+.resources h1 {
+    color: #427F70;
+    font-size: 36px;
+    margin: 16px 0 12px 0;
+    text-align: center;
+}
+
+.resources h2 {
+    color: #427F70;
+    font-size: 32px;
+}
+
+.resources hr {
+    border: 0;
+    border-top: 1px solid gray;
+    margin: 16px 0;
+    opacity: .25;
+}
+
+.resources-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.resources-container {
+    padding: .01em 16px 8px;
+}
+
+.resources-container:after,
+.resources-container:before,
+.resources-row-padding:after,
+.resources-row-padding:before {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.resources-content {
+    margin: 0 auto;
+}
+
+.resources-margin-bottom {
+    margin-bottom: 16px;
+}
+
+.resources-margin-top {
+    margin-top: 104px;
+}
+
+.resources-phone-numbers p {
+    font-weight: 500;
+    line-height: 2;
+}
+
+.resources-row-padding {
+    padding: 0 16px;
+}
+
+.resources-white {
+    background: #fff;
+    color: #000;
 }

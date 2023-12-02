@@ -48,7 +48,7 @@
 }
 
 .about-margin-top {
-    margin-top: 112px;
+    margin-top: 104px;
 }
 
 .about-padding-16,
@@ -78,7 +78,8 @@
     margin-bottom: 16px;
 }
 
-.about-us p {
+.about-us p,
+.mission-values p {
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 16px;
@@ -128,13 +129,6 @@
 
 .medication-container {
     padding: .01em 24px 4px;
-}
-
-.mission-values p {
-    font-weight: 500;
-    line-height: 1.5;
-    margin-bottom: 16px;
-    margin-top: 16px;
 }
 
 .missionvalues-container img {

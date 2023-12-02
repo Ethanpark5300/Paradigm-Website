@@ -1,17 +1,44 @@
+button[type=submit] {
+    background: #005580;
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 66%;
+}
+
 .center-wrapper {
     display: flex;
     justify-content: center;
 }
 
 .contact {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
+}
+
+.contact h1 {
+    color: #427F70;
+    text-align: center;
+}
+
+.contact-container {
+    padding: .01em 16px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    font-weight: 600;
 }
 
 .google-map {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 16px;
+    margin: 16px 16px 0 16px;
     padding-bottom: 33%;
     position: relative;
 }
@@ -26,14 +53,13 @@
 
 .hero-image {
     background: url(../images/hero_banner.png);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     display: block;
     height: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0 8px;
     position: relative;
     width: 100%;
@@ -67,36 +93,26 @@
     text-align: center;
 }
 
-.maps-card-4 {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+.maps-address {
+    margin-top: 16px;
 }
 
-.contact-container {
-    padding: .01em 16px;
+.maps-card-4 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .maps-display-container {
     position: relative;
 }
 
-.contact-form label,
-.contact-form input,
-.contact-form textarea {
-    font-weight: 600;
-}
-
-.maps-address {
-    margin-top: 16px;
+.maps-information-container {
+    padding-bottom: 16px;
 }
 
 .maps-information-container p {
     font-size: 16px;
     line-height: 1.5;
     margin-left: 16px;
-}
-
-.maps-information-container {
-    padding-bottom: 16px;
 }
 
 .maps-label-green {
@@ -286,7 +302,6 @@ button[type=submit]:hover {
 }
 
 button[type=submit] {
-    background: #005580;
     border: none;
     border-radius: 16px;
     color: #FFF;
@@ -316,12 +331,6 @@ textarea {
 textarea {
     height: 240px;
     margin-top: 8px;
-}
-
-.contact h1
-{
-    text-align: center;
-    color: #427F70;
 }
 
 @media (max-width: 361px) {

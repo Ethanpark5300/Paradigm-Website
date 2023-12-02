@@ -1,112 +1,11 @@
-.services-container:after,
-.services-container:before,
-.services-row-padding:after,
-.services-row-padding:before {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.services-content {
-    margin-left: auto;
-    margin-right: auto
-}
-
-.services-row-padding {
-    padding: 0 16px
-}
-
-.services-container {
-    padding: 0.01em 16px
-}
-
-.services-card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-}
-
-.services-margin-top {
-    margin-top: 112px
-}
-
-.services-margin-bottom {
-    margin-bottom: 16px
-}
-
-/* Colors */
-.services-white {
-    color: #000;
-    background-color: #fff
-}
-
-.services-text-grey {
-    color: #757575
-}
-
-/* Center website */
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 0px !important;
-    text-align: center;
-}
-
-.row {
-    margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row>.column {
-    padding-top: 4px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
 .column {
     float: left;
     width: 25%;
 }
 
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
 .content {
-    background-color: #F1F1F1;
+    background: #F1F1F1;
     padding: 10px;
-}
-
-h3 {
-    margin-top: 8px;
-    text-align: center;
-    font-weight: 600;
-}
-
-.services button {
-    background-color: #427F70;
-    border-radius: 16px;
-    border: 1px solid #427F70;
-    display: inline-block;
-    padding: 8px;
-    vertical-align: middle;
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.2s;
-    margin-top: 16px;
-    font-weight: 500;
-}
-
-.services button:hover {
-    transform: scale(1.1);
 }
 
 .flex-parent {
@@ -117,21 +16,103 @@ h3 {
     justify-content: center;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row>.column {
+    padding: 4px 8px 8px;
+}
+
+.services button {
+    background: #427F70;
+    border: 1px solid #427F70;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 16px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    transition: all .2s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.services button:hover {
+    transform: scale(1.1);
+}
+
+.services-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.services-container {
+    padding: .01em 16px;
+}
+
+.services-container:after,
+.services-container:before,
+.services-row-padding:after,
+.services-row-padding:before,
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.services-content {
+    margin: 0 auto;
+}
+
+.services-margin-bottom {
+    margin-bottom: 16px;
+}
+
+.services-margin-top {
+    margin-top: 104px;
+}
+
+.services-row-padding {
+    padding: 0 16px;
+}
+
+.services-text-grey {
+    color: #757575;
+}
+
+.services-white {
+    background: #fff;
+    color: #000;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    margin-top: 8px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1172px) {
     .column {
         width: 33%;
     }
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 908px) {
     .column {
         width: 50%;
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 626px) {
     .column {
         width: 100%;

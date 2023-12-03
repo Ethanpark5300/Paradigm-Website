@@ -8,12 +8,13 @@ html {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #994d4b;
+    background: #994d4b;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -23,4 +24,7 @@ html {
     }
 }
 
-/* TODO: Add hover animation to back to top button */
+#backToTopBtn:hover
+{
+    background: maroon;
+}

@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+body {
+    background: #005580;
+    font-family: Quicksand, sans-serif;
+}
+
 .bar {
     background: #427F70;
     height: 2px;
@@ -44,13 +49,6 @@
 
 .hamburger--open .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
 }
 
 .icon {
@@ -130,19 +128,26 @@
     display: flex;
 }
 
-.navbar a {
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#navbar a {
     text-decoration: none;
 }
 
-.navbar br {
+#navbar br {
     display: none;
 }
 
-.navbar button {
+#navbar button {
     border: none;
 }
 
-.navbar ul {
+#navbar ul {
     list-style: none;
 }
 
@@ -171,13 +176,8 @@ a[x-apple-data-detectors] {
     text-decoration: none;
 }
 
-body {
-    background: #005580;
-    font-family: Quicksand, sans-serif;
-}
-
 nav button {
-    background: #005580 !important;
+    background: #005580;
     border-radius: 1000px;
     color: #FFF;
     cursor: pointer;
@@ -245,7 +245,7 @@ nav button:hover {
 }
 
 @media (max-width: 347px) {
-    .navbar br {
+    #navbar br {
         display: inline;
     }
 }

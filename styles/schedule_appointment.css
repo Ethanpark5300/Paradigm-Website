@@ -18,7 +18,7 @@
     color: #FFF;
     cursor: pointer;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin: 16px 0;
     overflow: hidden;
@@ -129,9 +129,19 @@
     justify-content: center;
 }
 
-@media (min-width: 601px) {
+.appointment-half2 {
+    margin-top: 0px;
+}
+
+@media (min-width: 666px) {
     .appointment-half {
         width: 49.99999%;
+    }
+}
+
+@media (max-width: 666px) {
+    .appointment-half2 {
+        margin-top: 16px;
     }
 }
 

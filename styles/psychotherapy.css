@@ -1,33 +1,11 @@
-ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-}
-
-ul.breadcrumb li {
-    display: inline;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-ul.breadcrumb li+li:before {
-    padding: 4px;
-    color: black;
-    content: "/\00a0";
-}
-
-ul.breadcrumb li a {
-    color: #005580;
-    text-decoration: none;
-}
-
-ul.breadcrumb li a:hover {
-    text-decoration: underline;
-}
-
-.services-container a,
-.services-container a:visited
+.services-twothird a
 {
     color: rgb(0, 102, 204);
+}
+
+.services-twothird a:visited
+{
+    color: var(--brand-blue);
 }
 
 .services h1 {

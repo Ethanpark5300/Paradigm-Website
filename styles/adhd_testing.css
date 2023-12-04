@@ -114,32 +114,6 @@ hr {
     border-top: 1px solid #eee;
 }
 
-ul.breadcrumb {
-    list-style: none;
-    padding: 10px 16px;
-}
-
-ul.breadcrumb li {
-    display: inline;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-ul.breadcrumb li a {
-    color: #005580;
-    text-decoration: none;
-}
-
-ul.breadcrumb li a:hover {
-    text-decoration: underline;
-}
-
-ul.breadcrumb li+li:before {
-    color: #000;
-    content: "/\00a0";
-    padding: 4px;
-}
-
 @media (max-width: 336px) {
     .services h1 {
         font-size: 30px;

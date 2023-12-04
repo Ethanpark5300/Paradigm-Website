@@ -186,7 +186,11 @@ button[type=submit] {
 .providers-row-padding:after,
 .providers-row-padding:before,
 .contact-container:after,
-.contact-container:before {
+.contact-container:before,
+.welcome-container:after,
+.welcome-container:before,
+.welcome-row-padding:after,
+.welcome-row-padding:before {
     clear: both;
     content: "";
     display: table;
@@ -194,7 +198,6 @@ button[type=submit] {
 
 .providers-margin-bottom {
     margin-bottom: 16px;
-    padding-bottom: 0;
 }
 
 .providers-opacity {
@@ -271,16 +274,6 @@ button[type=submit]:hover {
 
 .welcome-container {
     padding: .01em 16px 8px;
-}
-
-.welcome-container:after,
-.welcome-container:before,
-.welcome-row-padding:after,
-.welcome-row-padding:before {
-    clear: both;
-    content: "";
-    display: table;
-    padding: 0 8px;
 }
 
 .welcome-content,

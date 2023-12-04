@@ -1,0 +1,141 @@
+main {
+    margin-top: 108px;
+    margin-bottom: 16px;
+}
+
+main h1, 
+main h3,
+main p
+{
+    text-align: center;
+}
+
+main p
+{
+    color: gray;
+    margin-top: 4px;
+}
+
+main h1
+{
+    margin-bottom: 0 !important;
+    color: var(--brand-green)
+}
+
+.w3-container:after,
+.w3-container:before,
+.w3-row-padding:after,
+.w3-row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.w3-content {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.w3-row-padding {
+    padding: 0 16px
+}
+
+.w3-container {
+    padding: 0.01em 16px
+}
+
+.w3-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.w3-opacity {
+    opacity: 0.60
+}
+
+.w3-padding-16 {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+/* Colors */
+.w3-white {
+    color: #000;
+    background-color: #fff
+}
+
+/* Center website */
+.center-page {
+    margin: auto;
+}
+
+.row {
+    margin: 8px -16px 0;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+main img {
+    border-radius: 16px;
+    border: 6px solid var(--brand-blue);
+
+    /* Remove this when there is 4+ providers */
+    width: 300px !important;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+
+    /* Centers everything */
+    text-align: center;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1052px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 775px) {
+    .column {
+        width: 100%;
+    }
+}
+
+main button {
+    background: var(--brand-blue);
+    border-color: var(--brand-blue);
+    margin-top: 8px;
+    border-radius: 1000px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+main button:hover {
+    transform: scale(1.1);
+}

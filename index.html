@@ -59,6 +59,7 @@
     </section>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero">
             <div class="hero-image">
                 <div class="hero-text">
@@ -68,21 +69,162 @@
             </div>
         </section>
 
+        <!-- Welcome Section -->
         <section id="welcome">
-
+            <div class="content">
+                <div class="row-padding">
+                    <div class="container card white">
+                        <div class="container">
+                            <h1>Welcome to Paradigm Psychiatry</h1>
+                            <h2>Currently Accepting New Patients</h2>
+                            <h2>Schedule an Appointment Today</h2>
+                            <div class="center-container">
+                                <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';" class="welcome-button margin-right">New Patients</button>
+                                <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';" class="welcome-button">Existing Patients</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Providers Section -->
         <section id="providers">
-
+            <div class="content">
+                <div class="row-padding">
+                    <div class="container card">
+                        <div class="container">
+                            <h1>Meet the Providers</h1>
+                            <div id="grid">
+                                <div class="center-page">
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="provider">
+                                                <img src="../images/alexandra_moore.jpeg" style="width:100%">
+                                                <h3>Alexandra Moore</h3>
+                                                <p>DNP, APRN, PMHNP-BC</p>
+                                                <!-- <button onclick="location.href='./alexandra_moore.html'"> Meet Allie</button> -->
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="provider">
+                                                <img src="../images/jill_abernathy.jpeg" style="width:100%">
+                                                <h3>Jill Abernathy</h3>
+                                                <p>PMHNP-BC</p>
+                                                <!-- <button onclick="location.href='./jill_abernathy.html'"> Meet Jill</button> -->
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="provider">
+                                                <img src="../images/kionglee_jung.jpeg" style="width:100%">
+                                                <h3>Kionglee Jung</h3>
+                                                <p>DNP, PMHNP, FNP - BC</p>
+                                                <!-- <button onclick="location.href='./kionglee_jung.html'"> Meet Lee</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="map">
-
+        <!-- Location Section -->
+        <section id="location">
+            <div class="content">
+                <div class="row-padding">
+                    <div class="container card">
+                        <div class="container">
+                            <h1>Building Location</h1>
+                            <h2><i class="fa fa-map-marker fa-fw"></i>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224 </h2>
+                            <div class="google-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.9006833119975!2d-111.88703312475792!3d33.321411855967305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b07abe6c53195%3A0xda57b0f1ff7d4821!2sParadigm%20Psychiatry!5e0!3m2!1sen!2sus!4v1697180534594!5m2!1sen!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
+            <div class="content">
+                <div class="row-padding">
+                    <div class="container card">
+                        <div class="container">
+                            <h1>Contact Us</h1>
+                            <div class="twothird container">
+                                <div class="form">
+                                    <form action="https://formsubmit.co/ethanpark5300@gmail.com" method="POST">
+                                        <input type="hidden" name="_next" value="https://ethanpark5300.github.io/Paradigm-Website/pages/contact.html">
+                                        <input type="hidden" name="_subject" value="New form submission!">
+                                        <input type="hidden" name="_template" value="box">
 
+                                        <label for="Name">Full Name</label>
+                                        <input type="text" name="Name" placeholder="Name..." required>
+
+                                        <label for="Email">Email</label>
+                                        <input type="email" name="Email" placeholder="Email..." required>
+
+                                        <label for="Subject">Subject</label>
+                                        <input type="text" name="Subject" placeholder="Subject..." required>
+
+                                        <label for="Message">Message</label>
+                                        <div class="message-area">
+                                            <textarea id="Message" name="Message" placeholder="Message..." required></textarea>
+                                        </div>
+
+                                        <div class="center-container">
+                                            <button type="submit">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="third container">
+                                <hr>
+                                <div class="contact-information">
+                                    <div class="building-address">
+                                        <p class="key"><i class="fa fa-map-marker fa-fw margin-right"></i>Building Address</p>
+                                        <p class="value">2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
+                                    </div>
+                                    <div class="phone-numbers">
+                                        <p class="key"><i class="fa fa-phone fa-fw margin-right"></i>Phone Numbers</p>
+                                        <p class="value">Office: <a href="tel:480-613-9599">(480) 613-9599</a></p>
+                                        <p class="value">Fax: <a href="tel:480-900-8515">(480) 900-8515</a></p>
+                                    </div>
+                                    <div class="email-addresses">
+                                        <p class="key"><i class="fa fa-envelope fa-fw margin-right"></i>Email Addresses</p>
+                                        <p class="value">General Inquiry: <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a> </p>
+                                        <p class="value">Billing Inquiry: <a href="mailto:billing@paradigmpsychiatry.com">billing@paradigmpsychiatry.com</a> </p>
+                                    </div>
+                                    <div class="open-hours">
+                                        <p class="key"><i class="fa fa-calendar fa-fw margin-right"></i>Open Hours</p>
+                                        <p class="value">Monday/Tuesday: 8:00 AM - 6:00 PM</p>
+                                        <p class="value">Tuesday/Wednesday: 9:00 AM - 6:00 PM</p>
+                                        <p class="value">Friday: 8 AM to 12 PM (Telemedicine)</p>
+                                        <p class="value">Saturday/Sunday: Closed</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- <section id="contact">
+            <div class="content">
+                <div class="row-padding">
+                    <div class="container card">
+                        <div class="container">
+                            <h1>Contact Us</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </main>
 
     <!-- Footer -->

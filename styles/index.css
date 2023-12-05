@@ -17,7 +17,7 @@
     margin-top: 40px;
 }
 
-.hero-text h1 {
+#hero h1 {
     font-size: 58px;
     margin-top: 0;
 }
@@ -52,9 +52,7 @@
 @media screen and (max-width: 400px) {
     .hero-text h1 {
         font-size: 34px;
-        border: 5px red solid;
     }
-    /* Dont touch */
 
     .hero-text img {
         width: 130px;
@@ -71,4 +69,270 @@
         width: 100px;
         height: 100px;
     }
+}
+
+#welcome,
+#providers,
+#location,
+#contact {
+    margin-top: 16px;
+}
+
+#contact {
+    margin-bottom: 16px;
+}
+
+h1:nth-child(2n+1) {
+    color: var(--brand-green);
+    text-align: center;
+    font-size: 36px;
+}
+
+#welcome h2 {
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+#welcome h2:nth-child(3) {
+    margin-top: 8px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+#welcome button:nth-child(1) {
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    .center-container {
+        display: block;
+        text-align: center;
+    }
+
+    #welcome button {
+        width: 100%;
+    }
+
+    #welcome button:nth-child(2) {
+        margin-top: 4px;
+    }
+}
+
+#welcome button {
+    background: #005580;
+    border: 1px solid #005580;
+    border-radius: 12px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    padding: 16px;
+    transition: all .2s;
+    white-space: nowrap;
+}
+
+#welcome button:hover {
+    transform: scale(1.1);
+}
+
+#providers {
+    text-align: center;
+}
+
+#providers p {
+    color: gray;
+    margin-top: 4px;
+}
+
+#providers h1 {
+    margin-bottom: 0;
+}
+
+.center-page {
+    margin: auto;
+}
+
+.row {
+    margin: 8px -16px 0;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+#providers img {
+    border-radius: 16px;
+    border: 6px solid var(--brand-blue);
+}
+
+.column {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.provider {
+    background-color: #FFF;
+    padding: 10px;
+}
+
+@media screen and (min-width: 400px) {
+    #providers img {
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.google-map {
+    margin-bottom: 16px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#location h2 {
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.third,
+.twothird {
+    float: left;
+}
+
+.third {
+    width: 33.33333%;
+}
+
+.twothird {
+    width: 66.66666%
+}
+
+hr {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .third {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .open-hours p {
+        text-align: center;
+    }
+
+    hr {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .twothird {
+        width: 100%
+    }
+}
+
+label, input,
+textarea {
+    font-weight: 600;
+}
+
+button[type=submit] {
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 33%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    padding: 12px;
+    resize: vertical;
+    width: 100%;
+}
+
+button[type=submit] {
+    background: #005580;
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 66%;
+}
+
+button[type=submit]:hover {
+    transform: scale(1.1);
+}
+
+textarea {
+    height: 180px;
+    margin-top: 6px !important;
+}
+
+.building-address, .phone-numbers, .email-addresses {
+    margin-bottom: 16px;
+}
+
+.key {
+    color: var(--brand-green);
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.margin-right {
+    margin-right: 8px;
+}
+
+.contact-information {
+    margin-top: -6px;
 }

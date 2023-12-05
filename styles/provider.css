@@ -1,15 +1,12 @@
 main {
-    margin-top: 108px;
-    margin-bottom: 16px;
+    margin: 108px 0 16px;
 }
 
 .center-image {
-    margin-top: 64px;
     display: block;
     height: 300px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
+    margin: 64px auto 0;
 }
 
 h1 {
@@ -20,71 +17,65 @@ h1 {
 h5 {
     color: gray;
     font-weight: 500;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
 
-.breadcrumbs
-{
+.breadcrumbs {
     margin-top: 16px;
 }
 
-.providers-third img {
+.third img {
     border: 6px solid #005580;
     border-radius: 16px;
 }
 
-.providers-card {
+.card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.providers-container {
+.container {
     padding: .01em 16px 8px;
 }
 
-.providers-container:after,
-.providers-container:before,
-.providers-row:after,
-.providers-row:before,
-.providers-row-padding:after,
-.providers-row-padding:before {
+.container:after,
+.container:before,
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before {
     clear: both;
     content: "";
     display: table;
 }
 
-.providers-content {
-    margin-left: auto;
-    margin-right: auto;
+.content {
+    margin: 0 auto;
 }
 
-.providers-margin-top {
-    margin-top: 104px;
-}
-
-.providers-row-padding {
+.row-padding {
     padding: 0 16px;
 }
 
-.providers-third {
+.third {
     width: 33.33333%;
 }
 
-.providers-third,
-.providers-twothird {
+.third,
+.twothird {
     float: left;
 }
 
-.providers-twothird {
+.twothird {
     width: 66.66666%;
 }
 
-.providers-white {
+.white {
     background: #fff;
     color: #000;
 }
 
 @media (max-width: 992px) {
-    .providers-main {
+    .main {
         margin-left: 0;
         margin-right: 0;
     }
@@ -98,11 +89,11 @@ h5 {
 
 @media (max-width: 1024px) {
     .center-image {
-        margin-top: 8px;
+        margin-top: 16px;
     }
 
-    .providers-third,
-    .providers-twothird {
+    .third,
+    .twothird {
         width: 100%;
     }
 }

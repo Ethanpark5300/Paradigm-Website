@@ -7,7 +7,7 @@ function goBack() {
     else if (referrer === "page2") {
         window.location.href = "../pages/contact.html";
     }
-    // } else {
+    // else {
     //     // Default behavior if referrer is not recognized
     //     window.history.back();
     // }

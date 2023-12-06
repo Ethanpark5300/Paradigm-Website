@@ -1,12 +1,12 @@
-.faq-section {
-    margin-top: 104px !important;
+#faq {
+    margin: 108px 0 16px;
 }
 
-.faq-section h1 {
+#faq h1 {
     text-align: center;
-    margin-top: 0;
-    color: #427F70;
+    margin-top: 8px;
     font-size: 36px;
+    color: var(--brand-green);
 }
 
 .accordion {

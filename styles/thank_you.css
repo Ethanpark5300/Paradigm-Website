@@ -26,10 +26,24 @@ main button {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 16px;
-    margin-top: 16px;
     padding: 16px;
     transition: all .2s;
     width: 20%;
+    white-space: normal;
+}
+
+@media screen and (max-width: 800px) {
+    main button {
+        width: 80%;
+    }
+}
+
+#thank_you a {
+    text-decoration: none;
+}
+
+#thank_you a:hover {
+    text-decoration: underline;
 }
 
 main button:hover {

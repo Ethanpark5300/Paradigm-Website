@@ -37,6 +37,10 @@ main p:not(#medication p) {
     margin: 16px 0;
 }
 
+#medication p {
+    line-height: 1;
+}
+
 @media screen and (max-width: 768px) {
     #mission-values img {
         height: auto;

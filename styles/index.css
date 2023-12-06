@@ -209,6 +209,13 @@ hr {
     display: none;
 }
 
+#contact a {
+    text-decoration: none;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
 input[type=text],
 input[type=email],
 textarea {
@@ -216,10 +223,11 @@ textarea {
     border-radius: 8px;
     box-sizing: border-box;
     margin-bottom: 16px;
-    margin-top: 6px;
+    margin-top: 4px !important;
     padding: 12px;
     resize: vertical;
     width: 100%;
+    font-weight: 600;
 }
 
 label,

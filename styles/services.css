@@ -6,6 +6,7 @@ h1 {
     text-align: center;
     color: var(--brand-green);
     margin-bottom: 0 !important;
+    font-size: 36px !important;
 }
 
 h3 {

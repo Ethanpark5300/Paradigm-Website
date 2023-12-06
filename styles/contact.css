@@ -1,4 +1,88 @@
-.center-wrapper {
+main {
+    margin: 108px 0 16px;
+}
+
+h1 {
+    color: var(--brand-green);
+    text-align: center;
+}
+
+.third,
+.twothird {
+    float: left;
+    width: 100%
+}
+
+@media screen and (min-width:1024px) {
+    .third {
+        width: 33.33333%;
+
+    }
+
+    .twothird {
+        width: 66.66666%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .twothird {
+        margin-bottom: 16px;
+    }
+}
+
+.row-padding,
+.row-padding>.third,
+.row-padding>.twothird {
+    padding: 0 8px
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 16px !important;
+    margin-top: 4px !important;
+    padding: 12px;
+    resize: vertical;
+    width: 100%;
+    font-weight: 500;
+}
+
+textarea {
+    height: 200px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+button[type=submit] {
+    background: #005580;
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 50%;
+}
+
+button[type=submit]:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* .center-wrapper {
     display: flex;
     justify-content: center;
 }
@@ -185,4 +269,4 @@ textarea {
     .contact-information-container p {
         text-align: center;
     }
-}
+} */

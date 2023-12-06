@@ -9,7 +9,7 @@ main p {
 }
 
 main h1 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
     color: var(--brand-green);
 }
 

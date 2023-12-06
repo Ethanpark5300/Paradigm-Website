@@ -197,7 +197,6 @@ button[type=submit] {
 
 h1:nth-child(2n+1) {
     color: var(--brand-green);
-    font-size: 36px;
     text-align: center;
 }
 

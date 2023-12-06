@@ -2,13 +2,6 @@ main {
     margin: 108px 0 16px;
 }
 
-@media (max-width: 992px) {
-    .main {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
 .third,
 .twothird {
     float: left;

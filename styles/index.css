@@ -197,6 +197,7 @@ button[type=submit] {
 
 h1:nth-child(2n+1) {
     color: var(--brand-green);
+    font-size: 36px;
     text-align: center;
 }
 
@@ -226,6 +227,22 @@ textarea {
 textarea {
     height: 180px;
     margin-top: 6px !important;
+}
+
+.tag {
+    color: var(--brand-green);
+    font-weight: 600;
+}
+
+#contact .row-padding {
+    padding: 0 8px !important;
+}
+
+
+.row-padding,
+.row-padding>.third,
+.row-padding>.twothird {
+    padding: 0 8px
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Thank you</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/thank_you.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
+
 <body>
-    
+    <!-- Thank you Section -->
+    <main>
+        <section id="thank_you">
+            <div class="content">
+                <div class="row-padding">
+                    <div class="container card">
+                        <div class="container">
+                            <h1>Thank You for Your Submission!</h1>
+                            <p>Thank you for reaching out to us through the contact form! Your inquiry is important to us, and we're grateful for the opportunity to assist you.</p>
+                            <p>We've received your details and will promptly review your submission. If additional information is needed or if we have any questions, we'll be in touch using the email address and phone number you provided.</p>
+                            <p>For any immediate queries or if you require further assistance, please don't hesitate to contact us:</p>
+                            <p>Email: [company@email.com]</p>
+                            <p>Phone: [company phone number]</p>
+                            <p>Once again, thank you for considering Paradigm Psychiatry. We look forward to connecting with you.</p>
+                            <p>Best regards, </p>
+                            <p>Paradigm Psyciatry Team</p>
+                            <div class="center-container">
+                                <button onclick="goBack()">Back to Previous Page</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-width footer-about">
+                <h2>About</h2>
+                <p>Paradigm Psychiatry is a telemedicine psychiatry clinic located in Chandler, AZ. We also offer in-office service, and day appointment may be available. </p>
+            </div>
+            <div class="footer-width footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about_us.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./policies.html">Policies</a></li>
+                    <li><a href="./providers.html">Providers</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-width footer-contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span><i class="fa fa-map-marker fa-fw"></i></span>
+                        <p>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope fa-fw"></i></span>
+                        <p>info@paradigmpsychiatry.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone fa-fw"></i></span>
+                        <p>(480) 613-9599</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <p>Copyright © 2023 Paradigm Psychiatry - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function goBack() {
+            const referrer = document.cookie.replace(/(?:(?:^|.*;\s*)referrer\s*=\s*([^;]*).*$)|^.*$/, "$1");
+            if (referrer === "page1") {
+                window.location.href = "form_page1.html";
+            } else if (referrer === "page2") {
+                window.location.href = "form_page2.html";
+            } else {
+                // Default behavior if referrer is not recognized
+                window.history.back();
+            }
+        }
+    </script>
 </body>
+
 </html>

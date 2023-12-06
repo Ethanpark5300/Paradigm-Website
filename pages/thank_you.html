@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/thank_you.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <script defer src="../scripts/backbutton.js"></script>
 </head>
 
 <body>
@@ -81,20 +82,6 @@
             <p>Copyright © 2023 Paradigm Psychiatry - All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-        function goBack() {
-            const referrer = document.cookie.replace(/(?:(?:^|.*;\s*)referrer\s*=\s*([^;]*).*$)|^.*$/, "$1");
-            if (referrer === "page1") {
-                window.location.href = "form_page1.html";
-            } else if (referrer === "page2") {
-                window.location.href = "form_page2.html";
-            } else {
-                // Default behavior if referrer is not recognized
-                window.history.back();
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -32,6 +32,10 @@ main button {
     width: 20%;
 }
 
+main button:hover {
+    transform: scale(1.1);
+}
+
 .center-container {
     display: flex;
     justify-content: center;

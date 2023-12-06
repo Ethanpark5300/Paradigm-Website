@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/backtotopbutton.css">
     <script defer src="../scripts/navbar.js"></script>
+    <script defer src="../scripts/backbutton_contact.js"></script>
     <script defer src="../scripts/backtotopbutton.js"> </script>
     <link rel="stylesheet" href="../styles/footer.css">
 </head>
@@ -181,11 +182,6 @@
     <button id="backToTopBtn" onclick="scrollToTop()">
         <i class="fa fa-arrow-circle-up"></i> Back to Top
     </button>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function () {
-            document.cookie = "referrer=page2; expires=0; path=/";
-        });
-    </script>
 </body>
 
 </html>

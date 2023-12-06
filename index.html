@@ -10,6 +10,7 @@
     <script defer src="./scripts/navbar.js"></script>
     <link rel="stylesheet" href="./styles/navbar.css">
     <script defer src="./scripts/backtotopbutton.js"></script>
+    <script defer src="./scripts/backbutton_home.js"></script>
     <link rel="stylesheet" href="./styles/backtotopbutton.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <meta name="description" content="Paradigm Psychiatry is a telemedicine psychiatry clinic located in Chandler, AZ. We also offer in-office service, and same day appointment may be available.">
@@ -270,12 +271,5 @@
     <button id="backToTopBtn" onclick="scrollToTop()">
         <i class="fa fa-arrow-circle-up"></i> Back to Top
     </button>
-
-    <script>
-        document.getElementById('home-form').addEventListener('submit', function () {
-            document.cookie = "referrer=page1; expires=0; path=/";
-        });
-    </script>
 </body>
-
 </html>

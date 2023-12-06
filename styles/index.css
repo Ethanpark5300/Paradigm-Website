@@ -83,6 +83,10 @@ button[type=submit]:hover {
     justify-content: center;
 }
 
+#contact p:nth-child(7) {
+    margin-bottom: 16px;
+}
+
 .center-page {
     margin: auto;
 }

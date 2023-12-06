@@ -10,10 +10,10 @@
     margin-top: 0;
 }
 
-#location h2 {
-    font-size: 21px;
+#location h5 {
     margin-bottom: 16px;
     text-align: center;
+    font-weight: 500;
 }
 
 #providers {
@@ -111,13 +111,21 @@ button[type=submit]:hover {
     width: 100%;
 }
 
+/* TODO: Fix hero image to use height: 100vh */
 .hero-image {
     background: url(../images/hero_banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 900px;
     position: relative;
+}
+
+@media screen and (min-height: 900px) {
+    .hero-image {
+        height: 100vh;
+    }
 }
 
 .hero-text {

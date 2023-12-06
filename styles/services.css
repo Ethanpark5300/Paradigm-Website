@@ -30,7 +30,6 @@ h3 {
     width: 25%;
 }
 
-/* Content */
 .content {
     padding: 10px;
 }
@@ -55,4 +54,25 @@ h3 {
     .column {
         width: 100%;
     }
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+#services button {
+    background-color: var(--brand-green);
+    color: #fff;
+    border-radius: 1000px;
+    border-color: var(--brand-green);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 20px;
+    transition: all .2s;
+    margin-top: 12px;
+}
+
+#services button:hover {
+    transform: scale(1.1);
 }

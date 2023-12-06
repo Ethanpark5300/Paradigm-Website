@@ -23,3 +23,7 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
+
+.breadcrumbs {
+    margin-top: 16px;
+}

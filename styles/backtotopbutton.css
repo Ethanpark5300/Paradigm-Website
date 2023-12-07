@@ -24,7 +24,8 @@ html {
     }
 }
 
-#backToTopBtn:hover
-{
-    background: maroon;
+@media (hover: hover) {
+    #backToTopBtn:hover {
+        background: maroon;
+    }
 }

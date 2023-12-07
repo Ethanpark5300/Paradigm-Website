@@ -39,3 +39,35 @@ main h1 {
 .row-padding {
     padding: 0 8px !important;
 }
+
+#schedule-appointment button {
+    background: #005580;
+    border: 1px solid #005580;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 16px 0;
+    overflow: hidden;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#schedule-appointment button:hover {
+    transform: scale(1.1);
+}
+
+main h2 {
+    margin: 16px 0;
+    color: var(--brand-green);
+}
+
+#appointment-information p:nth-child(7) {
+    margin-bottom: 16px;
+}

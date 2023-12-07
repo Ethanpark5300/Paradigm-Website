@@ -48,7 +48,8 @@ h5 {
 
 @media (max-width: 420px) {
     .center-image {
-        height: 225px;
+        height: auto;
+        width: 100%;
     }
 }
 

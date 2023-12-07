@@ -1,8 +1,23 @@
-:root
-{
+:root {
     --brand-red: #994d4b;
     --brand-green: #427F70;
     --brand-blue: #005580;
+}
+
+.center-horizontally {
+    display: flex;
+    justify-content: center;
+}
+
+.center-vertically {
+    display: flex;
+    align-items: center;
+}
+
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container:after,
@@ -92,7 +107,7 @@ h6 {
 p {
     font-weight: 500;
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 

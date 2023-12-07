@@ -42,7 +42,8 @@ main h1 {
 
 .checklist li {
     position: relative;
-    padding-left: 1.5em;
+    padding-left: 0;
+    margin-left: -12px;
     font-weight: 500;
 }
 

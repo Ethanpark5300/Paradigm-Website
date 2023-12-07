@@ -57,11 +57,6 @@ h3 {
     }
 }
 
-.center-container {
-    display: flex;
-    justify-content: center;
-}
-
 #services button {
     background-color: var(--brand-green);
     color: #fff;

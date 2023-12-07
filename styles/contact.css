@@ -69,11 +69,6 @@ textarea {
     height: 200px;
 }
 
-.center-container {
-    display: flex;
-    justify-content: center;
-}
-
 button[type=submit] {
     background: #005580;
     border: none;

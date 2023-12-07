@@ -40,7 +40,7 @@
     border-radius: 12px;
     color: #FFF;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin: 16px 0 8px;
     padding: 16px;
@@ -76,11 +76,6 @@ button[type=submit]:hover {
 #location,
 #contact {
     margin-top: 16px;
-}
-
-.center-container {
-    display: flex;
-    justify-content: center;
 }
 
 #contact p:nth-child(7) {
@@ -205,13 +200,10 @@ h1:nth-child(2n+1) {
     text-align: center;
 }
 
-hr {
-    display: none;
-}
-
 #contact a {
     text-decoration: none;
 }
+
 #contact a:hover {
     text-decoration: underline;
 }
@@ -250,7 +242,6 @@ textarea {
     padding: 0 8px !important;
 }
 
-
 .row-padding,
 .row-padding>.third,
 .row-padding>.twothird {
@@ -280,10 +271,12 @@ textarea {
     .twothird {
         width: 100%;
     }
+}
 
-    hr {
-        display: block;
-        margin-bottom: 16px;
+@media screen and (max-width: 500px) {
+    .center-horizontally {
+        display: block !important;
+        text-align: center !important;
     }
 }
 
@@ -294,11 +287,6 @@ textarea {
 
     #welcome button:nth-child(2) {
         margin-top: 4px;
-    }
-
-    .center-container {
-        display: block;
-        text-align: center;
     }
 
     .hero-text h1 {

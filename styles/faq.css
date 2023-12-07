@@ -83,9 +83,9 @@
     font-size: 30px;
 }
 
-@media only screen and (max-width: 1471px) {
+@media only screen and (max-width: 1500px) {
     .accordion {
-        width: 92.25%;
+        width: 95%;
     }
 
     .accordion .label {

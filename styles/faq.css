@@ -1,33 +1,22 @@
-#faq {
+main {
     margin: 108px 0 16px;
 }
 
-#faq h1 {
+h1 {
     text-align: center;
-    margin-top: 8px;
-    font-size: 36px;
     color: var(--brand-green);
-}
-
-.accordion {
-    width: 1487px;
-    margin: 0 auto 16px auto;
-    color: black;
-    background-color: white;
-    padding: 16px 32px 16px 16px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .underline {
     text-decoration: underline;
 }
 
-.accordion .container {
+.accordion .block {
     position: relative;
     margin: 10px;
 }
 
-.accordion .label {
+.accordion .question {
     font-weight: 600;
     position: relative;
     padding: 10px 32px 10px 0;
@@ -37,7 +26,7 @@
     word-break: break-word;
 }
 
-.accordion .label::before {
+.accordion .question::before {
     content: '+';
     color: #427F70;
     position: absolute;
@@ -47,7 +36,7 @@
     transform: translateY(-50%);
 }
 
-.accordion .content {
+.accordion .answer {
     position: relative;
     background: white;
     height: 0;
@@ -65,56 +54,20 @@
     opacity: .5;
 }
 
-.content a {
+.answer a {
     text-decoration: none;
 }
 
-.content a:hover {
+.answer a:hover {
     text-decoration: underline;
 }
 
-.accordion .container.active .content {
+.accordion .block.active .answer {
     height: auto;
     padding: 8px 8px 8px 0;
 }
 
-.accordion .container.active .label::before {
+.accordion .block.active .question::before {
     content: '-';
     font-size: 30px;
-}
-
-@media only screen and (max-width: 1500px) {
-    .accordion {
-        width: 95%;
-    }
-
-    .accordion .label {
-        font-size: 24px;
-    }
-
-    .accordion .content {
-        font-size: 16px;
-    }
-
-    .accordion hr {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .faq-section {
-        margin-top: 80px;
-    }
-
-    .accordion {
-        margin-bottom: 16px;
-    }
-
-    .accordion .label {
-        font-size: 20px;
-    }
-
-    .accordion .content {
-        font-size: 16px;
-    }
 }

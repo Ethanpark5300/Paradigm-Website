@@ -96,7 +96,7 @@ button[type=submit]:hover {
     margin-top: -6px;
 }
 
-.google-map {
+/* .google-map {
     margin-bottom: 16px;
     padding-bottom: 50%;
     position: relative;
@@ -108,6 +108,19 @@ button[type=submit]:hover {
     position: absolute;
     top: 0;
     width: 100%;
+} */
+
+#map-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 16px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* TODO: Fix hero image to use height: 100vh */
@@ -263,7 +276,7 @@ textarea {
     }
 
     .third {
-        margin-bottom: 16px;
+        margin-top: 16px;
         text-align: center;
         width: 100%;
     }

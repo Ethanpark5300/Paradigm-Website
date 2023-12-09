@@ -1,20 +1,16 @@
-main {
-    margin: 108px 0 16px;
-    text-align: center;
-}
-
-main p {
-    color: gray;
-    margin-top: 4px;
-}
-
-main h1 {
-    margin-bottom: 0;
-    color: var(--brand-green);
-}
-
 .center-page {
     margin: auto;
+}
+
+.column {
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+
+.provider {
+    background: #FFF;
+    padding: 10px;
 }
 
 .row {
@@ -26,36 +22,40 @@ main h1 {
     padding: 8px;
 }
 
-main img {
-    border-radius: 16px;
-    border: 6px solid var(--brand-blue);
-}
-
-.column {
-    float: left;
-    width: 33%;
+main {
+    margin: 108px 0 16px;
     text-align: center;
-}
-
-.provider {
-    background-color: #FFF;
-    padding: 10px;
 }
 
 main button {
     background: var(--brand-blue);
-    margin-top: 8px;
+    border-color: var(--brand-blue);
     border-radius: 1000px;
     color: #FFF;
     cursor: pointer;
     font-weight: 600;
-    transition: all .2s;
-    border-color: var(--brand-blue);
+    margin-top: 8px;
     padding: 8px 20px;
+    transition: all .2s;
 }
 
 main button:hover {
     transform: scale(1.1);
+}
+
+main h1 {
+    color: var(--brand-green);
+    margin-bottom: 0;
+}
+
+main img {
+    border: 6px solid var(--brand-blue);
+    border-radius: 16px;
+}
+
+main p {
+    color: gray;
+    margin-top: 4px;
 }
 
 @media screen and (min-width: 400px) {

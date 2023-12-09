@@ -1,11 +1,12 @@
 #conditions ul {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 16px;
-    font-size: 16px;
 }
 
 #medication p {
+    line-height: 1;
     margin-bottom: 16px;
 }
 
@@ -34,12 +35,8 @@ main {
 }
 
 main p:not(#medication p) {
-    text-align: center;
     margin: 16px 0;
-}
-
-#medication p {
-    line-height: 1;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -60,6 +57,3 @@ main p:not(#medication p) {
         columns: 1;
     }
 }
-
-/* border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */

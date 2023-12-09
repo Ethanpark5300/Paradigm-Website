@@ -16,21 +16,21 @@ main p:nth-child(2) {
     text-align: center;
 }
 
-main p:nth-child(2) {
-    font-style: italic;
-}
-
 main h2 {
     margin: 16px 0;
 }
 
 main hr {
-    margin-top: 16px;
     border: 0;
     border-top: 1px solid gray;
+    margin-top: 16px;
     opacity: .5;
 }
 
 main p:nth-child(19) {
     margin-bottom: 16px;
+}
+
+main p:nth-child(2) {
+    font-style: italic;
 }

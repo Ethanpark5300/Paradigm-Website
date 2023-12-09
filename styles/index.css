@@ -1,7 +1,20 @@
+#contact .row-padding {
+    padding: 0 8px !important;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
 #contact,
 .building-address,
 .phone-numbers,
-.email-addresses {
+.email-addresses,
+#contact p:nth-child(7) {
     margin-bottom: 16px;
 }
 
@@ -11,9 +24,22 @@
 }
 
 #location h5 {
+    font-weight: 500;
     margin-bottom: 16px;
     text-align: center;
-    font-weight: 500;
+}
+
+#map {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+#map-container {
+    height: 300px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
 }
 
 #providers {
@@ -78,10 +104,6 @@ button[type=submit]:hover {
     margin-top: 16px;
 }
 
-#contact p:nth-child(7) {
-    margin-bottom: 16px;
-}
-
 .center-page {
     margin: auto;
 }
@@ -92,52 +114,13 @@ button[type=submit]:hover {
     width: 33%;
 }
 
-.contact-information {
-    margin-top: -6px;
-}
-
-/* .google-map {
-    margin-bottom: 16px;
-    padding-bottom: 50%;
-    position: relative;
-}
-
-.google-map iframe {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-} */
-
-#map-container {
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-    margin-bottom: 16px;
-}
-
-#map {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* TODO: Fix hero image to use height: 100vh */
 .hero-image {
     background: url(../images/hero_banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
     height: 900px;
     position: relative;
-}
-
-@media screen and (min-height: 900px) {
-    .hero-image {
-        height: 100vh;
-    }
 }
 
 .hero-text {
@@ -153,12 +136,6 @@ button[type=submit]:hover {
 .hero-text img {
     height: 150px;
     width: 150px;
-}
-
-.key {
-    color: var(--brand-green);
-    font-weight: 600;
-    margin-right: 16px;
 }
 
 .margin-right {
@@ -177,6 +154,17 @@ button[type=submit]:hover {
 .row,
 .row>.column {
     padding: 8px;
+}
+
+.row-padding,
+.row-padding>.third,
+.row-padding>.twothird {
+    padding: 0 8px;
+}
+
+.tag {
+    color: var(--brand-green);
+    font-weight: 600;
 }
 
 .third {
@@ -213,26 +201,18 @@ h1:nth-child(2n+1) {
     text-align: center;
 }
 
-#contact a {
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
 input[type=text],
 input[type=email],
 textarea {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
+    font-weight: 600;
     margin-bottom: 16px;
     margin-top: 4px !important;
     padding: 12px;
     resize: vertical;
     width: 100%;
-    font-weight: 600;
 }
 
 label,
@@ -246,19 +226,10 @@ textarea {
     margin-top: 6px !important;
 }
 
-.tag {
-    color: var(--brand-green);
-    font-weight: 600;
-}
-
-#contact .row-padding {
-    padding: 0 8px !important;
-}
-
-.row-padding,
-.row-padding>.third,
-.row-padding>.twothird {
-    padding: 0 8px
+@media screen and (min-height: 900px) {
+    .hero-image {
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 1024px) {

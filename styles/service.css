@@ -13,6 +13,19 @@ main ul li {
     font-weight: 500;
 }
 
+#adhd_testing .left-image,
+#adhd_testing .right-image {
+    width: 100%;
+}
+
+#adhd_testing .left-image {
+    padding-right: 16px;
+}
+
+#adhd_testing .right-image {
+    padding-left: 16px;
+}
+
 .center-image {
     display: block;
     margin: 32px auto 16px;

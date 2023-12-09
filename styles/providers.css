@@ -51,6 +51,7 @@ main h1 {
 main img {
     border: 6px solid var(--brand-blue);
     border-radius: 16px;
+    width: 100%;
 }
 
 main p {

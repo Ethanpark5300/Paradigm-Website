@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #005580;
+    background: var(--brand-blue);
     font-family: Quicksand, sans-serif;
 }
 
@@ -82,14 +82,14 @@ body {
 }
 
 .nav__active {
-    border-bottom: solid 8px #005580;
+    border-bottom: solid 8px var(--brand-blue);
     font-weight: 600;
     padding-bottom: 15px;
 }
 
 .nav__item a,
 .nav__item a:visited {
-    color: #005580;
+    color: var(--brand-blue);
 }
 
 .nav__item__active {
@@ -109,7 +109,7 @@ body {
 }
 
 .nav__link:after {
-    border-bottom: solid 8px #005580;
+    border-bottom: solid 8px var(--brand-blue);
     content: '';
     display: block;
     margin-bottom: -16px;
@@ -123,7 +123,7 @@ body {
 }
 
 .nav__list {
-    color: #005580;
+    color: var(--brand-blue);
     column-gap: 32px;
     display: flex;
 }
@@ -177,7 +177,7 @@ a[x-apple-data-detectors] {
 }
 
 nav button {
-    background: #005580;
+    background: var(--brand-blue);
     border-radius: 1000px;
     color: #FFF;
     cursor: pointer;
@@ -193,7 +193,7 @@ nav button:hover {
 }
 
 @media (max-width: 1326px) {
-    .btn {
+    #navbar button {
         font-size: 14px;
         padding: 7px 17px;
     }
@@ -213,7 +213,7 @@ nav button:hover {
     }
 
     .nav__active {
-        border-bottom: solid 6px #005580;
+        border-bottom: solid 6px var(--brand-blue);
         padding-bottom: 0;
     }
 
@@ -222,7 +222,7 @@ nav button:hover {
     }
 
     .nav__link:after {
-        border-bottom: solid 6px #005580;
+        border-bottom: solid 6px var(--brand-blue);
         content: '';
         display: block;
         margin-bottom: 0;

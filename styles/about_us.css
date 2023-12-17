@@ -1,59 +1,84 @@
-#conditions ul {
-    font-size: 16px;
-    font-weight: 500;
+/* Global Styles */
+main {
+    margin-top: 90px;
+}
+
+#about_us,
+#mission_and_values,
+#conditions,
+#medication_types {
+    padding-top: 16px;
+}
+
+/* About Us Section */
+#about_us p {
+    text-align: center;
+    margin-bottom: 16px;
     line-height: 1.5;
-    margin-bottom: 16px;
 }
 
-#medication p {
-    line-height: 1;
-    margin-bottom: 16px;
+#about_us p:nth-last-child(2) {
+    font-weight: bold;
 }
 
-#mission-values img {
+/* Mission and Values Section */
+#mission_and_values p {
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+#mission_and_values img {
     display: block;
     margin: 0 auto;
 }
 
-#mission-values,
-#conditions,
-#medication {
+#mission_and_values p:nth-last-child(4) {
     margin-top: 16px;
 }
 
-.columns {
-    columns: 3;
-}
-
-h1 {
-    color: var(--brand-green);
-    text-align: center;
-}
-
-main {
-    margin: 108px 0 16px;
-}
-
-main p:not(#medication p) {
-    margin: 16px 0;
-    text-align: center;
-}
-
 @media screen and (max-width: 768px) {
-    #mission-values img {
+    #mission_and_values img {
         height: auto;
         width: 75%;
     }
 }
 
-@media screen and (max-width: 1181px) {
-    .columns {
-        columns: 2;
+/* Conditions Section */
+#conditions {
+    text-align: center;
+}
+
+#conditions ul {
+    font-size: var(--body-font-size);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+#conditions ul li {
+    margin-left: 32px;
+}
+
+.columns {
+    columns: 2;
+    display: inline-block;
+    text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+    #conditions ul li {
+        margin-left: 24px;
     }
 }
 
-@media screen and (max-width: 807px) {
+@media screen and (max-width: 1000px) {
     .columns {
         columns: 1;
     }
+}
+
+/* Medication Types Section */
+#medication_types p {
+    margin-bottom: 16px;
+    line-height: 1.5;
 }

@@ -1,0 +1,120 @@
+.faq-section {
+    margin-top: 112px;
+}
+
+.faq-section h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #427F70;
+    font-size: 36px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.accordion {
+    width: 1487px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    color: black;
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordion .label {
+    font-weight: 600;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    font-size: 24px;
+    color: #427F70;
+    cursor: pointer;
+    word-break: break-word;
+}
+
+.accordion .label::before {
+    content: '+';
+    color: #427F70;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 32px;
+    transform: translateY(-50%);
+}
+
+.accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.accordion hr {
+    width: 100%;
+    margin-left: 0;
+    border: 0;
+    border-top: 1px solid gray;
+    opacity: .5;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1375px) {
+    .accordion {
+        width: 90%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .accordion .label {
+        font-size: 24px;
+    }
+
+    .accordion .content {
+        font-size: 16px;
+    }
+
+    .accordion hr {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .faq-section {
+        margin-top: 80px;
+    }
+
+    .accordion {
+        margin: 40px auto;
+    }
+
+    .accordion .label {
+        font-size: 20px;
+    }
+
+    .accordion .content {
+        font-size: 16px;
+    }
+}

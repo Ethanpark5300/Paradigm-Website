@@ -1,66 +1,70 @@
-#appointment-information p:nth-child(7) {
-    margin-bottom: 16px;
-}
-
-#schedule-appointment button {
-    background: var(--brand-blue);
-    border: 1px solid #005580;
-    border-radius: 16px;
-    color: #FFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 16px 0;
-    overflow: hidden;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    transition: all .2s;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-
-#schedule-appointment button:hover {
-    transform: scale(1.1);
-}
-
-.half-container {
-    float: left;
-    width: 100%;
-}
-
-.otherhalf-container,
-#appointment-information {
-    margin-top: 16px;
-}
-
-.row-padding,
-.row-padding>.half-container,
-.row-padding>.whole-container {
-    padding: 0 8px !important;
-}
-
 main {
-    margin: 108px 0 16px;
+    margin-top: 106px;
 }
 
 main h1 {
-    color: var(--brand-green);
-    text-align: center;
+    margin: 24px 0;
 }
 
-main h2 {
-    color: var(--brand-green);
+main p {
+    line-height: 1.5;
+}
+
+#schedule_appointment .global_padding {
+    padding: 0 32px;
+}
+
+#appointment_information .global_padding {
+    padding: 0 2in;
+}
+
+main button {
+    background: var(--brand-green);
+    border-radius: 1000px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 16px;
+    transition: all 0.2s;
+    white-space: nowrap;
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#appointment_information {
+    margin-top: 16px;
+}
+
+main h2:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+main h2:nth-child(4),
+main h2:nth-child(6) {
     margin: 16px 0;
 }
 
-@media (min-width: 1024px) {
-    .half-container {
-        width: 49.99999%;
+main p:nth-last-child(1) {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    main .column_container {
+        display: block;
     }
 
-    .otherhalf-container {
-        margin-top: 0;
+    main .onehalf_column,
+    main .otherhalf_column {
+        width: 100%
+    }
+
+    #schedule_appointment h1 {
+        padding-top: 24px
+    }
+
+    main .otherhalf_column {
+        margin-top: -8px !important;
     }
 }

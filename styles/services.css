@@ -1,12 +1,51 @@
+main {
+    margin-top: 106px;
+}
+
+.grid {
+    margin: 8px -16px;
+}
+
+.grid,
+.grid>.service {
+    padding: 8px;
+}
+
+.service {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #f1f1f1;
+    padding: 12px;
+}
+
+#services h1 {
+    margin-bottom: 8px;
+}
+
+#services img {
+    width: 100%;
+}
+
 #services button {
     background: var(--brand-green);
-    border-color: var(--brand-green);
     border-radius: 1000px;
-    color: #fff;
+    border: none;
+    color: #FFF;
     cursor: pointer;
-    font-weight: 600;
-    margin-top: 12px;
+    font-size: 16px;
+    margin-top: 8px;
     padding: 8px 20px;
+    text-transform: uppercase;
     transition: all .2s;
 }
 
@@ -14,65 +53,20 @@
     transform: scale(1.1);
 }
 
-#services img {
-    width: 100%;
-}
-
-.column {
-    float: left;
-    width: 25%;
-}
-
-.content {
-    padding: 10px;
-}
-
-.row {
-    margin: 8px -16px;
-}
-
-.row,
-.row>.column {
-    padding: 8px;
-}
-
-.row-padding {
-    padding: 0 6px !important;
-}
-
-.tile-color {
-    background: #f1f1f1;
-}
-
-h1 {
-    color: var(--brand-green);
-    font-size: 36px !important;
-    margin-bottom: 0 !important;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-main {
-    margin: 98px 0 6px;
-}
-
-@media screen and (max-width: 1393px) {
-    .column {
+@media screen and (max-width: 1367px) {
+    .service {
         width: 33%;
     }
 }
 
-@media screen and (max-width: 1079px) {
-    .column {
+@media screen and (max-width: 1125px) {
+    .service {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 745px) {
-    .column {
+@media screen and (max-width: 868px) {
+    .service {
         width: 100%;
     }
 }

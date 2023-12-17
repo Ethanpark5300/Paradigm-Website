@@ -3,45 +3,48 @@
 
 <head>
     <title>Schedule Appointment</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
-    <link rel="stylesheet" href="../styles/schedule_appointment.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/backtotopbutton.css">
-    <script defer src="../scripts/navbar.js"></script>
-    <script defer src="../scripts/accordian.js"></script>
-    <script defer src="../scripts/backtotopbutton.js"></script>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/navigation_bar.css">
+    <link rel="stylesheet" href="../styles/schedule_appointment.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/back_to_top.css">
+    <link rel="stylesheet" href="../styles/font_awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../styles/font_awesome/css/brands.css">
+    <link rel="stylesheet" href="../styles/font_awesome/css/solid.css">
+    <script defer src="../scripts/navigation_bar.js"> </script>
+    <script defer src="../scripts/back_to_top.js"> </script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <section id="navbar">
+    <section id="navigation_bar">
         <div class="top-bar">
             <div class="top-bar__content">
                 <div class="phone">
-                    <i class="fa fa-phone"></i>
-                    <span> 480-613-9599 </span>
+                    <i class="fa-solid fa-phone"></i>
+                    <span> &nbsp;480-613-9599 </span>
                 </div>
                 <div class="email">
-                    <i class="fa fa-envelope"></i>
-                    <span> info@paradigmpsychiatry.com </span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span> &nbsp;info@paradigmpsychiatry.com </span>
                 </div>
             </div>
         </div>
         <div class="bottom-bar">
             <div class="bottom-bar__content">
                 <a href="../index.html" class="logo">
-                    <img class="logo__img" src="../images/logo.svg" alt="logo">
-                    <span class="logo__text"> Paradigm<br> Psychiatry </span>
+                    <img class="logo__img" src="../images/navbar_logo.svg" alt="logo">
+                    <span class="logo__text"> Paradigm Psychiatry </span>
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"> <a class="nav__link fromLeft" href="../index.html">Home</a></li>
                         <li class="nav__item"> <a class="nav__link fromLeft" href="./about_us.html">About Us</a> </li>
-                        <li class="nav__item"> <a class="nav__link fromLeft" href="./services.html">Services</a> </li>
+                        <li class="nav__item"> <a class="nav__link fromLeft" href="./services.html">Services</a></li>
                         <li class="nav__item"> <a class="nav__link fromLeft" href="./policies.html">Policies</a></li>
                         <li class="nav__item"> <a class="nav__link fromLeft" href="./providers.html">Providers</a></li>
                         <li class="nav__item"> <a class="nav__link fromLeft" href="./contact.html">Contact</a></li>
@@ -60,109 +63,97 @@
     </section>
 
     <main>
-        <section id="schedule-appointment">
-            <div class="content">
-                <div class="row-padding">
+        <section id="schedule_appointment">
+            <div class="column_container">
 
-                    <!-- New Patients Section -->
-                    <div class="half-container">
-                        <div class="container card">
-                            <div class="container">
-                                <h1>New Patients</h1>
-                                <p>Welcome to our practice! We're thrilled to have you as a new patient. Taking the first step towards your health and wellness journey is easy. Simply click the button below to schedule your first appointment with us using CharmHealth. Our team is dedicated to providing personalized care, and CharmHealth makes the process seamless. We look forward to meeting you and addressing your healthcare needs.</p>
-                                <div class="center-horizontally">
-                                    <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">First-Time Appointment</button>
-                                </div>
-                            </div>
-                        </div>
+                <!-- New Patients Section -->
+                <div class="onehalf_column global_padding">
+                    <h1>New Patients</h1>
+                    <p>Welcome to our practice! We are thrilled to have you as a new patient. Taking the first step towards your health and wellness journey is easy. Simply click the button below to schedule your first appointment with us using CharmHealth. Our team is dedicated to providing personalized care, and CharmHealth makes the process seamless. We look forward to meeting you and addressing your healthcare needs.</p>
+                    <div class="center_horizontal">
+                        <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">First-Time Appointment</button>
                     </div>
+                </div>
 
-                    <!-- Existing Patients Section -->
-                    <div class="half-container otherhalf-container">
-                        <div class="container card">
-                            <div class="container">
-                                <h1>Existing Patients</h1>
-                                <p>Thank you for choosing us again for your healthcare needs! We appreciate your trust in our services. To make your next appointment convenient and seamless, click the button below to schedule using CharmHealth. Whether it's a follow-up, consultation, or routine check-up, we're here to ensure you receive the best care. Welcome back!</p>
-                                <div class="center-horizontally">
-                                    <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">Follow-up Appointment</button>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Existing Patients Section -->
+                <div class="otherhalf_column global_padding">
+                    <h1>Existing Patients</h1>
+                    <p>Thank you for choosing us again for your healthcare needs! We appreciate your trust in our services. To make your next appointment convenient and seamless, click the button below to schedule using CharmHealth. Whether it is a follow-up, consultation, or routine check-up, we are here to ensure you receive the best care. Welcome back!</p>
+                    <div class="center_horizontal">
+                        <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">Follow-up Appointment</button>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="appointment-information">
-            <div class="content">
-                <div class="row-padding">
-                    <div class="whole-container">
-                        <div class="container card">
-                            <div class="container">
-                                <h1>Appointment Information</h1>
-                                <h2>Before Your Appointment</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                
-                                <h2>During Your Appointment</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                
-                                <h2>After Your Appointment</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div>
+
+        <section id="appointment_information">
+            <div class="row">
+                <div class="whole_column global_padding">
+                    <h1>Appointment Information</h1>
+                    <h2>Before Your Appointment</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <h2>During Your Appointment</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <h2>After Your Appointment</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Back to top button -->
-    <button id="backToTopBtn" onclick="scrollToTop()">
-        <i class="fa fa-arrow-circle-up"></i> Back to Top
-    </button>
-
     <!-- Footer -->
     <footer>
-        <div class="footer-info">
-            <div class="footer-width footer-about">
-                <h2>About</h2>
-                <p>Paradigm Psychiatry is a telemedicine psychiatry clinic located in Chandler, AZ. We also offer in-office service, and day appointment may be available. </p>
+        <div class="row">
+            <div class="column_container">
+                <div class="half_column">
+                    <div class="footer_quick_links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./about_us.html">About Us</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./policies.html">Policies</a></li>
+                            <li><a href="./providers.html">Providers</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                            <li class="last_item"><a href="./resources.html">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="half_column">
+                    <div class="footer_contact">
+                        <h2>Contact</h2>
+                        <div class="contact_footer">
+                            <ul class="columns">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p class="contact_margin_right">2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>info@paradigmpsychiatry.com</p>
+                                </li>
+                                <li class="last_item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>(480) 900-8515</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-width footer-links">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About Us</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./policies.html">Policies</a></li>
-                    <li><a href="./providers.html">Providers</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./resources.html">Resources</a></li>
-                </ul>
+            <div class="whole_column">
+                <h2>Copyright &copy 2023 Paradigm Psychiatry - All Rights Reserved</h2>
             </div>
-            <div class="footer-width footer-contact">
-                <h2>Contact</h2>
-                <ul>
-                    <li>
-                        <span><i class="fa fa-map-marker fa-fw"></i></span>
-                        <p>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-envelope fa-fw"></i></span>
-                        <p>info@paradigmpsychiatry.com</p>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-phone fa-fw"></i></span>
-                        <p>(480) 613-9599</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-copy-right">
-            <p>Copyright © 2023 Paradigm Psychiatry - All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Back To Top button -->
+    <button type="button" id="backToTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-up-long"></i> Back to Top
+    </button>
 </body>
 
 </html>

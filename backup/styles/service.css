@@ -1,0 +1,102 @@
+#endeavor_rx h1 {
+    padding-top: 16px;
+}
+
+#endeavor_rx ul {
+    line-height: 1.5;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+#endeavor_rx ul li,
+main ul li {
+    font-weight: 500;
+}
+
+#adhd_testing .left-image,
+#adhd_testing .right-image {
+    width: 100%;
+}
+
+#adhd_testing .left-image {
+    padding-right: 16px;
+}
+
+#adhd_testing .right-image {
+    padding-left: 16px;
+}
+
+.center-image {
+    display: block;
+    margin: 32px auto 16px;
+    width: 100%;
+}
+
+.checklist li {
+    font-weight: 500;
+    margin-left: -12px;
+    padding-left: 0;
+    position: relative;
+}
+
+.checklist ul {
+    line-height: 1.5;
+    list-style: none;
+}
+
+.checklist ul li:before {
+    content: '✓';
+}
+
+.imagessidebyside_column {
+    float: left;
+    width: 50%;
+}
+
+.imagessidebyside_row,
+#endeavor_rx {
+    margin-top: 16px;
+}
+
+.imagessidebyside_row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.third,
+.twothird {
+    float: left;
+    width: 100%;
+}
+
+main {
+    margin: 108px 0 16px;
+}
+
+main h1 {
+    color: var(--brand-green);
+    margin-top: 8px;
+}
+
+main ul {
+    line-height: 1.5;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+    .third {
+        width: 33.33333%;
+    }
+
+    .twothird {
+        width: 66.66666%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .center-image {
+        margin-top: 0 !important;
+    }
+}

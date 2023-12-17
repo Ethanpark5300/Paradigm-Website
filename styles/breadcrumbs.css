@@ -1,12 +1,12 @@
 ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 16px 16px;
     list-style: none;
 }
 
 ul.breadcrumb li {
     display: inline;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 ul.breadcrumb li+li:before {
@@ -16,7 +16,7 @@ ul.breadcrumb li+li:before {
 }
 
 ul.breadcrumb li a {
-    color: #005580;
+    color: var(--brand-green);
     text-decoration: none;
 }
 
@@ -24,6 +24,4 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.breadcrumbs {
-    margin-top: 16px;
-}
+/* TODO: Make breadcrumbs align with h1 */

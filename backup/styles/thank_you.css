@@ -1,0 +1,51 @@
+main {
+    margin: 16px 0 16px !important;
+}
+
+h1 {
+    text-align: center;
+    color: var(--brand-green);
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+main p:nth-child(5),
+main p:nth-child(8) {
+    margin-bottom: 0px;
+}
+
+main button {
+    background: var(--brand-blue);
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 20%;
+    white-space: normal;
+}
+
+@media screen and (max-width: 800px) {
+    main button {
+        width: 80%;
+    }
+}
+
+#thank_you a {
+    text-decoration: none;
+}
+
+#thank_you a:hover {
+    text-decoration: underline;
+}
+
+main button:hover {
+    transform: scale(1.1);
+}

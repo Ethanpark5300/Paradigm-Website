@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--brand-green);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@media (hover: hover) {
+    #backToTopBtn:hover {
+        
+        opacity: .5;
+    }
+}

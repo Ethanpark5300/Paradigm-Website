@@ -1,95 +1,96 @@
-#contact a {
-    text-decoration: none;
+main {
+    margin-top: 106px;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+#contact_form,
+.contact_information {
+    padding: 0 32px;
 }
 
-.building-address,
-.phone-numbers,
-.email-addresses,
-.open-hours {
-    margin-bottom: 16px;
-}
-
-.row-padding,
-.row-padding>.third,
-.row-padding>.twothird {
-    padding: 0 8px !important;
-}
-
-.tag {
-    color: var(--brand-green);
-    font-weight: 600;
-}
-
-.third,
-.twothird {
-    float: left;
-    width: 100%;
-}
-
-button[type=submit] {
-    background: var(--brand-blue);
-    border: none;
-    border-radius: 16px;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    padding: 16px;
-    transition: all .2s;
-    width: 50%;
-}
-
-button[type=submit]:hover {
-    transform: scale(1.1);
-}
-
-h1 {
-    color: var(--brand-green);
-    text-align: center;
-}
-
-input,
-textarea {
+main input,
+main textarea {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-    font-weight: 600;
-    margin-bottom: 16px !important;
-    margin-top: 4px !important;
+    margin: 4px 0 16px;
     padding: 12px;
     resize: vertical;
     width: 100%;
 }
 
-label {
-    font-weight: 600;
+main textarea {
+    height: 180px;
+    margin-top: 6px;
 }
 
-main {
-    margin: 108px 0 16px;
+main button[type=submit] {
+    background: var(--brand-green);
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 50%;
+    font-size: var(--body-font-size);
 }
 
-textarea {
-    height: 200px;
+main button[type=submit]:hover {
+    transform: scale(1.1);
 }
 
-@media screen and (min-width: 1024px) {
-    .third {
-        width: 33.33333%;
-    }
+.office-location,
+.phone-numbers,
+.email-addresses,
+.office-hours {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
 
-    .twothird {
-        width: 66.66666%;
-    }
+main .key {
+    font-family: var(--header-font);
+    color: var(--brand-green);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
-    .twothird {
-        margin-bottom: 16px;
+    main .column_container {
+        display: block;
+    }
+
+    main .onethird_column,
+    main .twothird_column {
+        width: 100%;
+    }
+
+    main .twothird_column,
+    main .onethird_column {
+        margin-top: -8px;
+    }
+
+    main h1 {
+        padding-top: 16px;
+    }
+
+    .contact_information {
+        text-align: center;
+    }
+
+    main p {
+        padding-bottom: 0;
+    }
+
+    main p:nth-child(8) {
+        padding-bottom: 16px;
     }
 }

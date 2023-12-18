@@ -64,6 +64,10 @@ main a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    main {
+        margin-top: 114px;
+    }
+
     main .column_container {
         display: block;
     }

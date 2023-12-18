@@ -23,7 +23,7 @@ footer i {
 
 .footer_contact ul li {
     display: flex;
-    margin: 0 0 16px 0px;
+    margin-bottom: 16px;
     align-items: center;
 }
 
@@ -87,7 +87,7 @@ footer .whole_column h2 {
         width: 100%;
     }
 
-    .contact_footer {
+    .footer_contact {
         padding-right: 32px;
     }
 

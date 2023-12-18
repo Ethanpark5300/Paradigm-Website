@@ -43,6 +43,54 @@ main {
     width: 150px;
 }
 
+@media screen and (max-width: 480px) {
+    .hero_container {
+        padding: 48px;
+    }
+
+    .hero_container h1 {
+        font-size: 42px !important;
+        color: red !important;
+    }
+
+    #hero img {
+        width: 63% !important;
+        height: 63% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero_container {
+        padding: 48px;
+    }
+
+    .hero_container h1 {
+        font-size: 36px !important;
+        color: green !important;
+    }
+
+    #hero img {
+        width: 60% !important;
+        height: 60% !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero_container {
+        padding: 32px;
+    }
+
+    .hero_container h1 {
+        font-size: 32px !important;
+        color: blue !important;
+    }
+
+    #hero img {
+        width: 57% !important;
+        height: 57% !important;
+    }
+}
+
 /* Welcome Section */
 #welcome {
     margin-top: 16px;

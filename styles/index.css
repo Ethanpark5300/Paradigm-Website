@@ -49,13 +49,13 @@ main {
     }
 
     .hero_container h1 {
-        font-size: 42px !important;
-        color: red !important;
+        font-size: 40px !important;
+        /* color: red !important; */
     }
 
     #hero img {
-        width: 63% !important;
-        height: 63% !important;
+        width: 64% !important;
+        height: 64% !important;
     }
 }
 
@@ -66,7 +66,7 @@ main {
 
     .hero_container h1 {
         font-size: 36px !important;
-        color: green !important;
+        /* color: green !important; */
     }
 
     #hero img {
@@ -82,12 +82,12 @@ main {
 
     .hero_container h1 {
         font-size: 32px !important;
-        color: blue !important;
+        /* color: blue !important; */
     }
 
     #hero img {
-        width: 57% !important;
-        height: 57% !important;
+        width: 55% !important;
+        height: 55% !important;
     }
 }
 

@@ -65,7 +65,7 @@ main {
     }
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 548px) {
     .service {
         width: 100%;
     }

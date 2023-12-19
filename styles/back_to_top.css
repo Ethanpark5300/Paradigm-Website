@@ -17,9 +17,12 @@ html {
     transition: 0.2s;
 }
 
+#backToTopBtn i {
+    margin-right: 6px;
+}
+
 @media (hover: hover) {
     #backToTopBtn:hover {
-        
-        opacity: .5;
+        background: rgba(66, 127, 112, 0.5);
     }
 }

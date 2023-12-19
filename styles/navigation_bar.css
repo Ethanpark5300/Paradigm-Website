@@ -106,7 +106,6 @@
     border-bottom: solid 8px var(--brand-green);
     content: '';
     display: block;
-    /* TODO: Testing */
     margin-bottom: -16px;
     padding-bottom: 16px;
     transform: scaleX(0);
@@ -136,10 +135,6 @@
 
 #navigation_bar br {
     display: none;
-}
-
-#navigation_bar button {
-    border: none;
 }
 
 #navigation_bar ul {
@@ -174,6 +169,7 @@ a[x-apple-data-detectors] {
 nav button {
     background: var(--brand-green);
     border-radius: 1000px;
+    border: none;
     color: #FFF;
     cursor: pointer;
     font-size: 14px;

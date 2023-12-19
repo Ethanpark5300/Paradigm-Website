@@ -15,9 +15,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
-    /* position: relative; */
+    height: var(--screen-height);
+    position: relative;
 }
+
 
 .hero_text {
     color: var(--brand-green);

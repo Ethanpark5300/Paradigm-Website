@@ -1,5 +1,5 @@
 main {
-    margin-top: 106px;
+    margin-top: 114px;
 }
 
 main h1 {
@@ -31,6 +31,10 @@ main button {
     margin: 16px 0;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+main button:hover {
+    transform: scale(1.1);
 }
 
 #appointment_information {

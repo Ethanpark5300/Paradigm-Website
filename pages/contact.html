@@ -39,13 +39,13 @@
                 <img class="logo_img" src="../images/navbar_logo.svg">
                 <span class="logo_text">Paradigm<br> Psychiatry</span>
             </a>
-    
+
             <input type="checkbox" id="check">
             <label for="check" class="icons">
                 <i class="bx bx-menu" id="menu-icon"></i>
                 <i class="bx bx-x" id="close-icon"></i>
             </label>
-    
+
             <nav class="navbar">
                 <div class="center_horizontal">
                     <a href="../index.html" class="nav__link" style="--i:0">Home</a>
@@ -133,13 +133,61 @@
                     </div>
                     <div class="office-hours">
                         <p class="key"><i class="fa-solid fa-calendar-days"></i>Office Hours</p>
-                        <p class="value">Monday: 8:00 AM to 6:00 PM</p>
+                        <div class="center_horizontal">
+                            <table>
+                                <!-- <thead>
+                                                                <tr>
+                                                                    <th>Day</th>
+                                                                    <th>Opening Time</th>
+                                                                    <th>Closing Time</th>
+                                                                </tr>
+                                                            </thead> -->
+                                <tbody>
+                                    <tr>
+                                        <td>Monday</td>
+                                        <td>8:00 AM</td>
+                                        <td>6:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday</td>
+                                        <td>8:00 AM</td>
+                                        <td>6:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wednesday</td>
+                                        <td>8:00 AM</td>
+                                        <td>5:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thursday</td>
+                                        <td>8:00 AM</td>
+                                        <td>5:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday</td>
+                                        <td>8:00 AM</td>
+                                        <td>12:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td>Closed</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td>Closed</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <p class="value">Monday: 8:00 AM to 6:00 PM</p>
                         <p class="value">Tuesday: 8:00 AM to 6:00 PM</p>
                         <p class="value">Wednesday: 8:00 AM to 5:00 PM</p>
                         <p class="value">Thursday: 8:00 AM to 5:00 PM</p>
                         <p class="value">Friday: 8:00 AM to 12:00 PM (Telemedicine)</p>
                         <p class="value">Saturday: Closed</p>
-                        <p class="value">Sunday: Closed</p>
+                        <p class="value">Sunday: Closed</p> -->
                     </div>
                 </div>
             </div>
@@ -193,6 +241,18 @@
 
     <!-- Back To Top button -->
     <button type="button" id="backToTopBtn" onclick="scrollToTop()"></button>
+    <script>
+        
+        // JavaScript to add a class when the form receives focus
+        document.getElementById('contact_form').addEventListener('focusin', function () {
+            this.classList.add('focus');
+        });
+
+        // JavaScript to remove the class when the form loses focus
+        document.getElementById('contact_form').addEventListener('focusout', function () {
+            this.classList.remove('focus');
+        });
+    </script>
 </body>
 
 </html>

@@ -150,7 +150,7 @@ header .center_horizontal {
 }
 
 .navbar a::-moz-selection, 
-::selection {
+.navbar a::selection {
     color: #2c554b;
 }
 

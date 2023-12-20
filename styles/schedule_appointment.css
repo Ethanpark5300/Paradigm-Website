@@ -20,7 +20,7 @@ main p {
 
 main button {
     background: var(--brand-green);
-    border-radius: 1000px;
+    border-radius: 16px;
     border: none;
     color: #fff;
     cursor: pointer;

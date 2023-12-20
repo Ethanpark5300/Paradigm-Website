@@ -3,6 +3,10 @@ main {
     margin-top: 114px;
 }
 
+html {
+    scroll-padding: 7rem;
+}
+
 h1 {
     padding-top: 24px;
     background: white;

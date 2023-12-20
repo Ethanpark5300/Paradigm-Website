@@ -7,10 +7,14 @@ main {
     padding: 0 32px;
 }
 
+.contact_information i {
+    margin-right: 16px;
+}
+
 main input,
 main textarea {
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 16px;
     box-sizing: border-box;
     margin: 4px 0 16px;
     padding: 12px;
@@ -65,7 +69,7 @@ main a:hover {
 
 @media screen and (max-width: 1024px) {
     main {
-        margin-top: 114px;
+        margin-top: 122px;
     }
 
     main .column_container {

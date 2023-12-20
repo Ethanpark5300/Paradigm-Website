@@ -116,19 +116,19 @@
                         <img src="./images/alexandra_moore.jpeg">
                         <h2>Alexandra Moore</h2>
                         <h3>DNP, PMHNP-BC</h3>
-                        <button onclick="location.href='./pages/providers.html#alexandra_moore'"> Meet Allie</button>
+                        <button class="arrow" onclick="location.href='./pages/providers.html#alexandra_moore'"><span>Meet Allie</span></button>
                     </div>
                     <div class="third_column">
                         <img src="./images/jill_abernathy.jpeg">
                         <h2>Jill Abernathy</h2>
                         <h3>PMHNP-BC</h3>
-                        <button onclick="location.href='./pages/providers.html#jill_abernathy'"> Meet Jill</button>
+                        <button class="arrow" onclick="location.href='./pages/providers.html#jill_abernathy'"><span>Meet Jill</span></button>
                     </div>
                     <div class="third_column">
                         <img src="./images/kionglee_jung.jpeg">
                         <h2>Kionglee Jung</h2>
                         <h3>DNP, PMHNP, FNP - BC</h3>
-                        <button onclick="location.href='./pages/providers.html#kionglee_jung'"> Meet Lee</button>
+                        <button class="arrow" onclick="location.href='./pages/providers.html#kionglee_jung'"><span>Meet Lee</span></button>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
             <div class="row box_shadow">
                 <div class="whole_column">
                     <h1>Office Location</h1>
-                    <h2><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</h2>
+                    <h2><i class="fa-solid fa-location-dot"></i>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</h2>
                     <div class="map_container">
                         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.9006833119975!2d-111.88703312475792!3d33.321411855967305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b07abe6c53195%3A0xda57b0f1ff7d4821!2sParadigm%20Psychiatry!5e0!3m2!1sen!2sus!4v1697180534594!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
                     </div>
@@ -188,28 +188,77 @@
                     <div class="contact_information">
                         <h1>Contact Information</h1>
                         <div class="office-location">
-                            <p class="key"><i class="fa-solid fa-location-dot"></i>&nbsp; Office Location</p>
+                            <p class="key"><i class="fa-solid fa-location-dot"></i>Office Location</p>
                             <p class="value">2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
                         </div>
                         <div class="phone-numbers">
-                            <p class="key"><i class="fa-solid fa-phone"></i>&nbsp; Phone Numbers</p>
+                            <p class="key"><i class="fa-solid fa-phone"></i>Phone Numbers</p>
                             <p class="value">Office: <a href="tel:+4806139599">(480) 613-9599</a></p>
                             <p class="value">Fax: <a href="tel:+4809008515">(480) 900-8515</a></p>
                         </div>
                         <div class="email-addresses">
-                            <p class="key"><i class="fa-solid fa-envelope"></i>&nbsp; Email Addresses</p>
-                            <p class="value">General Inquiry: <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a></p>
+                            <p class="key"><i class="fa-solid fa-envelope"></i>Email Addresses</p>
+                            <p class="value">General Inquiry: <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a></p> <br>
                             <p class="value">Billing Inquiry: <a href="mailto:billing@paradigmpsychiatry.com">billing@paradigmpsychiatry.com</a></p>
                         </div>
                         <div class="office-hours">
-                            <p class="key"><i class="fa-solid fa-calendar-days"></i>&nbsp; Office Hours</p>
-                            <p class="value">Monday: 8:00 AM to 6:00 PM</p>
+                            <p class="key"><i class="fa-solid fa-calendar-days"></i>Office Hours</p>
+                            <div class="center_horizontal">
+                               <table>
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Day</th>
+                                        <th>Opening Time</th>
+                                        <th>Closing Time</th>
+                                    </tr>
+                                </thead> -->
+                                <tbody>
+                                    <tr>
+                                        <td>Monday</td>
+                                        <td>8:00 AM</td>
+                                        <td>6:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday</td>
+                                        <td>8:00 AM</td>
+                                        <td>6:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wednesday</td>
+                                        <td>8:00 AM</td>
+                                        <td>5:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thursday</td>
+                                        <td>8:00 AM</td>
+                                        <td>5:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday</td>
+                                        <td>8:00 AM</td>
+                                        <td>12:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td>Closed</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td>Closed</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            </div>
+                            
+                            <!-- <p class="value">Monday: 8:00 AM to 6:00 PM</p>
                             <p class="value">Tuesday: 8:00 AM to 6:00 PM</p>
                             <p class="value">Wednesday: 8:00 AM to 5:00 PM</p>
                             <p class="value">Thursday: 8:00 AM to 5:00 PM</p>
                             <p class="value">Friday: 8:00 AM to 12:00 PM (Telemedicine)</p>
                             <p class="value">Saturday: Closed</p>
-                            <p class="value">Sunday: Closed</p>
+                            <p class="value">Sunday: Closed</p> -->
                         </div>
                     </div>
                 </div>
@@ -263,9 +312,7 @@
     </footer>
 
     <!-- Back To Top button -->
-    <button type="button" id="backToTopBtn" onclick="scrollToTop()">
-        <i class="fa-solid fa-up-long"></i> Back to Top
-    </button>
+    <button type="button" id="backToTopBtn" onclick="scrollToTop()"></button>
 </body>
 
 </html>

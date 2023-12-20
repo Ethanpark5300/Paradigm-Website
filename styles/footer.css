@@ -10,7 +10,7 @@ footer h2 {
 }
 
 footer .half_column {
-    background-color: rgb(34, 34, 34);
+    background-color: #222222;
 }
 
 footer li {
@@ -61,6 +61,7 @@ footer p {
 
 .footer_contact {
     text-align: center;
+    line-height: 1.5;
 }
 
 .footer_quick_links .last_item,

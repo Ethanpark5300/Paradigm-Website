@@ -36,22 +36,26 @@ main {
     width: 100%;
 }
 
-#services button {
-    background: var(--brand-green);
-    border-radius: 1000px;
-    border: none;
-    color: #FFF;
-    cursor: pointer;
+#services .arrow span::after {
     font-size: 16px;
-    margin-top: 8px;
-    padding: 8px 20px;
-    text-transform: uppercase;
-    transition: all .2s;
 }
 
-#services button:hover {
-    transform: scale(1.1);
+#services button {
+    font-size: 16px;
+    background: var(--brand-green);
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s;
+    white-space: nowrap;
+    margin-top: 8px;
 }
+
+/* #services button:hover {
+    transform: scale(1.1);
+} */
 
 @media screen and (max-width: 1367px) {
     .service {

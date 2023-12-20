@@ -19,7 +19,7 @@ body {
 
 :root {
     --brand-red: #994d4b;
-    --brand-green: #427F70;
+    --brand-green: #40806f;
     --brand-blue: #005580;
     --heading-font-size: 36px;
     --body-font-size: 18px;
@@ -35,8 +35,8 @@ h1 {
     text-align: center;
     font-size: var(--heading-font-size);
     text-transform: uppercase;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 @media screen and (max-width: 400px) {
@@ -143,6 +143,12 @@ textarea {
     align-items: center;
 }
 
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 /* Wrap text within the div */
 /* .word_wrap {
     white-space: pre-wrap;
@@ -161,4 +167,30 @@ textarea {
 
 .box_shadow {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.arrow span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.arrow span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.arrow:hover span {
+    padding-right: 20px;
+}
+
+.arrow:hover span:after {
+    opacity: 1;
+    right: 0;
 }

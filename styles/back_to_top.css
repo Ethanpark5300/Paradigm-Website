@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding: 6rem;
 }
 
 #backToTopBtn {
@@ -11,10 +10,15 @@ html {
     background: var(--brand-green);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.2s;
+}
+
+#backToTopBtn::before {
+    content: '\f35b';
+    font: var(--fa-font-solid);
 }
 
 #backToTopBtn i {
@@ -23,6 +27,6 @@ html {
 
 @media (hover: hover) {
     #backToTopBtn:hover {
-        background: rgba(66, 127, 112, 0.5);
+        background: rgba(66, 127, 112, .66);
     }
 }

@@ -27,12 +27,12 @@ main .global_padding {
 }
 
 .accordion .block.active .question::before {
-    content: '-';
-    font-size: 30px;
+    content: '\f0d8';
+    font: var(--fa-font-solid);
+    font-size: 24px;
 }
 
 .accordion .question {
-    color: #427F70;
     cursor: pointer;
     font-size: 24px;
     padding: 10px 32px 10px 0;
@@ -42,12 +42,12 @@ main .global_padding {
 }
 
 .accordion .question::before {
-    color: #427F70;
-    content: '+';
-    font-size: 32px;
+    content: '\f0d7';
+    font-size: 30px;
     position: absolute;
     right: -5px;
     top: 50%;
+    font: var(--fa-font-solid);
     transform: translateY(-50%);
 }
 

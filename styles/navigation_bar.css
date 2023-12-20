@@ -134,7 +134,7 @@ header .center_horizontal {
 
 #bottom_bar button {
     background: var(--brand-green);
-    border-radius: 1000px;
+    border-radius: 16px;
     border: none;
     color: #FFF;
     cursor: pointer;
@@ -147,6 +147,11 @@ header .center_horizontal {
 
 #bottom_bar button:hover {
     background: #2c554b;
+}
+
+.navbar a::-moz-selection, 
+::selection {
+    color: #2c554b;
 }
 
 @media screen and (max-width: 1248px) {
@@ -165,7 +170,6 @@ header .center_horizontal {
     .nav__link::before {
         top: 25px
     }
-
 
     header .center_horizontal {
         display: flex;
@@ -201,11 +205,11 @@ header .center_horizontal {
         background: white;
         overflow: hidden;
         transition: .3s ease;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
 
     #check:checked~.navbar {
         height: 452px;
+        border-bottom: 2px solid gray;
     }
 
     .navbar a {

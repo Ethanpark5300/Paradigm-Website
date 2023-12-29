@@ -1,65 +1,78 @@
-/* Global Styles */
-main {
-    margin-top: 114px;
+header {
+    font-size: 40px;
+    font-weight: var(--header-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    margin-top: 98px;
 }
 
-html {
-    scroll-padding: 7rem;
+body {
+    background-color: var(--background-color);
 }
 
-h1 {
-    padding-top: 24px;
-    background: white;
+.provider-name {
+    font-weight: var(--header-font-weight);
+    font-size: 24px;
+    margin-top: var(--body-font-size);
 }
 
-h3 {
-    color: gray;
-    opacity: .75;
-    font-weight: 400;
+.provider-specialty {
     font-size: 16px;
+    font-weight: var(--header-font-weight);
 }
 
-main p {
-    margin-top: 16px;
+#providers .global-padding {
+    padding: 0 1in;
+}
+
+#providers .provider-biography p {
+    padding-right: 32px;
     line-height: 1.5;
-}
-
-hr {
-    width: 95%;
-    margin: 0 auto var(--body-font-size);
-    border: 0;
-    border-top: 1px solid gray;
-    opacity: .33;
+    margin: var(--body-font-size) 0;
 }
 
 #providers img {
     width: 275px;
     height: 275px;
-    margin: 16px 0;
+    border-radius: 16px;
+    border: 6px solid var(--brand-green);
 }
 
-#providers .global_padding {
-    padding: 0 1in;
+#providers hr {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid var(--brand-blue);
 }
 
-#providers .twothird_column {
-    padding-right: 32px;
+#alexandra_moore {
+    scroll-margin-top: 5.5rem;
 }
 
-#alexandra_moore p:nth-last-child(1),
-#jill_abernathy p:nth-last-child(1),
-#kionglee_jung p:nth-last-child(1) {
-    margin-bottom: 16px;
+#jill_abernathy {
+    scroll-margin-top: 5.5rem;
 }
 
-@media screen and (max-width: 900px) {
-    #alexandra_moore p:nth-last-child(1),
-    #jill_abernathy p:nth-last-child(1),
-    #kionglee_jung p:nth-last-child(1) {
-        margin-bottom: 0;
+#kionglee_jung {
+    scroll-margin-top: 5.5rem;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 400px) {}
+
+@media (max-width: 320px) {}
+
+@media (max-width: 1024px) {
+    #providers .global-padding {
+        padding: 0 32px;
     }
 
-    #providers .column_container {
+    #providers .column-container {
         display: block;
     }
 
@@ -68,9 +81,21 @@ hr {
         height: auto;
     }
 
-    #providers .onethird_column,
-    #providers .twothird_column {
+    #providers .one-third-column,
+    #providers .two-third-column {
         width: 100%;
+    }
+
+    #providers .provider-biography p {
+        padding-right: 0px;
+    }
+
+    #providers hr {
+        margin-top: var(--body-font-size);
+    }
+
+    footer {
+        margin-top: var(--body-font-size);
     }
 }
 

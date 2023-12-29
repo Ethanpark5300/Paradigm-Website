@@ -1,39 +1,26 @@
-/* Global Styles */
-main {
-    margin-top: 114px;
+header {
+    font-size: 40px;
+    font-weight: var(--header-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
 }
 
-main h1 {
-    margin-top: -16px;
-    margin-bottom: 24px;
+body {
+    background-color: var(--background-color);
 }
 
 main p {
-    margin-top: 16px;
     line-height: 1.5;
-}
-
-main p:nth-last-child(1) {
-    margin-bottom: 16px;
+    margin: var(--body-font-size) 0;
 }
 
 main img {
-    width: 50%;
+    width: 66%;
     height: auto;
-}
-
-@media screen and (max-width: 1024px) {
-    main img {
-        width: 75%;
-    }
-
-    main .global_padding {
-        padding: 0 32px;
-    }
-
-    main h1 {
-        margin-top: 0px;
-    }
+    margin-top: var(--body-font-size);
 }
 
 @media screen and (max-width: 480px) {
@@ -42,104 +29,75 @@ main img {
     }
 }
 
-main ul {
+#genetic-testing p:nth-child(2) {
+    margin: 0;
+}
+
+#genetic-testing p:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+#genetic-testing ul li {
     line-height: 1.5;
-    padding-left: 1.5em;
-    position: relative;
 }
 
-/* Genetic Testing Section */
-#genetic_testing p:nth-child(5) {
-    margin-bottom: 16px;
+#genetic-testing img {
+    margin: var(--body-font-size) 0;
 }
 
-.checklist li {
-    margin-left: -12px;
-    padding-left: 0;
-    position: relative;
-}
-
-.checklist ul {
-    line-height: 1.5;
-    list-style: none;
-}
-
-.checklist ul li:before {
-    content: '✓';
-    padding-right: 8px;
-}
-
-#genetic_testing img:nth-child(1) {
-    margin-bottom: 16px;
-}
-
-/* ADHD Testing */
-.images_side_by_side_row {
+#adhd-testing .images-side-by-side-container {
     text-align: center;
 }
 
-.images_side_by_side_column {
-    float: left;
-    width: 50%;
-}
-
-.images_side_by_side_row::after {
+#adhd-testing .images-side-by-side-container::after {
     clear: both;
     content: "";
     display: table;
 }
 
-@media screen and (max-width: 1024px) {
-    .images_side_by_side_column {
+#adhd-testing .image-side-by-side {
+    float: left;
+    width: 50%;
+}
+
+#adhd-testing p:nth-child(2) {
+    margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+    #adhd-testing .image-side-by-side {
         width: 100%;
     }
 
-    .right_image {
-        margin-top: 16px;
+    #adhd-testing .image-side-by-side img:nth-last-child(1) {
+        margin-top: 0;
+    }
+
+    #adhd-testing p:nth-last-child(2) {
+        margin-bottom: var(--body-font-size) !important;
     }
 }
 
-.left_iamge,
-.right_image {
-    margin-bottom: 16px;
-}
-
-#adhd_testing p:nth-last-child(2) {
-    margin-bottom: 16px;
-}
-
-#endeavorrx {
-    margin-top: 16px;
-}
-
-#endeavorrx h1 {
-    margin-top: 24px;
-}
-
-#endeavorrx p:nth-last-child(2),
-#alternative_treatments p:nth-last-child(2),
-#alternative_treatments p:nth-last-child(4) {
+#adhd-testing p:nth-last-child(2) {
     margin-bottom: 0;
 }
 
-#endeavorrx ul,
-#alternative_treatments ul {
-    line-height: 1.5;
-    padding-left: 30px;
-    position: relative;
+#adhd-testing img {
+    margin-bottom: var(--body-font-size);
 }
 
-#endeavorrx ul li:nth-last-child(1),
-#alternative_treatments ul li:nth-last-child(1) {
-    margin-bottom: 16px;
-}
-
-/* Psychotherapy */
 #psychotherapy p i {
     font-size: 12px;
 }
 
-/* Alternative Treatments */
-#alternative_treatments .underline {
-    text-decoration: underline;
+#alternative-treatments ul li {
+    line-height: 1.5;
+}
+
+#alternative-treatments p:nth-child(3), #alternative-treatments p:nth-child(5) {
+    margin-bottom: 0;
+}
+
+#alternative-treatments {
+    margin-bottom: var(--body-font-size);
 }

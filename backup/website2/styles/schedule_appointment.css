@@ -1,0 +1,74 @@
+main {
+    margin-top: 114px;
+}
+
+main h1 {
+    margin: 24px 0;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+#schedule_appointment .global_padding {
+    padding: 0 32px;
+}
+
+#appointment_information .global_padding {
+    padding: 0 2in;
+}
+
+main button {
+    background: var(--brand-green);
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 16px;
+    transition: all 0.2s;
+    white-space: nowrap;
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+main button:hover {
+    transform: scale(1.1);
+}
+
+#appointment_information {
+    margin-top: 16px;
+}
+
+main h2:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+main h2:nth-child(4),
+main h2:nth-child(6) {
+    margin: 16px 0;
+}
+
+main p:nth-last-child(1) {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    main .column_container {
+        display: block;
+    }
+
+    main .onehalf_column,
+    main .otherhalf_column {
+        width: 100%
+    }
+
+    #schedule_appointment h1 {
+        padding-top: 24px
+    }
+
+    main .otherhalf_column {
+        margin-top: -8px !important;
+    }
+}

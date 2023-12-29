@@ -1,3 +1,82 @@
-main {
-    margin-top: 114px;
+header {
+    font-size: 40px;
+    font-weight: var(--header-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    margin-top: 98px;
+}
+
+#policies {
+    background-color: var(--background-color);
+}
+
+.global-padding {
+    padding: 0 32px;
+}
+
+.grid {
+    margin: 8px -16px;
+}
+
+.grid,
+.grid>.policy {
+    padding: 8px;
+}
+
+.policy {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: var(--background-color-darker);;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+#policies img {
+    width: 100%;
+}
+
+#policy-name {
+    font-size: var(--body-font-size);
+    font-weight: var(--header-font-weight);
+}
+
+#policies button {
+    background-color: var(--brand-green);
+    border-radius: 16px;
+    padding: 8px;
+    font-weight: var(--body-font-weight);
+    border: transparent;
+    color: #fff;
+    margin-top: 6px;
+}
+
+@media (max-width: 1349px) {
+    .policy {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .policy {
+        width: 50%;
+    }
+}
+
+@media (max-width: 699px) {
+    .policy {
+        width: 100%;
+    }
 }

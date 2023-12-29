@@ -1,5 +1,20 @@
-main {
-    margin-top: 114px;
+header {
+    font-size: 40px;
+    font-weight: var(--header-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    margin-top: 98px;
+}
+
+#services {
+    background-color: var(--background-color);
+}
+
+.global-padding {
+    padding: 0 32px;
 }
 
 .grid {
@@ -24,52 +39,43 @@ main {
 }
 
 .content {
-    background-color: #f1f1f1;
+    background-color: var(--background-color-darker);
     padding: 12px;
-}
-
-#services h1 {
-    margin-bottom: 8px;
+    border-radius: 8px;
 }
 
 #services img {
     width: 100%;
 }
 
-#services .arrow span::after {
-    font-size: 16px;
+#service-name {
+    font-size: var(--body-font-size);
+    font-weight: var(--header-font-weight);
 }
 
 #services button {
-    font-size: 16px;
-    background: var(--brand-green);
+    background-color: var(--brand-green);
     border-radius: 16px;
-    border: none;
+    padding: 8px;
+    font-weight: var(--body-font-weight);
+    border: transparent;
     color: #fff;
-    cursor: pointer;
-    padding: 10px;
-    transition: all 0.2s;
-    white-space: nowrap;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
-/* #services button:hover {
-    transform: scale(1.1);
-} */
-
-@media screen and (max-width: 1367px) {
+@media (max-width: 1069px) {
     .service {
-        width: 33%;
+        width: 33.33%;
     }
 }
 
-@media screen and (max-width: 1125px) {
+@media (max-width: 821px) {
     .service {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 548px) {
+@media (max-width: 559px) {
     .service {
         width: 100%;
     }

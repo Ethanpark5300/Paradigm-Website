@@ -1,0 +1,42 @@
+header {
+    font-size: 40px;
+    font-weight: var(--header-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main p {
+    line-height: 1.5;
+    margin: var(--body-font-size) 0;
+}
+
+main img {
+    width: 66%;
+    height: auto;
+    margin-top: var(--body-font-size);
+}
+
+@media screen and (max-width: 480px) {
+    main img {
+        width: 100%;
+    }
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+#canceled-missed-appointments p:nth-child(8) {
+    font-weight: var(--header-font-weight);
+}

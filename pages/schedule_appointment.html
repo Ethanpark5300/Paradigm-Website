@@ -2,117 +2,120 @@
 <html lang="en">
 
 <head>
-    <title>Schedule Appointment</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/navigation_bar.css">
+    <title>Schedule Appointment</title>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/font_awesome/css/brands.css">
+    <link rel="stylesheet" href="../assets/font_awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/font_awesome/css/solid.css">
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../components/BackToTopButton/BackToTopButton.css">
+    <script defer src='../components/BackToTopButton/BackToTopButton.js'></script>
+    <link rel="stylesheet" href="../components/NavigationBar/NavigationBar.css">
+    <link rel="stylesheet" href="../components/global.css">
+    <link rel="stylesheet" href="../components/footer.css">
     <link rel="stylesheet" href="../styles/schedule_appointment.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/back_to_top.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/brands.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/solid.css">
-    <script defer src="../scripts/back_to_top.js"> </script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <div id="top_bar">
-            <div class="top_contact">
+    <nav>
+        <div id="top-bar">
+            <div class="top-contact">
                 <div class="phone">
                     <i class="fa-solid fa-phone"></i>
-                    <span> 480-613-9599 </span>
+                    <span>480-613-9599</span>
                 </div>
                 <div class="email">
                     <i class="fa-solid fa-envelope"></i>
-                    <span> info@paradigmpsychiatry.com </span>
+                    <span>info@paradigmpsychiatry.com</span>
                 </div>
             </div>
         </div>
-        <div id="bottom_bar">
+        <div id="bottom-bar">
             <a href="../index.html" class="logo">
-                <img class="logo_img" src="../images/navbar_logo.svg">
-                <span class="logo_text">Paradigm<br> Psychiatry</span>
+                <img class="logo-img" src="../components/NavigationBar/NavigationBarLogo.svg" alt="Paradigm Psychiatry Logo">
+                <span class="logo-text">Paradigm<br> Psychiatry</span>
             </a>
-    
+
             <input type="checkbox" id="check">
             <label for="check" class="icons">
-                <i class="bx bx-menu" id="menu-icon"></i>
-                <i class="bx bx-x" id="close-icon"></i>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
             </label>
-    
-            <nav class="navbar">
-                <div class="center_horizontal">
-                    <a href="../index.html" class="nav__link" style="--i:0">Home</a>
+
+            <div class="navbar">
+                <div class="center-horizontal">
+                    <a href="../index.html" class="nav-link" style="--i:0">Home</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./about_us.html" class="nav__link" style="--i:1">About Us</a>
+                <div class="center-horizontal">
+                    <a href="./about_us.html" class="nav-link" style="--i:1">About Us</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./services.html" class="nav__link" style="--i:2">Services</a>
+                <div class="center-horizontal">
+                    <a href="./services.html" class="nav-link" style="--i:2">Services</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./policies.html" class="nav__link" style="--i:3">Policies</a>
+                <div class="center-horizontal">
+                    <a href="./providers.html" class="nav-link" style="--i:3">Providers</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./providers.html" class="nav__link" style="--i:4">Providers</a>
+                <div class="center-horizontal">
+                    <a href="./contact.html" class="nav-link" style="--i:4">Contact</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./contact.html" class="nav__link" style="--i:5">Contact</a>
+                <div class="center-horizontal">
+                    <a href="./faq.html" class="nav-link" style="--i:5">FAQ</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./faq.html" class="nav__link" style="--i:6">FAQ</a>
+                <div class="center-horizontal">
+                    <a href="./policies.html" class="nav-link" style="--i:6">Policies</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./resources.html" class="nav__link" style="--i:7">Resources</a>
+                <div class="center-horizontal">
+                    <a href="./resources.html" class="nav-link" style="--i:7">Resources</a>
                 </div>
-                <div class="center_horizontal">
+                <div class="center-horizontal">
                     <a style="--i:8" href="./schedule_appointment.html"><button>Schedule Appointment</button></a>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
-
+    </nav>
     <main>
-        <section id="schedule_appointment">
-            <div class="column_container">
-
-                <!-- New Patients Section -->
-                <div class="onehalf_column global_padding box_shadow">
-                    <h1>New Patients</h1>
-                    <p>Welcome to our practice! We are thrilled to have you as a new patient. Taking the first step towards your health and wellness journey is easy. Simply click the button below to schedule your first appointment with us using CharmHealth. Our team is dedicated to providing personalized care, and CharmHealth makes the process seamless. We look forward to meeting you and addressing your healthcare needs.</p>
-                    <div class="center_horizontal">
-                        <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">First-Time Appointment</button>
-                    </div>
-                </div>
-
-                <!-- Existing Patients Section -->
-                <div class="otherhalf_column global_padding box_shadow">
-                    <h1>Existing Patients</h1>
-                    <p>Thank you for choosing us again for your healthcare needs! We appreciate your trust in our services. To make your next appointment convenient and seamless, click the button below to schedule using CharmHealth. Whether it is a follow-up, consultation, or routine check-up, we are here to ensure you receive the best care. Welcome back!</p>
-                    <div class="center_horizontal">
-                        <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">Follow-up Appointment</button>
-                    </div>
+        <section id="schedule-appointment">
+            <header class="main-header">
+                <h1>Schedule Appointment</h1>
+            </header>
+            <div class="row">
+                <div class="column-container">
+                    <section id="new-patients" class="one-half-column">
+                        <header class="sub-header">New Patients</header>
+                        <div class="schedule-appointment-body">
+                            <p>Welcome to our practice! We are thrilled to have you as a new patient. Taking the first step towards your health and wellness journey is easy. Simply click the button below to schedule your first appointment with us using CharmHealth. Our team is dedicated to providing personalized care, and CharmHealth makes the process seamless. We look forward to meeting you and addressing your healthcare needs.</p>
+                            <div class="center-horizontal">
+                                <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e242de7065f63ed085818899c81f178b6220b26a26fea7f4272da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">First-Time Appointment</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="existing-patients" class="other-half-column">
+                        <header class="sub-header">Existing Patients</header>
+                        <div class="schedule-appointment-body">
+                            <p>Thank you for choosing us again for your healthcare needs! We appreciate your trust in our services. To make your next appointment convenient and seamless, click the button below to schedule using CharmHealth. Whether it is a follow-up, consultation, or routine check-up, we are here to ensure you receive the best care. Welcome back!</p>
+                            <div class="center-horizontal">
+                                <button onclick="window.location.href='https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=6130eaf2196878e21ab3c8a706cacba79227b8fb25e8615e3ae2d9eac344d1512da6cec48e5020f08b3e7b1b64a1650cdebf17855dc5f624';">Follow-up Appointment</button>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
-
-        <section id="appointment_information">
+        <section id="appointment-information">
+            <header class="main-header">
+                <h1>Appointment Information</h1>
+            </header>
             <div class="row">
-                <div class="whole_column global_padding box_shadow">
-                    <h1>Appointment Information</h1>
-                    <h2>Before Your Appointment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <h2>During Your Appointment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <h2>After Your Appointment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="whole-column global-padding">
+                    <p class="appointment-header">Before your appointment</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto consequuntur accusamus sunt eligendi deserunt dolorem rem doloribus quae asperiores tempora optio sapiente iusto natus nostrum id rerum odio, unde eveniet eos ipsam! Dicta animi perspiciatis dolore quod incidunt sequi beatae quasi, rerum corrupti accusantium praesentium fuga ab laborum porro eaque illum nam minus? Fugit nostrum illo consequuntur quidem voluptatem nam, ducimus distinctio voluptas! Voluptatem, voluptates, possimus eos atque iure sed odit laudantium maxime nesciunt pariatur quibusdam molestiae quia excepturi delectus commodi aspernatur maiores sit, ducimus culpa nostrum placeat a. At aliquam similique autem et alias dolorem numquam blanditiis rem rerum.</p>
+                    <p class="appointment-header">During your appointment</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto consequuntur accusamus sunt eligendi deserunt dolorem rem doloribus quae asperiores tempora optio sapiente iusto natus nostrum id rerum odio, unde eveniet eos ipsam! Dicta animi perspiciatis dolore quod incidunt sequi beatae quasi, rerum corrupti accusantium praesentium fuga ab laborum porro eaque illum nam minus? Fugit nostrum illo consequuntur quidem voluptatem nam, ducimus distinctio voluptas! Voluptatem, voluptates, possimus eos atque iure sed odit laudantium maxime nesciunt pariatur quibusdam molestiae quia excepturi delectus commodi aspernatur maiores sit, ducimus culpa nostrum placeat a. At aliquam similique autem et alias dolorem numquam blanditiis rem rerum.</p>
+                    <p class="appointment-header">After your appointment</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto consequuntur accusamus sunt eligendi deserunt dolorem rem doloribus quae asperiores tempora optio sapiente iusto natus nostrum id rerum odio, unde eveniet eos ipsam! Dicta animi perspiciatis dolore quod incidunt sequi beatae quasi, rerum corrupti accusantium praesentium fuga ab laborum porro eaque illum nam minus? Fugit nostrum illo consequuntur quidem voluptatem nam, ducimus distinctio voluptas! Voluptatem, voluptates, possimus eos atque iure sed odit laudantium maxime nesciunt pariatur quibusdam molestiae quia excepturi delectus commodi aspernatur maiores sit, ducimus culpa nostrum placeat a. At aliquam similique autem et alias dolorem numquam blanditiis rem rerum.</p>
                 </div>
             </div>
         </section>
@@ -121,52 +124,41 @@
     <!-- Footer -->
     <footer>
         <div class="row">
-            <div class="column_container">
-                <div class="half_column">
-                    <div class="footer_quick_links">
-                        <h2>Quick Links</h2>
+            <div class="column-container">
+                <div class="half-column footer-quick-links">
+                    <div class="footer-header">Quick Links</div>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about_us.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./providers.html">Providers</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./policies.html">Policies</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="half-column footer-contact">
+                    <div class="footer-header">Contact</div>
+                    <div class="center-horizontal">
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="./about_us.html">About Us</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./policies.html">Policies</a></li>
-                            <li><a href="./providers.html">Providers</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="./faq.html">FAQ</a></li>
-                            <li class="last_item"><a href="./resources.html">Resources</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</li>
+                            <li><i class="fa-solid fa-envelope"></i>info@paradigmpsychiatry.com</li>
+                            <li><i class="fa-solid fa-phone"></i>(480) 900-8515</li>
                         </ul>
                     </div>
                 </div>
-                <div class="half_column">
-                    <div class="footer_contact">
-                        <h2>Contact</h2>
-                        <div class="contact_footer">
-                            <ul class="columns">
-                                <li>
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <p class="contact_margin_right">2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <p>info@paradigmpsychiatry.com</p>
-                                </li>
-                                <li class="last_item">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <p>(480) 900-8515</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="whole_column">
-                <h2>Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</h2>
             </div>
         </div>
+        <div class="whole-column">Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</div>
     </footer>
 
-    <!-- Back To Top button -->
-    <button type="button" id="backToTopBtn" onclick="scrollToTop()"></button>
+    <!-- Back to Top Button -->
+    <button type="button" id="BackToTopButton" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" id="BackToTopButtonIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
 
 </html>

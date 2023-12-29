@@ -1,74 +1,104 @@
 main {
-    margin-top: 114px;
+    margin-top: 98px;
+    background-color: var(--background-color-darker);
 }
 
-main h1 {
-    margin: 24px 0;
+header.main-header {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    margin-bottom: var(--body-font-size);
 }
 
-main p {
-    line-height: 1.5;
+header.main-header h1 {
+    font-size: 40px;
 }
 
-#schedule_appointment .global_padding {
+#schedule-appointment .other-half-column {
+    width: 50%;
+    margin-left: var(--body-font-size);
+}
+
+#schedule-appointment .one-half-column,
+#schedule-appointment .other-half-column {
+    background-color: var(--background-color);
+}
+
+header.sub-header {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    font-size: 28px;
+    font-weight: var(--header-font-weight);
+}
+
+.schedule-appointment-body {
     padding: 0 32px;
+    line-height: 1.5;
+    margin-top: var(--body-font-size);
 }
 
-#appointment_information .global_padding {
-    padding: 0 2in;
+.schedule-appointment-body button {
+    margin: var(--body-font-size) 0;
 }
 
-main button {
-    background: var(--brand-green);
+.schedule-appointment-body button {
     border-radius: 16px;
-    border: none;
+    padding: 16px;
+    border: transparent;
+    background-color: var(--brand-green);
     color: #fff;
     cursor: pointer;
     font-size: 18px;
-    padding: 16px;
-    transition: all 0.2s;
-    white-space: nowrap;
-    margin: 16px 0;
     text-transform: uppercase;
-    font-weight: 500;
+    margin-bottom: var(--body-font-size);
+    font-weight: var(--header-font-weight);
+    transition: all 0.2s;
 }
 
-main button:hover {
-    transform: scale(1.1);
+.schedule-appointment-body button:hover {
+    background-color: var(--brand-green-hover);
 }
 
-#appointment_information {
-    margin-top: 16px;
-}
-
-main h2:nth-child(2) {
-    margin-bottom: 16px;
-}
-
-main h2:nth-child(4),
-main h2:nth-child(6) {
-    margin: 16px 0;
-}
-
-main p:nth-last-child(1) {
-    margin-bottom: 16px;
-}
-
-@media screen and (max-width: 1024px) {
-    main .column_container {
+@media (max-width: 1024px) {
+    #schedule-appointment .column-container {
         display: block;
     }
 
-    main .onehalf_column,
-    main .otherhalf_column {
-        width: 100%
+    #schedule-appointment .one-half-column,
+    #schedule-appointment .other-half-column {
+        width: 100%;
     }
 
-    #schedule_appointment h1 {
-        padding-top: 24px
+    #schedule-appointment .other-half-column {
+        margin: var(--body-font-size) 0 0 0;
     }
+}
 
-    main .otherhalf_column {
-        margin-top: -8px !important;
-    }
+#appointment-information {
+    margin-top: var(--body-font-size);
+}
+
+#appointment-information header {
+    margin-bottom: 0;
+}
+
+#appointment-information .whole-column {
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+.appointment-header {
+    font-weight: var(--header-font-weight);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: var(--body-font-size) 0;
+}
+
+#appointment-information p:nth-last-child(1) {
+    margin-bottom: var(--body-font-size);
 }

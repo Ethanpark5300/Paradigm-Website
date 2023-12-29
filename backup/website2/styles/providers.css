@@ -1,0 +1,82 @@
+/* Global Styles */
+main {
+    margin-top: 114px;
+}
+
+html {
+    scroll-padding: 7rem;
+}
+
+h1 {
+    padding-top: 24px;
+    background: white;
+}
+
+h3 {
+    color: black;
+    opacity: .75;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+main p {
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto var(--body-font-size);
+    border: 0;
+    border-top: 3px solid var(--brand-blue);
+    /* opacity: .33; */
+}
+
+#providers img {
+    width: 275px;
+    height: 275px;
+    margin: 16px 0;
+}
+
+#providers .global_padding {
+    padding: 0 1in;
+}
+
+#providers .twothird_column {
+    padding-right: 32px;
+}
+
+#alexandra_moore p:nth-last-child(1),
+#jill_abernathy p:nth-last-child(1),
+#kionglee_jung p:nth-last-child(1) {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    #alexandra_moore p:nth-last-child(1),
+    #jill_abernathy p:nth-last-child(1),
+    #kionglee_jung p:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    #providers .column_container {
+        display: block;
+    }
+
+    #providers img {
+        width: 50%;
+        height: auto;
+    }
+
+    #providers .onethird_column,
+    #providers .twothird_column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #providers img {
+        width: 66%;
+        height: auto;
+    }
+}

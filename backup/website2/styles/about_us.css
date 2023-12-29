@@ -1,0 +1,91 @@
+/* Global Styles */
+main {
+    margin-top: 98px;
+}
+
+#about_us,
+#mission_and_values,
+#conditions,
+#medication_types {
+    padding-top: 16px;
+}
+
+/* About Us Section */
+#about_us p {
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+#about_us p:nth-last-child(2) {
+    font-weight: bold;
+}
+
+/* Mission and Values Section */
+#mission_and_values p {
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+#mission_and_values img {
+    display: block;
+    margin: 0 auto;
+}
+
+#mission_and_values p:nth-last-child(4) {
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    #mission_and_values img {
+        height: auto;
+        width: 75%;
+    }
+}
+
+/* Conditions Section */
+#conditions {
+    text-align: center;
+}
+
+#conditions ul {
+    font-size: var(--body-font-size);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+#conditions ul li {
+    margin-left: 32px;
+}
+
+.columns {
+    columns: 2;
+    display: inline-block;
+    text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+    #conditions ul li {
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .columns {
+        columns: 1;
+    }
+}
+
+/* Medication Types Section */
+#medication_types p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+#bannerimage {
+    width: 100vw;
+    background-image: url("../istockphoto-1396083727-1024x1024.jpg");
+    height: 405px;
+    background-position: center;
+}

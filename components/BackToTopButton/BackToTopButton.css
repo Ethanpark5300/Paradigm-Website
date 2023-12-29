@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#BackToTopButton {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: var(--brand-red);
+    padding: .66rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.2s;
+    opacity: .6666;
+}
+
+#BackToTopButton:hover {
+    background: var(--brand-red);
+    opacity: 1;
+}
+
+#BackToTopButtonIcon {
+    width: 1.33rem;
+    height: 1.33rem;
+    color: #fff;
+}

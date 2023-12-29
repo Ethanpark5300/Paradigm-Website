@@ -1,0 +1,36 @@
+.breadcrumbs {
+    margin-top: 98px;
+}
+
+ul.breadcrumb {
+    padding: var(--body-font-size);
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: var(--body-font-size);
+    font-weight: 600;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: var(--brand-green);
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 344px) {
+    ul.breadcrumb li {
+        font-size: 16px;
+    }
+}
+

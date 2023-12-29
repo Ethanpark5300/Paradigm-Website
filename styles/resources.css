@@ -1,35 +1,55 @@
-main {
-    margin-top: 114px;
+#resources {
+    margin-top: 98px;
+    background-color: var(--background-color);
 }
 
-h1 {
-    padding-top: 24px;
-    margin-bottom: 8px;
-}
-
-.emergency {
-    font-style: italic;
+header.main-header {
+    text-transform: uppercase;
     text-align: center;
-    font-weight: 500;
-    padding: 0 32px;
+    padding: 48px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    margin-bottom: var(--body-font-size);
 }
 
-h2 {
-    margin: 24px 0 16px;
+header.main-header h1 {
+    font-size: 40px;
 }
 
-main p {
+header.main-header h2 {
+    font-size: var(--body-font-size);
+    font-style: italic;
+    margin-top: calc(var(--body-font-size)/4);
+}
+
+header.sub-header {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+    font-size: 28px;
+    font-weight: var(--header-font-weight);
+}
+
+#crisis-lines,
+#psychiatric-urgent-cares,
+#psychiatric-hospitals {
+    text-align: center;
     line-height: 1.5;
 }
 
-hr {
-    width: 95%;
-    margin: var(--body-font-size) auto 0;
-    border: 0;
-    border-top: 1px solid gray;
-    opacity: .33;
+#crisis-lines p:nth-child(1),
+#psychiatric-urgent-cares p:nth-child(1),
+#psychiatric-hospitals p:nth-child(2) {
+    margin-top: var(--body-font-size);
 }
 
-.psychiatric_hospitals p:nth-last-child(1) {
-    margin-bottom: 16px;
+#crisis-lines p:nth-last-child(1),
+#psychiatric-urgent-cares p:nth-last-child(1) {
+    margin-bottom: var(--body-font-size);
+}
+
+#psychiatric-hospitals p:nth-last-child(1) {
+    padding-bottom: var(--body-font-size);
 }

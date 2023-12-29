@@ -1,139 +1,182 @@
 main {
-    margin-top: 114px;
+    margin-top: 98px;
 }
 
-#contact_form,
-.contact_information {
+header {
+    font-size: 36px;
+    font-weight: var(--header-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px 32px;
+    background-color: var(--brand-green);
+    color: #fff;
+}
+
+/* Contact Section */
+#contact {
+    /* margin-top: var(--body-font-size); */
+    background-color: #f1f1f1;
+}
+
+#contact .two-third-column,
+#contact .one-third-column {
+    background-color: var(--background-color);
+}
+
+#contact-form,
+.contact-information {
     padding: 0 32px;
 }
 
-.contact_information i {
-    margin-right: 16px;
+#contact .office-location,
+.phone-numbers,
+.email-addresses,
+.office-hours {
+    line-height: 1.5;
+    margin-top: var(--body-font-size);
 }
 
-main input,
-main textarea {
-    border: 1px solid #ccc;
+#contact input,
+#contact textarea {
+    border: 1px solid var(--background-color-darker);
     border-radius: 16px;
     box-sizing: border-box;
     margin: 4px 0 16px;
     padding: 12px;
-    resize: vertical;
+    resize: none;
     width: 100%;
+    background-color: var(--background-color-darker);
 }
 
-main textarea {
-    height: 270px;
-    margin-top: 6px;
+#contact input:focus,
+#contact textarea:focus {
+    outline: transparent;
+    border: 3px solid var(--brand-green);
+    transition: 0.05s all;
 }
 
-main button[type=submit] {
+/* .two-third-column {
+    margin-right: var(--body-font-size);
+} */
+
+#contact textarea {
+    margin-top: 6px !important;
+    height: 280px;
+    resize: none;
+}
+
+#contact button[type=submit] {
     background: var(--brand-green);
-    border: none;
+    border: transparent;
     border-radius: 16px;
     color: #FFF;
     cursor: pointer;
-    margin-bottom: 16px;
+    margin-bottom: var(--body-font-size);
     padding: 16px;
     transition: all .2s;
     width: 50%;
     font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
 }
 
-main button[type=submit]:hover {
-    transform: scale(1.1);
+#contact button:hover {
+    background-color: var(--brand-green-hover);
 }
 
-.office-location,
-.phone-numbers,
-.email-addresses,
-.office-hours {
-    margin-bottom: 16px;
-    line-height: 1.5;
+#contact .two-third-column header {
+    margin-bottom: var(--body-font-size)
 }
 
-main .key {
-    font-family: var(--header-font);
-    color: var(--brand-green);
+.key {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--header-font-weight);
+    color: var(--brand-green);
+    margin-top: var(--body-font-size);
 }
 
-main a {
+.key i {
+    margin-right: calc(var(--body-font-size)/2);
+}
+
+.value {
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    margin-top: calc(var(--body-font-size)/2);
+    color: #000;
+}
+
+#contact .phone-numbers .value:nth-last-child(1),
+#contact .email-addresses .value:nth-last-child(1) {
+    margin-top: 4px;
+}
+
+#contact a {
     text-decoration: none;
 }
 
-main a:hover {
+#contact a:hover {
     text-decoration: underline;
-}
-
-input:focus,
-textarea:focus {
-    outline: transparent;
-    border: 1.6px solid var(--brand-green);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: var(--background-color);
     font-size: var(--body-font-size);
-    margin-bottom: 8px;
+    margin-bottom: var(--body-font-size);
 }
 
 th,
 td {
-    padding: 14px;
+    padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid lightgray;
+    font-weight: var(--body-font-weight);
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-tr:hover {
-    background-color: #f5f5f5;
-}
-
-@media screen and (max-width: 1024px) {
-    main {
-        margin-top: 122px;
-    }
-
-    main .column_container {
+@media (max-width: 1024px) {
+    #contact .column-container {
         display: block;
     }
 
-    main .onethird_column,
-    main .twothird_column {
+    #contact .one-third-column,
+    #contact .two-third-column {
         width: 100%;
     }
 
-    main .twothird_column,
-    main .onethird_column {
-        margin-top: -8px;
-    }
-
-    main h1 {
-        padding-top: 16px;
-    }
-
-    .contact_information {
+    #contact .one-third-column {
+        /* margin-top: var(--body-font-size); */
         text-align: center;
     }
+}
 
-    main p {
-        padding-bottom: 0;
-    }
+/* Location Section */
+#location {
+    /* margin-top: var(--body-font-size); */
+    background-color: var(--background-color);
+    text-align: center;
+}
 
-    main p:nth-child(8) {
-        padding-bottom: 16px;
-    }
+#location .office-location {
+    font-weight: var(--body-font-weight);
+    font-size: 20px;
+    margin: var(--body-font-size) 0;
+    padding: 0 16px;
+}
 
-    table {
-        margin-bottom: 24px;
-    }
+#location i {
+    margin-right: calc(var(--body-font-size)/2);
+}
+
+.map {
+    border: none;
+    height: 100%;
+    width: 90%;
+}
+
+.map-container {
+    height: 300px;
+    margin-bottom: var(--body-font-size);
+    overflow: hidden;
+    position: relative;
 }

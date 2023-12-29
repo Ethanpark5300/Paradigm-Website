@@ -1,0 +1,98 @@
+@import url('https://fonts.bunny.net/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --brand-red: #994d4b;
+    --brand-green: #40806f;
+    --brand-green-hover: #2b564a;
+    --brand-blue: #2f506f;
+    --body-font-size: 18px;
+    --body-font-weight: 500;
+    --header-font-weight: 700;
+    --background-color: #f2f3f4;
+    --background-color-darker: #d8dbde;
+}
+
+label,
+input,
+textarea,
+li,
+p {
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+}
+
+.center-horizontal {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NOTE: 1in = 96px */
+.global-padding {
+    padding: 0 2in;
+}
+
+@media (max-width: 1024px) {
+    .global-padding {
+        padding: 0 32px;
+    }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.whole-column {
+    float: left;
+    width: 100%;
+}
+
+.third-column {
+    float: left;
+    width: 33.33%;
+}
+
+.column-container {
+    display: flex;
+    width: 100%;
+}
+
+.half-column {
+    float: left;
+    width: 50%;
+}
+
+.two-third-column {
+    flex: 1;
+    width: 66.66%;
+}
+
+.one-third-column {
+    width: 33.33%;
+}
+
+.one-half-column {
+    flex: 1;
+    width: 50%;
+}
+
+.other-half-column {
+    width: 50%;
+}

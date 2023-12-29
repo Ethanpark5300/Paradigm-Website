@@ -1,0 +1,399 @@
+/* Global Styles */
+/* main {
+    margin-top: 90px;
+} */
+
+/* Hero Section */
+#hero h1 {
+    font-size: 60px;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.hero_image {
+    background-image: url("../images/hero.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--screen-height);
+    position: relative;
+}
+
+
+.hero_text {
+    color: var(--brand-green);
+    font-family: var(--header-font);
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-transform:none !important;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_container {
+    background-color: #fef9f6;
+    padding: 64px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #2c544a;
+    border-radius: 1000px;
+}
+
+.hero_text img {
+    height: 150px;
+    width: 150px;
+}
+
+@media screen and (max-width: 480px) {
+    .hero_container {
+        padding: 48px;
+    }
+
+    .hero_container h1 {
+        font-size: 40px !important;
+        /* color: red !important; */
+    }
+
+    #hero img {
+        width: 64% !important;
+        height: 64% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero_container {
+        padding: 48px;
+    }
+
+    .hero_container h1 {
+        font-size: 36px !important;
+        /* color: green !important; */
+    }
+
+    #hero img {
+        width: 60% !important;
+        height: 60% !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero_container {
+        padding: 32px;
+    }
+
+    .hero_container h1 {
+        font-size: 32px !important;
+        /* color: blue !important; */
+    }
+
+    #hero img {
+        width: 55% !important;
+        height: 55% !important;
+    }
+}
+
+/* Welcome Section */
+#welcome {
+    margin-top: 16px;
+}
+
+#welcome h1 {
+    text-align: center;
+    font-size: 64px;
+}
+
+#welcome h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+#welcome button {
+    background: var(--brand-green);
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 16px;
+    transition: all 0.2s;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#welcome button:hover {
+    transform: scale(1.1);
+}
+
+#welcome button:nth-child(2) {
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    #welcome h1 {
+        font-size: 56px;
+    }
+
+    #welcome h2 {
+        font-size: 24px;
+    }
+
+    #welcome button {
+        width: 75%;
+    }
+
+    #welcome .center_horizontal {
+        display: block;
+        text-align: center;
+    }
+
+    #welcome button:nth-child(2) {
+        margin-left: 0px;
+    }
+}
+
+/* Providers Section */
+#providers {
+    margin-top: 16px;
+    text-align: center;
+}
+
+#providers h1 {
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+
+#providers img {
+    height: 250px;
+    width: 250px;
+    border: 6px solid var(--brand-green);
+    border-radius: 16px;
+}
+
+#providers h2 {
+    text-align: center;
+}
+
+#providers h3 {
+    color: gray;
+    opacity: .75;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#providers button {
+    background: var(--brand-green);
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s;
+    white-space: nowrap;
+    margin: 8px 0 16px;
+    font-size: var(--body-font-size);
+}
+
+/* #providers button:hover {
+    transform: scale(1.1);
+} */
+
+@media screen and (max-width: 1350px) {
+    #providers .third_column {
+        width: 100%;
+    }
+
+    #providers .global_padding {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #providers img {
+        width: 62.5%;
+        height: auto;
+    }
+}
+
+/* Location Section */
+#location {
+    margin-top: 16px;
+}
+
+#location i {
+    margin-right: 12px;
+}
+
+#location h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 1.25rem !important;
+}
+
+.map {
+    border: none;
+    height: 100%;
+    width: 90%;
+}
+
+.map_container {
+    height: 300px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 16px;
+}
+
+#contact .small {
+    font-size: 14px;
+}
+
+#contact i {
+    margin-right: 16px;
+}
+
+#home_form,
+.contact_information {
+    padding: 0 32px;
+}
+
+#contact input,
+#contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin: 4px 0 16px;
+    padding: 12px;
+    resize: vertical;
+    width: 100%;
+}
+
+#contact textarea {
+    height: 270px;
+    margin-top: 6px !important;
+}
+
+#contact button[type=submit] {
+    background: var(--brand-green);
+    border: none;
+    border-radius: 16px;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 16px;
+    padding: 16px;
+    transition: all .2s;
+    width: 50%;
+    font-size: var(--body-font-size);
+}
+
+#contact button[type=submit]:hover {
+    transform: scale(1.1);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: transparent;
+    border: 1.6px solid var(--brand-green);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.office-location,
+.phone-numbers,
+.email-addresses,
+.office-hours {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+#contact .key {
+    font-family: var(--header-font);
+    color: var(--brand-green);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: var(--body-font-size);
+    margin-bottom: 8px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+#contact br {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #contact .column_container {
+        display: block;
+    }
+
+    #contact .onethird_column,
+    #contact .twothird_column {
+        width: 100%;
+    }
+
+    #contact .twothird_column,
+    #contact .onethird_column {
+        margin-top: -8px;
+    }
+
+    #contact h1 {
+        padding-top: 16px;
+    }
+
+    .contact_information {
+        text-align: center;
+    }
+
+    #contact p {
+        padding-bottom: 0;
+    }
+
+    #contact p:nth-child(8) {
+        padding-bottom: 16px;
+    }
+
+    #contact br {
+        display: block;
+    }
+
+    table {
+        margin-bottom: 24px;
+    }
+}

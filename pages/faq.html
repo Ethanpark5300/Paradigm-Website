@@ -2,144 +2,160 @@
 <html lang="en">
 
 <head>
-    <title>FAQ</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/navigation_bar.css">
-    <link rel="stylesheet" href="../styles/faq.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/back_to_top.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/brands.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/solid.css">
-    <script defer src="../scripts/back_to_top.js"> </script>
+    <title>FAQ</title>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/font_awesome/css/brands.css">
+    <link rel="stylesheet" href="../assets/font_awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/font_awesome/css/solid.css">
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../components/BackToTopButton/BackToTopButton.css">
+    <script defer src='../components/BackToTopButton/BackToTopButton.js'></script>
+    <link rel="stylesheet" href="../components/NavigationBar/NavigationBar.css">
+    <link rel="stylesheet" href="../components/global.css">
+    <link rel="stylesheet" href="../components/footer.css">
     <script defer src="../scripts/accordion.js"></script>
+    <link rel="stylesheet" href="../styles/faq.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <div id="top_bar">
-            <div class="top_contact">
+    <nav>
+        <div id="top-bar">
+            <div class="top-contact">
                 <div class="phone">
                     <i class="fa-solid fa-phone"></i>
-                    <span> 480-613-9599 </span>
+                    <span>480-613-9599</span>
                 </div>
                 <div class="email">
                     <i class="fa-solid fa-envelope"></i>
-                    <span> info@paradigmpsychiatry.com </span>
+                    <span>info@paradigmpsychiatry.com</span>
                 </div>
             </div>
         </div>
-        <div id="bottom_bar">
+        <div id="bottom-bar">
             <a href="../index.html" class="logo">
-                <img class="logo_img" src="../images/navbar_logo.svg">
-                <span class="logo_text">Paradigm<br> Psychiatry</span>
+                <img class="logo-img" src="../components/NavigationBar/NavigationBarLogo.svg" alt="Paradigm Psychiatry Logo">
+                <span class="logo-text">Paradigm<br> Psychiatry</span>
             </a>
-    
+
             <input type="checkbox" id="check">
             <label for="check" class="icons">
-                <i class="bx bx-menu" id="menu-icon"></i>
-                <i class="bx bx-x" id="close-icon"></i>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
             </label>
-    
-            <nav class="navbar">
-                <div class="center_horizontal">
-                    <a href="../index.html" class="nav__link" style="--i:0">Home</a>
+
+            <div class="navbar">
+                <div class="center-horizontal">
+                    <a href="../index.html" class="nav-link" style="--i:0">Home</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./about_us.html" class="nav__link" style="--i:1">About Us</a>
+                <div class="center-horizontal">
+                    <a href="./about_us.html" class="nav-link" style="--i:1">About Us</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./services.html" class="nav__link" style="--i:2">Services</a>
+                <div class="center-horizontal">
+                    <a href="./services.html" class="nav-link" style="--i:2">Services</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./policies.html" class="nav__link" style="--i:3">Policies</a>
+                <div class="center-horizontal">
+                    <a href="./providers.html" class="nav-link" style="--i:3">Providers</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./providers.html" class="nav__link" style="--i:4">Providers</a>
+                <div class="center-horizontal">
+                    <a href="./contact.html" class="nav-link" style="--i:4">Contact</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./contact.html" class="nav__link" style="--i:5">Contact</a>
+                <div class="center-horizontal">
+                    <a href="./faq.html" class="current" style="--i:5">FAQ</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./faq.html" class="current" style="--i:6">FAQ</a>
+                <div class="center-horizontal">
+                    <a href="./policies.html" class="nav-link" style="--i:6">Policies</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./resources.html" class="nav__link" style="--i:7">Resources</a>
+                <div class="center-horizontal">
+                    <a href="./resources.html" class="nav-link" style="--i:7">Resources</a>
                 </div>
-                <div class="center_horizontal">
+                <div class="center-horizontal">
                     <a style="--i:8" href="./schedule_appointment.html"><button>Schedule Appointment</button></a>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
-    
+    </nav>
+
     <main>
-        <div class="row box_shadow">
-            <div class="whole_column global_padding">
-                <h1>Frequently Asked Questions</h1>
+        <div class="row">
+            <header>Frequently Asked Questions</header>
+            <div class="whole-column global-padding">
                 <div class="accordion">
-                    <div class="block">
-                        <div class="question">Which insurances does Paradigm Psychiatry accept?</div>
-                        <div class="answer">Paradigm Psychiatry accepts Aetna, Blue Cross Blue Shield (BCBS), Cigna, TriCare, and United HealthCare (Optum).</div>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <div class="question">What are the fees for self-pay patients?</div>
-                        <div class="answer">For self-pay patients, the fee for a new patient visit is $250, and the fee for a follow-up visit is $150. </div>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <div class="question">Can I request medical documents/forms such as FMLA and STD forms?</div>
-                        <div class="answer">Medical documents/forms, including FMLA and STD forms, will be considered only for patients established for at least two months, and a fee will be applied.</div>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <div class="question">What is the recommended arrival time for new patients?</div>
-                        <div class="answer">New patients are encouraged to arrive 15 minutes prior to their scheduled appointment time to allow enough time for the registration and check-in process. </div>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <div class="question">What is the cancelation policy for appointments?</div>
-                        <div class="answer">To cancel an appointment, please contact Paradigm Psychiatry at <a href="tel:480-613-9599">(480) 613-9599</a>. If you do not reach a representative, leave a detailed voicemail with your full name, date of birth, date/time of the scheduled appointment, and reason for cancelation. You can also send an email to <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a> with the same detailed information. Please call at least 24 hours in advance to allow others access to care.</div>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <div class="question">What happens if I miss or late-cancel an appointment?</div>
+                    <div class="block" id="question1">
+                        <div class="question">Which insurance plans does Paradigm Psychiatry accept?</div>
                         <div class="answer">
-                            <p><span class="underline">First late cancelation/missed appointment</span>: Courtesy reschedule.</p>
-                            <br>
-                            <p><span class="underline">Second late cancelation/missed appointment</span>: $50.00 fee will be applied to your account.</p>
-                            <br>
-                            <p><span class="underline">Third late cancelation/missed appointment</span>: $50.00 fee will be applied to your account and may result in discharge from the practice.</p>
+                            <p>Paradigm Psychiatry is contracted with the following insurance plans:</p>
+                            <ul>
+                                <li>Cigna</li>
+                                <li>Aetna/Banner Aetna</li>
+                                <li>Blue Cross Blue Shield (BCBS)/AmeriBen</li>
+                                <ul>
+                                    <li>If your BCBS plan is out of state, please contact your insurance to verify benefits</li>
+                                </ul>
+                                <li>United Health Care/Optum Behavioral Health/ UMR</li>
+                                <li>Tricare West</li>
+                            </ul>
                         </div>
                     </div>
                     <hr>
-                    <div class="block">
+                    <div class="block" id="question2">
+                        <div class="question">What insurance plans are you <i>NOT</i> contracted with?</div>
+                        <div class="answer">
+                            <p>We do not accept the following insurance plans and patients will be required to pay the <b>SELF PAY</b> rate to be seen. <b>(Intake-$250, Follow Up-$150)</b></p>
+                            <p>Paradigm Psychiatry is <b><i>NOT</i></b> contracted with any MEDICARE/MEDICAID plans.</p>
+                            <p>Paradigm Psychiatry is <b><i>NOT</i></b> contracted with any of the following AHCCCS plans:</p>
+                            <p>Care1st Health Plan, Health Choice Arizona, Molina Healthcare, Mercy Care, Banner University Family Care, UHC Community Plan, Arizona Complete Health.</p>
+                            <p>Paradigm Psychiatry is <b><i>NOT</i></b> contracted with AmBetter, Gilsbar or ComPsych.</p>
+                            <p>Paradigm Psychiatry is <b><i>NOT</i></b> contracted with BCBS (FEP) Federal Employee Program or BCBS PCP HMO Plan.</p>
+                            <p>*Paradigm Psychiatry does not participate in any Workmans Compensation cases.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="block" id="question3">
+                        <div class="question">What are the fees for self-pay patients?</div>
+                        <div class="answer">
+                            <p>For self-pay patients, the fee for a new patient visit is $250, and the fee for a follow-up visit is $150.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="block" id="question4">
+                        <div class="question">Can I request medical documents/forms such as FMLA and STD forms?</div>
+                        <div class="answer"><p>Medical documents/forms, including FMLA and STD forms, will be considered only for patients established for at least two months, and a fee will be applied.</p></div>
+                    </div>
+                    <hr>
+                    <div class="block" id="question5">
+                        <div class="question">What is the recommended arrival time for new patients?</div>
+                        <div class="answer"><p>New patients are encouraged to arrive 15 minutes prior to their scheduled appointment time to allow enough time for the registration and check-in process.</p></div>
+                    </div>
+                    <hr>
+                    <div class="block" id="question6">
+                        <div class="question">What happens if I miss or late-cancel an appointment?</div>
+                        <div class="answer">
+                            <p><b><i>First late cancelation/missed appointment:</i></b> Courtesy reschedule.</p>
+                            <p><b><i>Second late cancelation/missed appointment:</i></b> $50.00 fee will be applied to your account.</p>
+                            <p><b><i>Third late cancelation/missed appointment:</i></b> $50.00 fee will be applied to your account and may result in discharge from the practice.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="block" id="question7">
                         <div class="question">What if I am running late to my appointment?</div>
-                        <div class="answer"> If you are more than 10 minutes late to your appointment, please contact the office by phone to notify them as soon as possible. Paradigm Psychiatry has a late arrival policy, and you may be asked to reschedule to minimize wait times and provide quality care to all patients. </div>
+                        <div class="answer"><p>If you are more than 10 minutes late to your appointment, please contact the office by phone at <a href="tel:+4806139599">(480) 613-9599</a> to notify them as soon as possible. Paradigm Psychiatry has a late arrival policy, and you may be asked to reschedule to minimize wait times and provide quality care to all patients.</p></div>
                     </div>
                     <hr>
-                    <div class="block">
-                        <div class="question">Which insurance plans does Paradigm Psychiatry accept?</div>
-                        <div class="answer">Paradigm Psychiatry accepts the following commercial insurance plans: Blue Cross Blue Shield (BCBS), United Health Care (UHC), United Behavioral Health (UBH), Aetna, Cigna, Tricare West </div>
+                    <div class="block" id="question8">
+                        <div class="question">How do I request a refill of my medication?</div>
+                        <div class="answer">
+                            <ul>
+                                <li>For effective treatment, medication refills are typically sent during appointments. Your provider will send enough medication with refills to last until your next scheduled follow up. Please ensure your follow up visits are scheduled timely so you do not run out of medication early.</li>
+                                <li>You can request a medication refill by contacting the office by phone [<a href="tel:+4806139599">(480) 613-9599</a>], email <a href="mailto:info@paradigmpsychiatry.com">info@paradigmpsychiatry.com</a> or send a request via patient portal.</li>
+                                <li>For Controlled Substances, such as stimulants, an appointment is required every 1-3 months for refills.</li>
+                                <p><b><i>Paradigm Psychiatry does not replace any lost, stolen, or damaged Controlled Substance Medications.</i></b></p>
+                            </ul>
+                        </div>
                     </div>
                     <hr>
-                    <div class="block">
-                        <div class="question">Does Paradigm Psychiatry accept Medicare or Medicaid/AHCCCS plans?</div>
-                        <div class="answer">No, Paradigm Psychiatry is not contracted with and does not accept any Medicare or Medicaid/AHCCCS plans. Patients are welcome to schedule as self-pay. </div>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <div class="question">Is Paradigm Psychiatry contracted with Arizona Care Network, Ambetter, or Gilsbar?</div>
-                        <div class="answer">No, Paradigm Psychiatry is out of network and not contracted with Arizona Care Network, Ambetter, and Gilsbar. Patients with these plans may need to consider self-pay options. </div>
-                    </div>
-                    <hr>
-                    <br>
                 </div>
             </div>
         </div>
@@ -148,50 +164,41 @@
     <!-- Footer -->
     <footer>
         <div class="row">
-            <div class="column_container">
-                <div class="half_column">
-                    <div class="footer_quick_links">
-                        <h2>Quick Links</h2>
+            <div class="column-container">
+                <div class="half-column footer-quick-links">
+                    <div class="footer-header">Quick Links</div>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about_us.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./providers.html">Providers</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./policies.html">Policies</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="half-column footer-contact">
+                    <div class="footer-header">Contact</div>
+                    <div class="center-horizontal">
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="./about_us.html">About Us</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./policies.html">Policies</a></li>
-                            <li><a href="./providers.html">Providers</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="./faq.html">FAQ</a></li>
-                            <li class="last_item"><a href="./resources.html">Resources</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</li>
+                            <li><i class="fa-solid fa-envelope"></i>info@paradigmpsychiatry.com</li>
+                            <li><i class="fa-solid fa-phone"></i>(480) 900-8515</li>
                         </ul>
                     </div>
                 </div>
-                <div class="half_column">
-                    <div class="footer_contact">
-                        <h2>Contact</h2>
-                        <ul class="columns">
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p class="contact_margin_right">2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                <p>info@paradigmpsychiatry.com</p>
-                            </li>
-                            <li class="last_item">
-                                <i class="fa-solid fa-phone"></i>
-                                <p>(480) 900-8515</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="whole_column">
-                <h2>Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</h2>
             </div>
         </div>
+        <div class="whole-column">Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</div>
     </footer>
 
-    <!-- Back To Top button -->
-    <button type="button" id="backToTopBtn" onclick="scrollToTop()"></button>
+    <!-- Back to Top Button -->
+    <button type="button" id="BackToTopButton" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" id="BackToTopButtonIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
 
 </html>

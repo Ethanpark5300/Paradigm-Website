@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Management</title>
+    <link rel="shortcut icon" href="../../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/font_awesome/css/brands.css">
+    <link rel="stylesheet" href="../../assets/font_awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../../assets/font_awesome/css/solid.css">
+    <link rel="stylesheet" href="../../assets/normalize.css">
+    <link rel="stylesheet" href="../../components/BackToTopButton/BackToTopButton.css">
+    <script defer src='../../components/BackToTopButton/BackToTopButton.js'></script>
+    <link rel="stylesheet" href="../../components/breadcrumbs.css">
+    <link rel="stylesheet" href="../../components/NavigationBar/NavigationBar.css">
+    <link rel="stylesheet" href="../../components/global.css">
+    <link rel="stylesheet" href="../../components/footer.css">
+    <link rel="stylesheet" href="../../styles/service.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="top-bar">
+            <div class="top-contact">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>480-613-9599</span>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@paradigmpsychiatry.com</span>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-bar">
+            <a href="../../index.html" class="logo">
+                <img class="logo-img" src="../../components/NavigationBar/NavigationBarLogo.svg" alt="Paradigm Psychiatry Logo">
+                <span class="logo-text">Paradigm<br> Psychiatry</span>
+            </a>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </label>
+
+            <div class="navbar">
+                <div class="center-horizontal">
+                    <a href="../../index.html" class="nav-link" style="--i:0">Home</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../about_us.html" class="nav-link" style="--i:1">About Us</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../services.html" class="current" style="--i:2">Services</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../providers.html" class="nav-link" style="--i:3">Providers</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../contact.html" class="nav-link" style="--i:4">Contact</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../faq.html" class="nav-link" style="--i:5">FAQ</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../policies.html" class="nav-link" style="--i:6">Policies</a>
+                </div>
+                <div class="center-horizontal">
+                    <a href="../resources.html" class="nav-link" style="--i:7">Resources</a>
+                </div>
+                <div class="center-horizontal">
+                    <a style="--i:8" href="../schedule_appointment.html"><button>Schedule Appointment</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="medication-management">
+        <div class="row">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li><a href="../services.html">Services</a></li>
+                    <li>Medication Management</li>
+                </ul>
+            </div>
+            <header>Medication Management</header>
+            <div class="whole-column global-padding">
+                <div class="center-horizontal">
+                    <img src="../../images/services/medication_management.jpg" alt="Medication Management Image">
+                </div>
+                <p>Psychiatric medication management is the process of working with your mental health provider to ensure that your psychiatric medications are effective and safe. This may include changing doses, switching medications, or adding new drugs. Medication management can significantly reduce symptoms and help people focus on their recovery. In fact, proper medication management can make the difference in someone keeping close relationships, staying healthy, keeping a job, and avoiding trouble.</p>
+                <p>The same prescription drug can affect one person differently than it affects another person. Our providers thoroughly discuss expectations, potential side effects that can occur and different options that are available, while considering cost-effectiveness. We also help patients discontinue and safely taper off medications that are no longer needed, effective or beneficial to their health.</p>
+                <p>Medication management appointments can vary in frequency from weekly to every 1-3 months depending on the type of medication, diagnosis, and severity of symptoms. Most refills are done during the follow up appointments.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="column-container">
+                <div class="half-column footer-quick-links">
+                    <div class="footer-header">Quick Links</div>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about_us.html">About Us</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../providers.html">Providers</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../policies.html">Policies</a></li>
+                        <li><a href="../resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="half-column footer-contact">
+                    <div class="footer-header">Contact</div>
+                    <div class="center-horizontal">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</li>
+                            <li><i class="fa-solid fa-envelope"></i>info@paradigmpsychiatry.com</li>
+                            <li><i class="fa-solid fa-phone"></i>(480) 900-8515</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whole-column">Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" id="BackToTopButton" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" id="BackToTopButtonIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
+
+</body>
+
+</html>

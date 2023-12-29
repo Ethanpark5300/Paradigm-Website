@@ -1,0 +1,31 @@
+ul.breadcrumb {
+    padding: 16px 32px;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: var(--brand-green);
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 339px) {
+    ul.breadcrumb li {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,37 @@
+main {
+    margin-top: 114px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 24px;
+    margin-bottom: 8px;
+}
+
+.emergency {
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 32px;
+}
+
+h2 {
+    margin: 24px 0 16px;
+    color: var(--brand-green);
+}
+
+main p {
+    line-height: 1.5;
+}
+
+hr {
+    width: 95%;
+    margin: var(--body-font-size) auto 0;
+    border: 0;
+    border-top: 1px solid gray;
+    opacity: .33;
+}
+
+.psychiatric_hospitals p:nth-last-child(1) {
+    margin-bottom: 16px;
+}

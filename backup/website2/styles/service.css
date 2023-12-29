@@ -1,0 +1,145 @@
+/* Global Styles */
+main {
+    margin-top: 114px;
+}
+
+main h1 {
+    margin-top: -16px;
+    margin-bottom: 24px;
+}
+
+main p {
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+main p:nth-last-child(1) {
+    margin-bottom: 16px;
+}
+
+main img {
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    main img {
+        width: 75%;
+    }
+
+    main .global_padding {
+        padding: 0 32px;
+    }
+
+    main h1 {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main img {
+        width: 100%;
+    }
+}
+
+main ul {
+    line-height: 1.5;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+/* Genetic Testing Section */
+#genetic_testing p:nth-child(5) {
+    margin-bottom: 16px;
+}
+
+.checklist li {
+    margin-left: -12px;
+    padding-left: 0;
+    position: relative;
+}
+
+.checklist ul {
+    line-height: 1.5;
+    list-style: none;
+}
+
+.checklist ul li:before {
+    content: '✓';
+    padding-right: 8px;
+}
+
+#genetic_testing img:nth-child(1) {
+    margin-bottom: 16px;
+}
+
+/* ADHD Testing */
+.images_side_by_side_row {
+    text-align: center;
+}
+
+.images_side_by_side_column {
+    float: left;
+    width: 50%;
+}
+
+.images_side_by_side_row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media screen and (max-width: 1024px) {
+    .images_side_by_side_column {
+        width: 100%;
+    }
+
+    .right_image {
+        margin-top: 16px;
+    }
+}
+
+.left_iamge,
+.right_image {
+    margin-bottom: 16px;
+}
+
+#adhd_testing p:nth-last-child(2) {
+    margin-bottom: 16px;
+}
+
+#endeavorrx {
+    margin-top: 16px;
+}
+
+#endeavorrx h1 {
+    margin-top: 24px;
+}
+
+#endeavorrx p:nth-last-child(2),
+#alternative_treatments p:nth-last-child(2),
+#alternative_treatments p:nth-last-child(4) {
+    margin-bottom: 0;
+}
+
+#endeavorrx ul,
+#alternative_treatments ul {
+    line-height: 1.5;
+    padding-left: 30px;
+    position: relative;
+}
+
+#endeavorrx ul li:nth-last-child(1),
+#alternative_treatments ul li:nth-last-child(1) {
+    margin-bottom: 16px;
+}
+
+/* Psychotherapy */
+#psychotherapy p i {
+    font-size: 12px;
+}
+
+/* Alternative Treatments */
+#alternative_treatments .underline {
+    text-decoration: underline;
+}

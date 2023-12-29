@@ -2,170 +2,155 @@
 <html lang="en">
 
 <head>
-    <title>Resources</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/navigation_bar.css">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/font_awesome/css/brands.css">
+    <link rel="stylesheet" href="../assets/font_awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/font_awesome/css/solid.css">
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../components/BackToTopButton/BackToTopButton.css">
+    <script defer src='../components/BackToTopButton/BackToTopButton.js'></script>
+    <link rel="stylesheet" href="../components/NavigationBar/NavigationBar.css">
+    <link rel="stylesheet" href="../components/global.css">
+    <link rel="stylesheet" href="../components/footer.css">
     <link rel="stylesheet" href="../styles/resources.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/back_to_top.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/brands.css">
-    <link rel="stylesheet" href="../styles/font_awesome/css/solid.css">
-    <script defer src="../scripts/back_to_top.js"> </script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <div id="top_bar">
-            <div class="top_contact">
+    <nav>
+        <div id="top-bar">
+            <div class="top-contact">
                 <div class="phone">
                     <i class="fa-solid fa-phone"></i>
-                    <span> 480-613-9599 </span>
+                    <span>480-613-9599</span>
                 </div>
                 <div class="email">
                     <i class="fa-solid fa-envelope"></i>
-                    <span> info@paradigmpsychiatry.com </span>
+                    <span>info@paradigmpsychiatry.com</span>
                 </div>
             </div>
         </div>
-        <div id="bottom_bar">
+        <div id="bottom-bar">
             <a href="../index.html" class="logo">
-                <img class="logo_img" src="../images/navbar_logo.svg">
-                <span class="logo_text">Paradigm<br> Psychiatry</span>
+                <img class="logo-img" src="../components/NavigationBar/NavigationBarLogo.svg" alt="Paradigm Psychiatry Logo">
+                <span class="logo-text">Paradigm<br> Psychiatry</span>
             </a>
-    
+
             <input type="checkbox" id="check">
             <label for="check" class="icons">
-                <i class="bx bx-menu" id="menu-icon"></i>
-                <i class="bx bx-x" id="close-icon"></i>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
             </label>
-    
-            <nav class="navbar">
-                <div class="center_horizontal">
-                    <a href="../index.html" class="nav__link" style="--i:0">Home</a>
+
+            <div class="navbar">
+                <div class="center-horizontal">
+                    <a href="../index.html" class="nav-link" style="--i:0">Home</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./about_us.html" class="nav__link" style="--i:1">About Us</a>
+                <div class="center-horizontal">
+                    <a href="./about_us.html" class="nav-link" style="--i:1">About Us</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./services.html" class="nav__link" style="--i:2">Services</a>
+                <div class="center-horizontal">
+                    <a href="./services.html" class="nav-link" style="--i:2">Services</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./policies.html" class="nav__link" style="--i:3">Policies</a>
+                <div class="center-horizontal">
+                    <a href="./providers.html" class="nav-link" style="--i:3">Providers</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./providers.html" class="nav__link" style="--i:4">Providers</a>
+                <div class="center-horizontal">
+                    <a href="./contact.html" class="nav-link" style="--i:4">Contact</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./contact.html" class="nav__link" style="--i:5">Contact</a>
+                <div class="center-horizontal">
+                    <a href="./faq.html" class="nav-link" style="--i:5">FAQ</a>
                 </div>
-                <div class="center_horizontal">
-                    <a href="./faq.html" class="nav__link" style="--i:6">FAQ</a>
+                <div class="center-horizontal">
+                    <a href="./policies.html" class="nav-link" style="--i:6">Policies</a>
                 </div>
-                <div class="center_horizontal">
+                <div class="center-horizontal">
                     <a href="./resources.html" class="current" style="--i:7">Resources</a>
                 </div>
-                <div class="center_horizontal">
+                <div class="center-horizontal">
                     <a style="--i:8" href="./schedule_appointment.html"><button>Schedule Appointment</button></a>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
-    
-    <main>
-        <div class="row box_shadow">
+    </nav>
+    <main id="resources">
+        <header class="main-header">
             <h1>Hospital and Crisis Lines</h1>
-                <p class="emergency"> If you are experiencing a life-threatening EMERGENCY, please call 911.</p>
-            <div class="column_container global_padding">
-                <div class="whole_column">
-                    <div class="crisis_lines">
-                        <h2>Crisis Lines</h2>
-                        <p>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</p>
-                        <p>Maricopa County - Crisis Response Network: 1-800-631-1314; 602-222-9444</p>
-                        <p>Empact Crisis Line: 480-784-1500</p>
-                        <p>Pima County Crisis Line: 1-800-796-6762</p>
-                        <p>Apache, Coconino, Mojave, Navajo, and Yavapai County Crisis Line: 1-877-756-4090</p>
-                        <p>Gila River and Ak-Chin Indian Communities: 1-800-259-3449</p>
-                    </div>
+            <h2>If you are experiencing a life-threatening EMERGENCY, please call 911.</h2>
+        </header>
+        <section id="crisis-lines">
+            <header class="sub-header">Crisis Lines</header>
+            <div class="row">
+                <div class="whole-column global-padding">
+                    <p>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</p>
+                    <p>Maricopa County - Crisis Response Network: 1-800-631-1314; 602-222-9444</p>
+                    <p>Empact Crisis Line: 480-784-1500</p>
+                    <p>Pima County Crisis Line: 1-800-796-6762</p>
+                    <p>Apache, Coconino, Mojave, Navajo, and Yavapai County Crisis Line: 1-877-756-4090</p>
+                    <p>Gila River and Ak-Chin Indian Communities: 1-800-259-3449</p>
+                </div>
+        </section>
+        <section id="psychiatric-urgent-cares">
+            <header class="sub-header">Psychiatric Urgent Cares</header>
+            <div class="row">
+                <div class="whole-column global-padding">
+                    <p>Connections Arizona (UPC): 602-416-7600</p>
+                    <p>MIND24-7: 184-646-3247</p>
                 </div>
             </div>
-            <hr>
-            <div class="column_container global_padding">
-                <div class="whole_column">
-                    <div class="psychiatric_urgent_cares">
-                        <h2>Psychiatric Urgent Cares</h2>
-                        <p>Connections Arizona (UPC): 602-416-7600</p>
-                        <p>Recovery Innovations of Arizona: 602-650-1212</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="column_container global_padding">
-                <div class="whole_column">
-                    <div class="psychiatric_hospitals">
-                        <h2>Psychiatric Hospitals</h2>
-                        <p>Aurora Behavioral Health: 480-345-5420</p>
-                        <p>Banner Behavioral Health: 480-448-7500</p>
-                        <p>Oasis Behavioral Health: 480-917-9301</p>
-                        <p>Valley Hospital - Phoenix: 602-957-4000</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        <section id="psychiatric-hospitals">
+            <header class="sub-header">Psychiatric Hospitals</header>
+            <p>Aurora Behavioral Health: 480-345-5420</p>
+            <p>Banner Behavioral Health: 480-448-7500</p>
+            <p>Oasis Behavioral Health: 480-917-9301</p>
+            <p>Valleywise Behavioral Health Center: 602-957-4000</p>
+            <p>Copper Springs: 602-562-4937</p>
+            <p>Quail Run Behavioral Health: 602-455-5694</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="row">
-            <div class="column_container">
-                <div class="half_column">
-                    <div class="footer_quick_links">
-                        <h2>Quick Links</h2>
+            <div class="column-container">
+                <div class="half-column footer-quick-links">
+                    <div class="footer-header">Quick Links</div>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about_us.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./providers.html">Providers</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./policies.html">Policies</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="half-column footer-contact">
+                    <div class="footer-header">Contact</div>
+                    <div class="center-horizontal">
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="./about_us.html">About Us</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./policies.html">Policies</a></li>
-                            <li><a href="./providers.html">Providers</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="./faq.html">FAQ</a></li>
-                            <li class="last_item"><a href="./resources.html">Resources</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</li>
+                            <li><i class="fa-solid fa-envelope"></i>info@paradigmpsychiatry.com</li>
+                            <li><i class="fa-solid fa-phone"></i>(480) 900-8515</li>
                         </ul>
                     </div>
                 </div>
-                <div class="half_column">
-                    <div class="footer_contact">
-                        <h2>Contact</h2>
-                        <ul class="columns">
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p class="contact_margin_right">2460 W Ray Rd Building B, Suite 1, Chandler, AZ 85224</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                <p>info@paradigmpsychiatry.com</p>
-                            </li>
-                            <li class="last_item">
-                                <i class="fa-solid fa-phone"></i>
-                                <p>(480) 900-8515</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="whole_column">
-                <h2>Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</h2>
             </div>
         </div>
+        <div class="whole-column">Copyright &copy; 2023 Paradigm Psychiatry - All Rights Reserved</div>
     </footer>
 
-    <!-- Back To Top button -->
-    <button type="button" id="backToTopBtn" onclick="scrollToTop()"></button>
+    <!-- Back to Top Button -->
+    <button type="button" id="BackToTopButton" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" id="BackToTopButtonIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
 
 </html>

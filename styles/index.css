@@ -1,6 +1,6 @@
 /* Global Styles */
 header {
-    font-size: 33px;
+    font-size: 36px;
     font-weight: var(--header-font-weight);
     text-transform: uppercase;
     text-align: center;
@@ -10,6 +10,64 @@ header {
 }
 
 /* Hero Section */
+/* #hero {
+    background-color: salmon;
+    height: calc(100vh - 98px);
+    padding: 64px 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero img {
+    height: 400px;
+
+}
+
+#hero .hero-text {
+    width: 66.66%;
+}
+
+#hero h1 {
+    font-size: 64px;
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        flex-direction: column;
+        justify-content:safe;
+        padding-top: 0 !important;
+    }
+
+    #hero img {
+        width: 66.66%;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    #hero .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    #hero {
+        padding: 128px 64px;
+    }
+    
+    #hero img {
+        width: 66.66%;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+} */
+
 #hero h1 {
     font-size: 60px;
     margin: 0;
@@ -21,7 +79,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: var(--screen-height);
+    height: calc(var(--screen-height) - 98px);
     position: relative;
 }
 
@@ -55,7 +113,6 @@ header {
 
     .hero-container h1 {
         font-size: 40px !important;
-        /* color: red !important; */
     }
 
     #hero img {
@@ -71,7 +128,6 @@ header {
 
     .hero-container h1 {
         font-size: 36px !important;
-        /* color: green !important; */
     }
 
     #hero img {
@@ -87,7 +143,6 @@ header {
 
     .hero-container h1 {
         font-size: 32px !important;
-        /* color: blue !important; */
     }
 
     #hero img {

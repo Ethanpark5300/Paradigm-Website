@@ -15,7 +15,6 @@ main p {
 
 /* About Us Section */
 #about-us {
-    margin-top: 98px;
     background-color: var(--background-color);
     text-align: center;
 }

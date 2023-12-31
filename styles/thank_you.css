@@ -6,24 +6,23 @@ header {
     padding: 48px 32px;
     background-color: var(--brand-green);
     color: #fff;
-    margin-top: 98px;
 }
 
 .whole-column {
     background-color: var(--background-color);
 }
 
-#thank_you p {
+#thank-you p {
     line-height: 1.5;
     margin-top: var(--body-font-size);
     text-align: center;
 }
 
-#thank_you p:nth-child(5) {
+#thank-you p:nth-child(5) {
     margin-top: calc(var(--body-font-size)/4);
 }
 
-#thank_you button {
+#thank-you button {
     border-radius: 16px;
     padding: 16px;
     border: transparent;
@@ -37,14 +36,14 @@ header {
     transition: all 0.2s;
 }
 
-#thank_you button:hover {
+#thank-you button:hover {
     background-color: var(--brand-green-hover);
 }
 
-#thank_you a {
+#thank-you a {
     text-decoration: none;
 }
 
-#thank_you a:hover {
+#thank-you a:hover {
     text-decoration: underline;
 }

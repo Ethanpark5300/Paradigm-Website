@@ -81,7 +81,7 @@ footer .half-column ul li {
 }
 
 @media (max-width: 325px) {
-    .footer-contact ul li {
-        font-size: 15px !important;
+    footer .footer-contact ul li {
+        font-size: 15px;
     }
 }

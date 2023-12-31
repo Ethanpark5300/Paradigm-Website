@@ -69,7 +69,7 @@ main img {
         width: 100%;
     }
 
-    #adhd-testing .image-side-by-side img:nth-last-child(1) {
+    #adhd-testing .image-side-by-side img {
         margin-top: 0;
     }
 

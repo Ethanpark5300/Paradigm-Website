@@ -1,7 +1,3 @@
-.breadcrumbs {
-    margin-top: 98px;
-}
-
 ul.breadcrumb {
     padding: var(--body-font-size);
     list-style: none;
